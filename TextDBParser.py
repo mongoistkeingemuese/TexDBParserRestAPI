@@ -12,35 +12,15 @@ class TextDBParser(DatabaseParser):
     def create_database_from_json(self, database_path, json_path):
         database_path=os.path.normpath(database_path)
         json_path=os.path.normpath(json_path)
-        
-        # Erstelle den Pfad zur Textdatei basierend auf dem Namen der Eingabedatei
         new_database = database_path
 
-        # Lese die JSON-Datei ein
         with open(json_path, 'r', encoding='utf-8') as file:
             json_obj = json.load(file)
 
-        # Erstelle ein Dictionary, um die Keys nach Namespaces zu gruppieren
-        namespaces = defaultdict(list)
-
-        for full_key, value in json_obj.items():
-            if '.' in full_key:
-                namespace, key = full_key.split('.', 1)
-                namespaces[namespace].append((key, value))
-            else:
-                namespaces[""].append((full_key, value))
-
-        # Sortiere die Namespaces alphabetisch
-        sorted_namespaces = sorted(namespaces.keys())
-
-        # Erstelle eine Liste zum Speichern der Textzeilen
         lines = []
 
-        for namespace in sorted_namespaces:
-            if namespace:  # Füge den Namespace-Header hinzu, wenn ein Namespace vorhanden ist
-                lines.append(f'\n[x namespace="{namespace}"]')
-            for key, value in namespaces[namespace]:  # Nutze das ursprüngliche "namespaces"-Dictionary hier
-                lines.append(f'{key}={value}')
+        for full_key, value in json_obj.items():
+            lines.append(f'{full_key}={value}')
 
         # Schreibe die Textzeilen in die Textdatei
         with open(new_database, 'w', encoding='utf-8') as text_file:
@@ -199,5 +179,4 @@ class TextDBParser(DatabaseParser):
 
 if __name__=="__main__":
     TestParser=TextDBParser("TextDB")
-
 
