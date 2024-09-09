@@ -10,6 +10,7 @@ class TextDBParser(DatabaseParser):
         super().__init__(name)
 
     def create_database_from_json(self, database_path, json_path):
+        #get key+value from JSON and create TextDB
         database_path=os.path.normpath(database_path)
         json_path=os.path.normpath(json_path)
         new_database = database_path
@@ -22,74 +23,73 @@ class TextDBParser(DatabaseParser):
         for full_key, value in json_obj.items():
             lines.append(f'{full_key}={value}')
 
-        # Schreibe die Textzeilen in die Textdatei
         with open(new_database, 'w', encoding='utf-8') as text_file:
             text_file.write('\n'.join(lines))
 
+        #send database as payload
         with open(new_database, 'r', encoding='utf-8') as text_file:
             self.payload=str(text_file.read())
 
-        return f'Die Textdatei wurde erfolgreich erstellt: {new_database}'
+        return f'text database was created successfully  {new_database}'
 
     def create_json_from_database(self, database_path, json_path):
         database_path=os.path.normpath(database_path)
         json_path=os.path.normpath(json_path)
     
         database_name= os.path.basename(database_path)
-        # Erstelle den Pfad zur JSON-Datei basierend auf dem Namen der Eingabedatei
+
         database_as_json = json_path
 
-        # Lese die Textdatei ein
         with open(database_path, 'r', encoding='utf-8') as file:
             lines = file.readlines()
 
-        # Erstelle ein Dictionary, um die Daten zu speichern
         json_obj = {}
         current_namespace = ""
 
-        # Regex zum Erkennen des Namespace Headers
+        # Regex to recognize namespace header
         namespace_pattern = re.compile(r'\[.*namespace="(.+?)"\]')
 
-        # Regex zum Erkennen des Namespace Resets
+        # Regex to recognice namespace reset
         namespace_reset_pattern = re.compile(r'\[Namespace Reset\]')
         
-        # Regex zum Erkennen von Keys, die nur aus einer Zahl oder einem Buchstaben gefolgt von einer Zahl bestehen
+        # Regex to recognice H - and L- numbers in TextDB
         special_key_pattern = re.compile(r'^[A-Za-z]\d+$|^\d+$')
 
         for line in lines:
-            # Überprüfen, ob die Zeile einen Namespace definiert
+            # check for namespace
             namespace_match = namespace_pattern.match(line.strip())
             if namespace_match:
-                # Extrahiere den Namespace
+                # extract namespace
                 current_namespace = namespace_match.group(1)
 
             elif namespace_reset_pattern.match(line.strip()):
-                # Setze den Namespace zurück
+                # reset namespace
                 current_namespace = ""
 
             elif '=' in line:
-                # Splitte jede Zeile in Key und Value
+                # split key and value
                 key, value = line.split('=', 1)
                 key = key.strip()
                 value = value.strip()
 
-                # Überprüfen, ob der Key den speziellen Kriterien entspricht
+                # check for special handling
                 if special_key_pattern.match(key):
-                    # Wenn der Key aus einem Buchstaben und einer Zahl oder nur aus einer Zahl besteht,
-                    # wird er keinem Namespace zugeordnet und bleibt unverändert
+                    # reset namespace when key is H - L - number
                     full_key = key
                 else:
-                    # Andernfalls wird der Namespace hinzugefügt
+                    # add namespace
                     full_key = f"{current_namespace}.{key}" if current_namespace else key
                 
                 json_obj[full_key] = value
-        # Sortiere die Einträge alphabetisch nach Key
+
+        # sort namespace keys alphabeticaly
         sorted_json_obj = {k: v for k, v in sorted(json_obj.items())}
 
-        # Schreibe das Dictionary in die JSON-Datei
+        # write dict in JSON
         with open(database_as_json, 'w', encoding='utf-8') as json_file:
             json.dump(sorted_json_obj, json_file, indent=4, ensure_ascii=False)
         
+        #send JSON as payload
         with open(database_as_json, 'r', encoding='utf-8') as text_file:
             self.payload=str(text_file.read())
 
@@ -99,82 +99,81 @@ class TextDBParser(DatabaseParser):
         excel_path=os.path.normpath(excel_path)
         json_path=os.path.normpath(json_path)
 
-        # Prüfe, ob die bestehende Excel-Datei existiert und nicht leer ist
         if os.path.exists(excel_path) and os.path.getsize(excel_path) > 0:
-            # Lese die bestehende Excel-Datei ein
+            # read dataframe from excel
             df_existing = pd.read_excel(excel_path, engine='openpyxl')
-            # Drucke die Spaltennamen zur Fehlersuche
+            # print existing column descriptions
             print(f"Spaltennamen in der bestehenden Excel-Datei: {df_existing.columns.tolist()}")
         else:
-            # Initialisiere ein leeres DataFrame, wenn die Datei nicht existiert oder leer ist
+            # initialize excel sheet
             df_existing = pd.DataFrame(columns=['Key', 'Value'])
-            print("Die bestehende Excel-Datei existiert nicht oder ist leer. Ein neues DataFrame wird erstellt.")
+            print("ecxel file does not exist or is empty ... new file was created")
 
-        # Lese die neue JSON-Datei ein
         with open(json_path, 'r', encoding='utf-8') as file:
             json_data = json.load(file)
 
-        # Erstelle ein DataFrame aus der neuen JSON-Daten
+        # create new dataframe from JSON
         df_new = pd.DataFrame(list(json_data.items()), columns=['Key', language_description])
 
         if df_existing.empty:
-            # Wenn das bestehende DataFrame leer ist, erstelle eine neue Tabelle mit den neuen Daten
+            # create empty dataframe  
             df_result = df_new
         else:
-            # Überprüfe, ob die 'Key' Spalte vorhanden ist
+            #check for Key column
             if 'Key' not in df_existing.columns:
                 raise KeyError("Die Spalte 'Key' fehlt in der bestehenden Excel-Datei.")
             
-            # Setze den Key als Index für beide DataFrames, um sie korrekt zu kombinieren
+            # set key column active to combine dataframes
             df_existing.set_index('Key', inplace=True)
             df_new.set_index('Key', inplace=True)
 
-            # Kombiniere die beiden DataFrames
+            # combine dataframes
             df_combined = df_existing.combine_first(df_new)
 
-            # Setze den Index zurück, um die 'Key'-Spalte als normale Spalte zu behalten
+            # reset index to keep "Key" column
             df_result = df_combined.reset_index()
 
-        # Konvertiere die Key-Spalte in Strings, um Vergleichsfehler bei der Sortierung zu vermeiden
+        # convert Key column to string to exclude comparing errors
         df_result['Key'] = df_result['Key'].astype(str)
 
-        # Sortiere das DataFrame alphabetisch nach der Key-Spalte
+        # sort Keys alphabeticaly
         df_result.sort_values(by='Key', inplace=True)
 
-        # Speichere das aktualisierte DataFrame zurück in eine Excel-Datei
+        # save active dataframe in excel
         df_result.to_excel(excel_path, index=False, engine='openpyxl')
 
-        self.payload=str("<3 kannst die Excel als String ehh nicht lesen :P")
+        self.payload=str("<3 cant read excel as sting anyway :P")
         
-        return f'Die Excel-Datei wurde erfolgreich erstellt/aktualisiert: {excel_path}'
+        return f'Excel file was created/updated successfully: {excel_path}'
 
     def get_json_from_translation_excel(self, json_path, excel_path, language_description):
            
         excel_path=os.path.normpath(excel_path)
         json_path=os.path.normpath(json_path)
 
-        # Lese die Excel-Datei ein
+        # read excel dataframe
         df = pd.read_excel(excel_path, engine='openpyxl')
         key_column='Key'
         
-        # Überprüfe, ob die angegebenen Spalten vorhanden sind
+        # check columns for language description
         if key_column not in df.columns or language_description not in df.columns:
-            raise ValueError(f"Die angegebenen Spalten '{key_column}' oder '{language_description}' existieren nicht in der Excel-Datei.")
+            raise ValueError(f"Column '{key_column}' or '{language_description}' does not exist in excel file")
         
-        # Entferne Zeilen, in denen entweder der Key oder der Value NaN ist
+        # remove Key and Values when NaN  
         df_cleaned = df.dropna(subset=[key_column, language_description])
         
-        # Erstelle ein Dictionary aus den angegebenen Spalten
+        # create dict from column
         json_data = dict(zip(df_cleaned[key_column], df_cleaned[language_description]))
         
-        # Schreibe das Dictionary in die JSON-Datei
+        # write dict in JSON
         with open(json_path, 'w', encoding='utf-8') as json_file:
             json.dump(json_data, json_file, indent=4, ensure_ascii=False)
 
-        with open(json_path, 'r', encoding='utf-8') as text_file:
-            self.payload=str(text_file.read())
+        # send JSON as payload
+        with open(json_path, 'r', encoding='utf-8') as json_file:
+            self.payload=str(json_file.read())
         
-        return f'Die JSON-Datei wurde erfolgreich erstellt: {json_path}' 
+        return f'JSON file was created successfully: {json_path}' 
 
 
 if __name__=="__main__":

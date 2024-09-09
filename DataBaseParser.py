@@ -11,11 +11,11 @@ class DatabaseParser(ABC):
         app.run(debug=True)
 
     def execute_method(self, method_name, data):
-        """Dynamisch eine Methode der Kindklasse aufrufen."""
+        # process child class functions dynamicly
         try:
             method = getattr(self, method_name, None)
             if not method:
-                raise ValueError(f"Methode '{method_name}' nicht gefunden")
+                raise ValueError(f"Methode '{method_name}' not found")
             
             result = method(**data)
             return jsonify({'status': 'success', 'result': result, 'payload':f'{self.payload}'}), 200
@@ -23,7 +23,7 @@ class DatabaseParser(ABC):
             return jsonify({'status': 'error', 'message': str(e)}), 500
 
     def create_app(self):
-        """Erstellt die Flask-App und konfiguriert die API-Endpunkte."""
+        #create RestAPI and Webinterface 
         app = Flask(self.name)
         swagger = Swagger(app)
 
