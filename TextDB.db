@@ -1,0 +1,4237 @@
+#Info:Modified=2024-09-06 10:51:33
+#Info:HmiVersion=4.2.2056.0
+#Info:PlcVersion=Unknown
+#Info:ModifiedBy=Architekt
+#Info:Msnr=13016867-0020
+#Info:ExportBy=Architekt
+#Info:Export=2024-05-06 14:37:08
+#Info:ExportMsnr=13016724
+#Info:HashCode=ZuTzmj/VvukitW4E7ip+oHqKwmH/h+flS/QfUcemT7+vAA==
+#Info:ExternalModified=True
+#Info:ImportBy=Architekt
+#Info:Import=2024-08-06 09:20:55
+
+de=Deutsch
+gb=English
+fr=Français
+ru=Pусский
+prt=Português
+rou=Românesc
+dk=Dansk
+
+AnalogValueConfiguration=Analog IO Konfiguration
+
+
+[Common Words namespace="Common"]
+Question=Frage
+Yes=Ja
+No=Nein
+Export=Export
+Import=Import
+Apply=Übernehmen
+Edit=Ändern
+Remove=Entfernen
+Cancel=Abbruch
+Retrieve=Abrufen
+Message=Meldung :
+Done=Fertig
+Configuration=Konfiguration
+Value.IsGreater=Wert ist größer als
+Value.IsSmaller=Wert ist kleiner als
+Value.MinimalValue=Minimaler Wert
+value.MaximalValue=Maximaler Wert
+AllFiles=Alle Dateien
+In=in
+And=und
+OtherErrors=andere Fehler
+
+[Einheiten namespace="Units"]
+Second=Sekunde
+Second.Short=s
+Second.Multi=Sekunden
+Celsius=Grad Celsius
+Celsius.Short=°C
+Millimeter=Millimeter
+Millimeter.Short=mm
+
+[System namespace="System"]
+User=Benutzer:
+LoggedOff=Nicht Angemeldet!
+HMI_Version=HMI-Version:
+
+[Validation Result Item namespace="ValidationResultItem"]
+
+ValidationResultUnknown=Validierung unbekannt
+Left=Linker Stab
+Top=Oberer Stab
+Right=Rechter Stab
+Bottom=Unterer Stab
+BarNotSet=nicht gesetzt
+NoFixtureAvailable=hat keine Zulage
+SealBehaviorConfigInconsistent=Verhalten für Dichtungsniederdrücker nicht einheitlich
+BarSideInconsistent=Auflageseite nicht einheitlich oder nicht definiert
+NoValidFixedCorner=Keine valide feste Ecke
+NoValidFixtureSet=Keine valide Zulagenkombination
+Twin.OwnEquipPositionIncorrect=Rüstposition nicht korrekt!
+Twin.OverMax=Der Auftrag ist zu groß für die Doppelschweißmaschine!
+Twin.ParkPositionNull=Die Eintragung der Parkposition des Partners darf nicht null sein!
+Width=Elementbreite
+Height=Elementhöhe
+UnderMin=zu klein
+OverMax=zu groß
+ConfigurationException=Konfigurationsfehler
+PropertiesContainsZero=Eigenschaften fehlerhaft
+CCProcessing=Eckenverarbeitungsvariante fehlerhaft
+Processingposition=Bearbeitungsposition
+EProcessingPosition.Irrelevant=Irrelevant
+EProcessingPosition.Left=Links
+EProcessingPosition.Top=Oben
+EProcessingPosition.Right=Rechts
+EProcessingPosition.Bottom=Unten
+SetTooOften=an mehreren Stäben gesetzt
+TooManyVirtualBars=Zu viele offene Elemente! (Bartyp 0 oder 900)
+TooManyStulpBars=Zu viele Stulp Stäbe! (Bartyp 500 oder 509)
+ProcessingPositionsNotValid=Bearbeitungspositionen erlauben keine eindeutige Drehung!
+
+[Production Cleaning Subpage namespace="CleaningSubpageControl"]
+Caption=Bitte Maschine beräumen
+Confirm=Weiter
+Cancel=Abbruch
+TipS1Plus=Tip S1 +
+TipS1Minus=Tip S1 -
+TipS3S4Plus=Tip S3|S4 +
+TipS3S4Minus=Tip S3|S4 -
+TipS5S6Plus=Tip S5|S6 +
+TipS5S6Minus=Tip S5|S6 -
+TipS5S6SchlittenPlus=S5|S6 Schlitten 1 +
+TipS5S6SchlittenMinus=S5|S6 Schlitten 1 -
+TipS5S6ZulagePlus=S5|S6  Zulage 1 -
+TipS5S6ZulageMinus=S5|S6 Zulage 1 -
+TipS7S8Plus=Tip S7|S8 +
+TipS7S8Minus=Tip S7|S8 -
+TipS7S8SchlittenPlus=S7|S8 Schlitten 2 +
+TipS7S8SchlittenMinus=S7|S8 Schlitten 2 -
+TipS7S8ZulagePlus=S7|S8 Zulage 2 -
+TipS7S8ZulageMinus=S7|S8 Zulage 2 -
+
+[Main Production Control namespace="MainProductionControl"]
+BarcodeScanner.NotReset=Der Barcodescanner konnte nicht resettet werden.
+[Production Main Page namespace="ProductionSubpageControl"]
+StartFirstInitPhase=Initiale Grundstellung
+StartSecondInitPhase=Grundstellung
+SetNextTask=Vorziehen
+Start=Start
+Stop=Stop
+Empty=Leerfahren
+StopOnCycleEnd=Leerfahren
+ScannerReset= Reset Scanner
+RemoveFromWeldingTaskManager=Austakten
+GuideThrough_On=Durchlauf
+GuideThrough_Off=Schweißen
+ManualRemoval_On=Handentnahme
+ManualRemoval_Off=Austransport
+StartInserterCleaning=Einleger hoch
+StartMirrorCleaning=Spiegel reinigen
+StartFixtureChange=Zulagen wechseln
+StartTopCutter=Messerwechsel
+ProductionReset=Reset Production
+StartLubrication=Schmieren
+StartProfileReferencing=Profil Referenz
+RestartSendTaskToCornerCleaner=Daten erneut senden
+RequestTaskCheck=Überprüfen AUS
+DeRequestTaskCheck=Überprüfen AN
+StartParkPositon=Parkposition
+VertriebsDemoButton=Demo-Aufträge
+
+[Main Production View namespace="MainProductionView"]
+
+Knifes=Messer
+Lower=Unten
+Upper=Oben
+UpperLower=Oben/Unten
+Color= Farbcode
+
+
+[Production Subpage namespace="ProductionSubpageView"]
+SystemState=Maschinenstatus
+SystemState.MirrorUsage=Verbl. Spiegelnutzungen
+SystemState.LifetimePieceCount=Gesamtstückzähler
+SystemState.DailyPieceCount=Tagesstückzähler
+SystemState.HeadStates=Schweißkopfstatus
+SystemState.Head=Kopf
+SystemState.Head1=Schweißkopf 1
+SystemState.Head2=Schweißkopf 2
+SystemState.Head3=Schweißkopf 3
+SystemState.Head4=Schweißkopf 4
+SystemState.Head5=Schweißkopf 5
+SystemState.Head6=Schweißkopf 6
+SystemState.Head7=Schweißkopf 7
+SystemState.Head8=Schweißkopf 8
+SystemState.Pressure=Druck
+SystemState.BufferCount=Elemente auf Puffertisch
+SystemState.DataSendActive=Übertragung aktiv
+SystemState.DataAccepted=Daten akzeptiert
+SystemState.DataError=Fehler von Server gemeldet
+SystemState.DataServerOffline=Server offline
+SystemState.DataEPOffline=Eckenputzer offline
+SystemState.ScrewHead5=Schraubkopf 5
+SystemState.ScrewHead6=Schraubkopf 6
+SystemState.ScrewHead7=Schraubkopf 7
+SystemState.ScrewHead8=Schraubkopf 8
+
+CurrentElementData=Aktueller Auftrag
+CurrentElementData.Duplex=Duplex!
+CurrentElementData.CommissionCurrentOrder=Kommission
+CurrentElementData.CommissionCurrentOrder.Fallback=Unbekannt
+CurrentElementData.Width=Breite
+CurrentElementData.Height=Höhe
+CurrentElementData.UnitOfMeasure=mm
+CurrentElementData.InsertionPosition=Einlegeposition
+CurrentElementData.Position=Position
+CurrentElementData.InsertionPosition.Left=Links
+CurrentElementData.InsertionPosition.Left.Short=L
+CurrentElementData.InsertionPosition.Right=Rechts
+CurrentElementData.InsertionPosition.Right.Short=R
+CurrentElementData.InsertionPosition.Top=Oben
+CurrentElementData.InsertionPosition.Top.Short=O
+CurrentElementData.InsertionPosition.Bottom=Unten
+CurrentElementData.InsertionPosition.Bottom.Short=U
+;CurrentElementData.DND=Dichtungsniederdrücker
+CurrentElementData.DND=DND
+CurrentElementData.DND.None=Keiner
+CurrentElementData.Fixtures=Zulagen
+CurrentElementData.Fixtures.None=Keine
+CurrentElementData.ElementPosition=Elementposition
+CurrentElementData.BarSide=Auflageseite
+CurrentElementData.BarSide.Inner=Innen
+CurrentElementData.BarSide.Outer=Außen
+CurrentElementData.InsertionPosition.Transom=Kämpfer
+CurrentElementData.SupportFixtures=Auflage
+CurrentElementData.LeftOuterFixtures=Zulagen Links
+CurrentElementData.RightOuterFixtures=Zulagen Rechts
+CurrentElementData.HeatingPlate=Spiegel
+
+WorkState=Bearbeitungsschritt
+WorkState.SetUpPhase=Rüstphase
+WorkState.InsertionPhase=Einlegephase
+WorkState.HeatingUpPhase=Anwärmphase
+WorkState.JoiningPhase=Fügephase
+WorkState.CoolingDownPhase=Abkühlphase
+
+CurrentElementVisualisation=Visualisierung aktueller Auftrag
+
+SelectedElementData=Selektierter Auftrag
+SelectedElementData.CommissionSelectedOrder=Kommission
+SelectedElementData.InsertionPosition=Einlegeposition
+SelectedElementData.ReducedInsertionPosition=Reduzierte Einlegeposition
+SelectedElementData.WeldingPosition=Schweißposition
+SelectedElementData.RemovalPosition=Entnahmeposition
+
+WeldingCollection=Auftragsliste
+WeldingCollection.StateDescription=Status
+WeldingCollection.Commission=Kommission
+WeldingCollection.FinalElementWidth=Breite [mm]
+WeldingCollection.FinalElementHeight=Höhe [mm]
+WeldingCollection.LeftBar=Stab links
+WeldingCollection.TopBar=Stab oben
+WeldingCollection.RightBar=Stab rechts
+WeldingCollection.BottomBar=Stab unten
+WeldingCollection.FirstTransomBar=1. Quer Stab
+WeldingCollection.SecondTransomBar=2. Quer Stab
+WeldingCollection.Position=Position
+WeldingCollection.NoDND=Keiner
+WeldingCollection.CartNumber=Wagen
+WeldingCollection.ShelfNumber=Fach
+WeldingCollection.TaskState=Status
+WeldingCollection.CustomerMessage=Los Notiz
+WeldingCollection.Properties=Eigenschaften
+WeldingCollection.TopLeftCornerKnifes=Links oben
+WeldingCollection.TopRightCornerKnifes=Rechts oben
+WeldingCollection.BottomLeftCornerKnifes=Links unten
+WeldingCollection.BottomRightCornerKnifes=Rechts unten
+WeldingCollection.Upper=Oben
+WeldingCollection.Lower=Unten
+
+WaitingOfTwinMachine=Warte auf Freigabe!
+
+[MainProductionView namespace="MainProductionView"]
+Knifes=Messer
+Lower=Unten
+Upper=Oben
+UpperLower=Position
+Color=Farbe + Name
+
+[Welding Task Management namespace="WeldingTaskManagementPageView"]
+AssociatedDatabaseId=Status
+Commission=Kommission
+FinalElementWidth=Breite in mm
+FinalElementHeight=Höhe in mm
+ElementCount=Anzahl
+IsDuplex=Duplex?
+Esl=ESL Bohrungen
+LeftBar=Stab links
+TopBar=Stab oben
+RightBar=Stab rechts
+BottomBar=Stab unten
+WeldingTaskProperties=Eigenschaften
+CartNumber=Wagen
+ShelfNumber=Fach
+Remarks=Bemerkung
+ESLSelection.NoESL=Keine
+NotImportedTasks=Manuelle angelegte Aufträge
+TaskState=Status
+
+TransomBar.First=1. Querstab
+TransomBar.Second=2. Querstab
+TransomBar.Position=Achsmaß
+
+PropertiesSelection.OuterCoating=Äußere Farbe
+PropertiesSelection.InnerCoating=Innere Farbe
+PropertiesSelection.OuterGasketPresent=Äußere Dichtung?
+PropertiesSelection.InnerGasketPresent=Innere Dichtung?
+
+[Lot Data Management namespace="LotDataManagementPageControl"]
+ResetBarcodeScanner=ScannerReset
+
+[Lot Data Management namespace="LotDataManagementPageView"]
+Lots=Lose
+LotState=Los Status
+IncludingTasks=enthaltene Schweißaufträge
+SelectedTask=gewählter Auftrag
+Remarks=Bemerkung
+Knifes=Messer
+
+LotID=Los ID
+File=Dateiname
+Barcode=Barcode
+TaskCount=Auftragsanzahl
+ImportTime=Import Zeitpunkt
+ImportFile=Datei
+DND=Dichtungsniederdrücker
+IsExecutable=Ausführbar
+Yes=Ja
+
+Buttons.ImportLot=Lose importieren
+Buttons.StartLot=Lose eintakten
+Buttons.StartLot.Dialog=%% Aufträge wurden nicht eingetakted, da keine Bearbeitung möglich ist!
+Buttons.RemoveLot=Lose entfernen
+Buttons.RemoveLot.Dialog=Sie sind dabei alle gewählten Lose (inkl. aller Aufträge) zu löschen!\nMöchten Sie fortfahren?
+Buttons.ExportLotDB=Lose exportieren
+Buttons.RepairMode=Reparaturmodus
+Buttons.ProductionMode=Produktionsmodus
+Buttons.StartTask=Auftrag eintakten
+Buttons.RemoveTask=Auftrag entfernen
+Buttons.ExportLotLog=Log exportieren
+
+[Lot Operation Log Export Dialog namespace="LotOperationLogExportDialog"]
+ExportPath=Export Pfad:
+ExportPath.Description=(Klick für Auswahl)
+ExportAll=Alle exportieren?
+DateRange=Zeitraum:
+
+[Produktionsmittel namespace="ProductResources"]
+Name=Name
+ExtName=Ext. Name
+ID=ID
+Errors=Bemerkung
+
+BarType.ExternalId=Funktionsnummer
+
+Fixture.Strength=Stärke
+Fixture.Color=Farbe
+Fixture.BarSide=Auflageseite
+Fixture.FixtureType=Typ
+Fixture.FixtureOption=Zulagenart
+Bar.LowerKnife=Unteres Messer
+Bar.UpperKnife=Oberes Messer
+
+Bar.Type=Typ
+Bar.InsertionOffset=Einlegeoffset
+Bar.WeldingOffset=Schweißoffset
+Bar.RemovalOffset=Entnahmeoffset
+Bar.ProfileWidth=Profilbreite
+Bar.ProfileHeight=Profilhöhe
+Bar.RebateWidth=Falzbreite
+Bar.WeldingMirrorTemperature=Spiegeltemperatur
+Bar.HeatingUpTimeSpan=Anwärmzeit
+Bar.CoolingDownTimeSpan=Abkühlzeit
+Bar.JoiningTimeSpan=Fügezeit
+Bar.HEDNDBehavior=Dichtung
+Bar.DND=DND
+Bar.LowerKnife=Unteres Messer
+Bar.UpperKnife=Oberes Messer
+Bar.StulpPosition=Stulpbearbeitung
+Bar.StulpAnschlag=Stulpanschlag an Stulpfräse melden
+Bar.AlternateInsertionOption=Einlage ohne Stabzentrierung/\nohne Einleger
+Bar.AlternateClamp=obsolet!
+Bar.AlternateReleaseOption=Anheben der Spanner während\ndes Fügens
+Bar.AlternateOpeningOption=Ausheben ohne Schweißvorschub\nentlasten (Halbschalenprofile)
+Bar.AlternateDeClamp=Abkühlzeit vor Fügen (Acrylprofile)
+Bar.AlternateInsertionOptionForRenovate=Alternativer Einlageablauf(Rahmen)
+Bar.DrillParameter=Bohrparameter
+Bar.DrillStartPosition=Startposition
+Bar.DrillEndPosition=Endposition
+Bar.DrillVelocity=Bohrergeschwindigkeit
+Bar.DrillFeedingVelocity=Vorschubgeschwindigkeit
+Bar.ScrewParameter=Schraubparameter
+Bar.ScrewdriverProgram=Programm-No
+Bar.DoNotDrill=Nicht Bohren
+Bar.DoNotScrew=Nicht Verschrauben
+Bar.FirstHolePosition=Erste Lochposition
+Bar.SecondHolePosition=Zweite Lochposition
+Bar.ProcessingPosition=Bearbeitung
+Bar.MeasuredMirrorTouchTime=Spiegelkontaktzeit
+Bar.DNDBehavior=DND
+Bar.IsWeldingRiskDetected=Schweißrisiko
+Bar.IsHydraulicRiskDetected=Hydraulikrisiko
+Bar.StoppTime=Zeitpunkt
+Bar.DoCutterAdjustment=Untermesserverstellung aktiv
+Bar.TransomHeatingPlate=Kämpferspiegel
+Bar.CornerFixtures=Eckzulagen
+Bar.TransomSupportFixtureViewModel=Kämpferstab Auflagen
+Bar.ExteriorFixtures=Kämpferstab Zulagen
+Bar.ExteriorFixtureViewModel=Kämpferstab Zulagen
+
+
+Bar.HeatingUpTimeSpan.Short=AZ
+Bar.JoiningTimeSpan.Short=FZ
+Bar.CoolingDownTimeSpan.Short=AbZ
+Bar.MeasuredMirrorTouchTime.Short=SkZ
+Bar.WeldingMirrorTemperature.Short=SsT
+Bar.DNDBehavior.Short=DND
+Bar.IsWeldingRiskDetected.Short=SR
+Bar.IsHydraulicRiskDetected.Short=HR
+
+Bar.EDNDBehavior.non=Keine Aktion
+Bar.EDNDBehavior.Pull=Ziehen
+Bar.EDNDBehavior.Push=Drücken
+
+Bar.AlternateReleaseOptionForRenovate=Alternativer Einlageablauf(Renovierung)
+Bar.LowerKnife=Unteres Messer
+Bar.UpperKnife=Oberes Messer
+
+Properties.InnerCoating=Innere Beschichtung
+Properties.OuterCoating=Äußere Beschichtung
+Properties.InnerGasket=Innere Dichtung
+Properties.OuterGasket=Äußere Dichtung
+
+[Enum FixtureType namespace="EFixtureType"]
+Corner=Eckzulage
+Exterior=Kämpferzulage
+TransomSupport=Kämpferauflage
+
+[Enum FixtureOption namespace="EFixtureOption"]
+NotDefined=Normal
+LowerLimit=Adapterzulage
+
+[Validierung der Produktionsmittel namespace="ProductResources.Validation"]
+Remarks=Bemerkung
+
+Name.Empty=Name darf nicht leer sein!
+Name.Short=Name muss aus mindestens 3 Zeichen bestehen.
+Name.Twice=Name darf nicht doppelt vorkommen!
+
+ExternalID.Empty=External Id darf nicht leer sein!
+
+Fixture.BarSide=Auflageseite ist nicht definiert!
+
+Bar.TimeSpanNegativ=Zeit kann nicht negativ sein!
+Bar.NoFixtureSelected=Es muss mindestens eine Eckzulage ausgwählt sein!
+Bar.NoHeatingPlateSelected=Bei Querstäben müssen ein Kämpferspiegel ausgewählt sein!
+
+Coating.Unkown=Beschichtung unbekannt!
+Coating.Combo=Kombination
+
+ShouldNotBeTwice=darf nicht doppelt vorkommen!
+
+[Welding Customer Area namespace="CustomerConfigurationMainPageControl"]
+Types=Stabtypen
+WeldingBonus=Schweißzulagen
+Configuration=Stabkonfigurationen
+DND=Dichtungsniederdrücker
+CoatingColor=Farbcodes
+TransomHeatingPlate=Querstab-Heizspiegel
+Knife=Messer
+
+ExportAll=Alles exportieren
+ImportAll=Alles importieren
+
+[ProductResources.ExportImportControl namespace="ExportImportControl"]
+SelectAllBars=Alle an-/abwählen
+SelectAllBarTypes=Alle an-/abwählen
+SelectAllDNDs=Alle an-/abwählen
+SelectAllFixtures=Alle an-/abwählen
+SelectAllCoatingColors=Alle an-/abwählen
+SelectAllTransomHeatingPlates=Alle an-/abwählen
+SelectAllKnifes=Alle an-/abwählen
+ExportSelected=Export Selekt.
+ExportAll=Alle exportieren
+LoadNewFile=Neue Datei
+ImportSelected=Import Selekt.
+ImportAll=Alle importieren
+CompleteImportAndReplace=Komplett Ersatz
+ResetCollections=Neu Laden
+
+[ProductResources ExportImport PageView namespace="ExportImportView"]
+Information=Informationen
+SelectedItems=angewählt
+MultipleNames=mit gleichen Namen
+NeededToClarify=zu klären
+Total=Gesamt:
+Sources=Quellen
+Content=Inhalt
+Local=Lokale Produktionsmittel
+Files=Dateien
+Machine=Maschine
+
+[Single-Head-Welding Page Control namespace="ManualSingleHeadWeldingControl"]
+StartTopCutter=Messerwechsel
+StartFixtureChange=Zulagen wechseln
+StartMirrorCleaning=Spiegel reinigen
+StartInserterCleaning=Einleger hoch
+StartLubrication=Schmieren
+
+FillBarConfigFromSelection=Von Auswahl
+ResetBarConfig=Defaultwerte
+DNDBehaviorPull=Drücken
+DNDBehaviorNon=Keine Aktion
+DNDBehaviorPush=Ziehen
+
+Start=Start
+Stop=Stop
+StopOnCycleEnd=Leerfahren
+StartSecondInitPhase=Grundstellung
+StartFirstInitPhase=Initiale Grundstellung
+
+[Single-Head-Welding Page View namespace="ManualSingleHeadWeldingView"]
+Axispositions=Achspositionen
+PLCDialoge=Steuerungsmeldungen
+WorkState=Bearbeitungsschritt
+WorkState.SetUpPhase=Rüstphase
+WorkState.InsertionPhase=Einlegephase
+WorkState.HeatingUpPhase=Anwärmphase
+WorkState.JoiningPhase=Fügephase
+WorkState.CoolingDownPhase=Abkühlphase
+BarConfiguration=Stabkonfiguration
+WeldingHeadData=Schweißkopf
+WeldingHeadData.Status=Status
+ValueZeroOrSmaller=Wert darf nicht 0 oder kleiner sein!
+WeldingHistory=Schweißhistorie
+ConfiguredBars=Konfigurierte Stäbe
+
+[MQTT Settings namespace="MqttSettings"]
+Enable=Aktivieren
+ClientName=Name
+BrokerHost=Broker Host
+BrokerPort= Broker Port
+MainPlcStatusTopic=PLC Status Topic
+
+[ProductResources.ExportImportTexte namespace="ExportImportTexte"]
+CompleteImportAndReplace.Caption=Kompletter Import?
+CompleteImportAndReplace.Question=Soll alles durch den Inhalt einer Datei ersetzt werden?
+SelectImport.Caption=Selektierte Importieren?
+SelectImport.Question=Sollen die selektierten Produktionsmittel in die Datenbank übernommen werden?
+AllImport.Caption=Alle Übernehmen?
+AllImport.Question=Sollen alle angezeigten Produktionsmittel in die Datenbank übernommen werden?
+Reset.Caption=Reset der Listen?
+Reset.Question=Sollen alle Listen aus der Datenbank neubefüllt werden?
+
+[ProductResources.ExportImportModel namespace="ExportImportModel"]
+Bar=Stabkonfigurationen
+BarType=Stabtypen
+DND=DND
+Fixture=Zulagen
+CoatingColor=Farbcodes
+TransomHeatingPlate=Querstab-Heizspiegel
+Knife=Messer
+
+[Obere Messer namespace="UpperKnifes"]
+Left=Links
+Right=Rechts
+Bottom=Unten
+Top=Oben
+
+[Unteres Messer namespace="LowerKnife"]
+Left=Links
+Right=Rechts
+Bottom=Unten
+Top=Oben
+
+[MetaData namespace="PlcObjects.MetaData"]
+AppVersion=Appversion
+AppDescription=Appbeschreibung
+AppLog=AppLog
+
+
+[Action Step Texte namespace="EActionStep"]
+Empty=! !
+ULogIn=Bitte anmelden
+UStartInit=Initiale Grundstellung starten
+MFirstInit=Initiale Grundstellung wird durchgeführt
+UClearMachine=Maschine bitte beräumen!
+MSecondInit=Grundstellung wird durchgeführt
+UScanJob=Schweißauftrag eintakten
+UStartAutomatic=Automatik starten -> Grüne Taste
+MHoming=Maschine macht eine Homing-Fahrt
+MWelding=Schweißauftrag wird bearbeitet -> Dialoge beachten
+
+[Welding Admin Area namespace="WeldingControlGroupConfiguration"]
+HmiParameters=Hmi-Parameter
+Configuration=Konfiguration
+
+ProductionAdjustmentParameters=Korrekturparameter
+ElementToWeld=Zu schweißendes Element
+ProductionAdjustmentHorizontalOffset=Produktionsachskorrektur Horizontal
+ProductionAdjustmentVerticalOffset=Produktionsachskorrektur Vertikal
+
+[Parameter Schweißen - HMI - namespace="WeldingControlGroupConfiguration.HmiParameters"]
+LotAutoImport=Los Daten Import
+LotAutoImport.Active=Automatik
+LotAutoImport.Active.no=deaktiviert
+LotAutoImport.Active.yes=aktiviert
+LotAutoImport.ExecTime=Minuten zwischen den Importen
+LotAutoImport.Folder=Losimport-Verzeichnis
+LotAutoImport.DuplicateHandling=Umgang mit Duplikaten
+LotAutoImport.DuplicateHandling.NoImport=Nicht Importieren
+LotAutoImport.DuplicateHandling.ReplaceExisting=Überschreiben
+LotAutoImport.FileExtention.new=Dateiendung - neue Lose
+LotAutoImport.FileExtention.update=Dateiendung - Duplikat
+LotAutoImport.FileExtention.ok=Dateiendung - Import OK
+LotAutoImport.FileExtention.fail=Dateiendung - Import Fail
+LotAutoImport.NotExistingPathCounterMax=Anzahl Zugriffsversuche bis Fehlermeldung
+LotAutoImport.DeleteCompletedTimeSpan=Tage bis zur Löschung fertiger Lose
+LotAutoImport.DeleteTimeSpan=Tage bis zur Löschung der Lose
+LotAutoImport.MaxLengthScannerID=Maximale Länge der Scanner ID eines Loses
+
+LotOperationLog.AutoExportActive=Log Automatisch exportieren?
+LotOperationLog.AutoExportActive.yes=Ja
+LotOperationLog.AutoExportActive.no=Nein
+LotOperationLog=Log der Los Operationen
+LotOperationLog.ExportDirPath=Standard Export Ordner Pfad
+LotOperationLog.FilePrefix=Dateinamen Prefix
+LotOperationLog.FileType=Dateityp
+LotOperationLog.MaxLogCount=Log Anzahl Schwelle zu Export 
+
+LotManagement=Los Daten Management
+LotManagement.OperationConcept=Moduskonzept
+LotManagement.ScannAll=In Produktion alle scannen
+LotManagement.ScannAll.repair=Ein
+LotManagement.ScannAll.notFinished=Aus
+
+Barcode.Scanner=Barcode Scanner
+Barcode.Scanner.Active=Handscanner
+Barcode.Scanner.Active.no=deaktiviert
+Barcode.Scanner.Active.yes=aktiviert
+Barcode.Scanner.Port=Scanner Port
+Barcode.ScanFilter=Barcode-Filter Scanner
+Barcode.LotFilter=Barcode-Filter Losdaten
+Barcode.CodeType=Barcode Typ
+
+ProductionLog=Produktionslog
+ProductionLog.Active=Produktionslog aktiv?
+ProductionLog.Active.no=Nein
+ProductionLog.Active.yes=Ja
+
+[Scheißspiegel - HMI - namespace="WeldingControlGroupConfiguration.WeldingMirrors"]
+OffsetActualValue=Istwertkorrektur in K
+OffsetActuatorValue=Offset Heizleistung in W
+MinActuatorValue=Minimale Heizleistung in W
+MaxActuatorValue=Maximale Heizleistung in W
+ProportionalValue_Kp=Reglerparameter Kp
+ResettingTime_Tn=Reglerparameter Tn
+DelayTime_Tv=Reglerparameter Tv
+CycleTime=PWM Periode in s
+ToleranceRange=Toleranzband für Solltemperatur in K
+ToleranceRangeWaitTime=Warteueot für Temperaturstabilität in s
+ByPassValue=Hand-Stellwert (Bypass) in W
+SetPointValue=Solltemperatur in °C
+MinSetPointValue=Minimaltemperatur in °C
+MaxSetPointValue=Maximaltemperatur in °C
+
+[Positionsliste - HMI - namespace="WCG.PositionList"]
+0=Rüstposition
+1=FREE
+2=Parkposition
+3=Kleinstmaßschwelle
+
+[Positionsliste - HMI - namespace="WCG.PositionList_1"]
+0=Rüstposition / Reduzierte Einlage 6 Kopf
+1=Rüstposition / Reduzierte Einlage 8 Kopf
+2=Parkposition
+3=Kleinstmaßschwelle
+
+[Positionsliste - HMI - namespace="WCG.PositionList_2"]
+0=Rüstposition / Reduzierte Einlage 6 Kopf
+1=Rüstposition / Reduzierte Einlage 8 Kopf
+2=Parkposition
+3=Kleinstmaßschwelle
+
+[Positionsliste - HMI - namespace="WCG.PositionList_3"]
+0=S5 Rüstposition / Reduzierte Einlage 8 Kopf
+1=S5-Schlitten Rüstposition
+2=S5 Standby / Parkposition
+3=S5-Schlitten Standby / Parkposition
+4=S5-Zulage/Vorschub Grundstellung
+5=S5-Rezept - Vorschub Startposition Bohren
+6=S5-Rezept - Vorschub Endposition Bohren
+7=S5-Rüstposition / Reduzierte Einlage 6 Kopf
+8=S5-Bohr-Schraubverstellung Grundstellung
+9=S5-Offset Bohr-Schraubposition
+10=S5-Rezept - Bohrposition 1
+11=S5-Rezept - Schraubposition 1
+12=S5-Rezept - Bohrposition 2
+13=S5-Rezept - Schraubposition 2
+14=S5-Abholpos Schraube
+15=S5-Offset Vorschub Bohrerverfahrposition
+16=S5-Rezept - Vorschub Bohrerverfahrposition
+17=S5-Freifahrposition Austransport
+
+[Positionsliste - HMI - namespace="WCG.PositionList_4"]
+0=S6 Rüstposition / Reduzierte Einlage 8 Kopf
+1=S6-Schlitten Rüstposition
+2=S6 Standby / Parkposition
+3=S6-Schlitten Standby / Parkposition
+4=S6-Zulage/Vorschub Grundstellung
+5=S6-Rezept - Vorschub Startposition Bohren
+6=S6-Rezept - Vorschub Endposition Bohren
+7=S6-Rüstposition / Reduzierte Einlage 6 Kopf
+8=S6-Bohr-Schraubverstellung Grundstellung
+9=S6-Offset Bohr-Schraubposition
+10=S6-Rezept - Bohrposition 1
+11=S6-Rezept - Schraubposition 1
+12=S6-Rezept - Bohrposition 2
+13=S6-Rezept - Schraubposition 2
+14=S6-Abholpos Schraube
+15=S6-Offset Vorschub Bohrerverfahrposition
+16=S6-Rezept - Vorschub Bohrerverfahrposition
+17=S6-Freifahrposition Austransport
+
+[Positionsliste - HMI - namespace="WCG.PositionList_5"]
+0=S7 Rüstposition / Reduzierte Einlage 8 Kopf
+1=S7-Schlitten Rüstposition
+2=S7 Standby / Parkposition
+3=S7-Schlitten Standby / Parkposition
+4=S7-Zulage/Vorschub Grundstellung
+5=S7-Rezept - Vorschub Startposition Bohren
+6=S7-Rezept - Vorschub Endposition Bohren
+7=Platzhalter
+8=S7-Bohr-Schraubverstellung Grundstellung
+9=S7-Offset Bohr-Schraubposition
+10=S7-Rezept - Bohrposition 1
+11=S7-Rezept - Schraubposition 1
+12=S7-Rezept - Bohrposition 2
+13=S7-Rezept - Schraubposition 2
+14=S7-Abholpos Schraube
+15=S7-Offset Vorschub Bohrerverfahrposition
+16=S7-Rezept - Vorschub Bohrerverfahrposition
+17=S7-Freifahrposition Austransport
+
+[Positionsliste - HMI - namespace="WCG.PositionList_6"]
+0=S8 Rüstposition / Reduzierte Einlage 8 Kopf
+1=S8-Schlitten Rüstposition
+2=S8 Standby / Parkposition
+3=S8-Schlitten Standby / Parkposition
+4=S8-Zulage/Vorschub Grundstellung
+5=S8-Rezept - Vorschub Startposition Bohren
+6=S8-Rezept - Vorschub Endposition Bohren
+7=Platzhalter
+8=S8-Bohr-Schraubverstellung Grundstellung
+9=S8-Offset Bohr-Schraubposition
+10=S8-Rezept - Bohrposition 1
+11=S8-Rezept - Schraubposition 1
+12=S8-Rezept - Bohrposition 2
+13=S8-Rezept - Schraubposition 2
+14=S8-Abholpos Schraube
+15=S8-Offset Vorschub Bohrerverfahrposition
+16=S8-Rezept - Vorschub Bohrerverfahrposition
+17=S8-Freifahrposition Austransport
+
+[Geschwinidgkeitsliste - HMI - namespace="WCG.VelocityList"]
+0=Kämpferkopfgeschwindigkeit mm/s
+1=1
+2=2
+
+[Geschwinidgkeitsliste - HMI - namespace="WCG.VelocityList_1"]
+0=Kämpferkopfgeschwindigkeit mm/s
+1=1
+2=2
+
+[Geschwinidgkeitsliste - HMI - namespace="WCG.VelocityList_2"]
+0=Kämpferkopfgeschwindigkeit mm/s
+1=1
+2=2
+
+[Geschwinidgkeitsliste - HMI - namespace="WCG.VelocityList_3"]
+0=S5-Rezept - Vorschubgeschwindigkeit mm/s
+1=S5-Rezept - Bohrergeschwindigkeit °/s
+2=2
+
+[Geschwinidgkeitsliste - HMI - namespace="WCG.VelocityList_4"]
+0=S6-Rezept - Vorschubgeschwindigkeit mm/s
+1=S6-Rezept - Bohrergeschwindigkeit °/s
+2=2
+
+[Geschwinidgkeitsliste - HMI - namespace="WCG.VelocityList_5"]
+0=S7-Rezept - Vorschubgeschwindigkeit mm/s
+1=S7-Rezept - Bohrergeschwindigkeit °/s
+2=2
+
+[Geschwinidgkeitsliste - HMI - namespace="WCG.VelocityList_6"]
+0=S8-Rezept - Vorschubgeschwindigkeit mm/s
+1=S8-Rezept - Bohrergeschwindigkeit °/s
+2=2
+
+[ELotManagementConcept namespace="ELotManagementConcept"]
+SeperateRepairAndUseMode=Getrennter Reparatur / Benutzer Modus
+OnlyRepairMode=Nur Reparatur Modus
+
+[EBarcodeType namespace="EBarcodeType"]
+Default=Default
+Code39Check=Code39Check
+
+[Element Rotation namespace="ElementRotation"]
+ClockwiseBy90Degrees=Im Uhrzeigersinn
+CounterClockwiseBy90Degrees=Gegen Uhrzeigersinn
+Zero=Keine Drehung
+RotateBy180Degree=Um 180° drehen
+
+[ElementViewInLot namespace="ElementViewInLot"]
+FromInside=Von Innen
+FromOutside=Von Außen
+
+[Enum EWeldingHeadConfig namespace="EWeldingHeadConfig"]
+DND=DNDs vorhanden
+VerticalMovementDND=DND Vertikale Bewegung
+Duplex=Duplexfähig
+ProfileReferencing=Profil Referenzierung
+WeldingMirrorFromAbove=Kämpferschweißspiegel von oben
+
+[Enum EScrewingHeadConfig namespace="EScrewingHeadConfig"]
+None=Nichts
+WithZylinder=Mit Zylinder
+WithHorizontalAxis= MIt horizontaler Achse
+WithZylinderAndVerticalAxis= Mit Zylinder und vertikaler Achse
+
+[Enum ProcessOptions namespace="EProcessOptions"]
+ReleaseClamping=Spanner entlasten
+ReleaseWeldingFeeder=Schweißvorschub entlasten
+
+[Parameter Schweißen - Konfiguration - namespace="WeldingControlGroupConfiguration.Config"]
+General=Allg. Konfiguration
+General.MaximumMirrorUsages=Max. Anzahl Schweißspiegelnutzungen
+General.RemainingMirrorUsages=Verbleibende Schweißspiegelnutzungen
+General.ThinTaskThreshold=Schwelle Dünne Aufträge
+General.StructuralDescription=Maschinentyp
+General.StructuralDescription.FixedCornerLeft=Links-Orientiert
+General.StructuralDescription.FixedCornerRight=Rechts-Orientiert
+General.ElementRotation=Drehung hoher Elemente um 90°
+General.ElementViewInLot=Sichtweise auf ein Element im Los
+General.TwoElementTransportMaxHeight=Max Höhe für Zwei Elemente Transport
+General.TwoElementTransportMaxWidth=Max Breite für Zwei Elemente Transport
+General.WeldingHeadConfig=Schweißkopfausbau
+General.WeldingHeadConfig.DND=Dichtungsniederdrücker
+General.WeldingHeadConfig.VerticalMovementDND=Vertikalzustellung DND
+General.ScrewingHeadConfig=Schraubkopfausbau
+AutomaticHandRemovalCheck=Automatische Handentnahme
+AutomaticHandRemovalCheck.CheckSize.Active=Vergleich(Min/Max)
+AutomaticHandRemovalCheck.CheckSize=Vergleich(Breite/Höhe)
+AutomaticHandRemovalCheck.MinSizeHeight=Minimale Größe Höhe
+AutomaticHandRemovalCheck.MaxSizeHeight=Maximale Größe Höhe
+AutomaticHandRemovalCheck.MinSizeWidth=Minimale Größe Breite
+AutomaticHandRemovalCheck.MaxSizeWidth=Maximale Größe Breite
+
+WeldingProcess=Konfiguration Schweißprozess 
+WeldingProcess.HeatingUpTimeSpan=Anwärmzeit
+WeldingProcess.JoiningTimeSpan=Fügezeit
+WeldingProcess.CoolingDownTimeSpan=Abkühlzeit
+WeldingProcess.WeldingRiskTimeSpan=Zeitspanne Schweißrisiko
+WeldingProcess.HydraulicRiskTimeSpan=Zeitspanne Hydraulikrisiko
+WeldingProcess.MaximalRuntimeForHydraulic=Max. Hydrauliklaufzeit
+WeldingProcess.TargetHydraulicPressure_H1=Solldruck Hydraulik Kopf 1
+WeldingProcess.TargetHydraulicPressure_H2=Solldruck Hydraulik Kopf 2
+WeldingProcess.TargetHydraulicPressure_H3=Solldruck Hydraulik Kopf 3
+WeldingProcess.TargetHydraulicPressure_H4=Solldruck Hydraulik Kopf 4
+WeldingProcess.Options=Optionen
+WeldingProcess.DefaultWeldingMirrorTemp=Solltemperatur Schweißspiegel
+WeldingProcess.ProfileMeasuringTolerance=Toleranz Profil Vermessung
+
+PositionsAndOffsets=Positionen und Offsets
+PositionsAndOffsets.HorizontalStrokeForRemoval=Horizontaler Hub für Austransport
+PositionsAndOffsets.DefaultVerticalInsertionOffset=Einlegeoffset vertikal
+PositionsAndOffsets.DefaultHorizontalInsertionOffset=Einlegeoffset horizontal
+PositionsAndOffsets.DefaultVerticalRemovalOffset=Entnahmeoffset vertikal
+PositionsAndOffsets.DefaultHorizontalRemovalOffset=Entnahmeoffset horizontal
+PositionsAndOffsets.LowerLimitVerticalRemovalOffset=Entnahme-Offset Höhe für Kleinstmaß
+PositionsAndOffsets.LowerLimitHorizontalRemovalOffset=Entnahme-Offset Breite für Kleinstmaß
+PositionsAndOffsets.ReducedInsertionHeight=Reduzierte Einlegehöhe
+PositionsAndOffsets.ReducedInsertionHeightTolerance=Toleranz für reduzierte Einlegehöhe
+PositionsAndOffsets.EquipPosition_S1=Rüstposition S1
+PositionsAndOffsets.EquipPosition_S3=Rüstposition S3
+PositionsAndOffsets.EquipPosition_S4=Rüstposition S4
+PositionsAndOffsets.HorizontalRemovalOffsetV2=Horizontaler Entnahmeoffset V2
+PositionsAndOffsets.VerticalRemovalOffsetV2=Vertikaler Entnahmeoffset V2
+PositionsAndOffsets.MinDistanceEdgeHeadToTransomHead=min. Abstand Eckköpfe zu Kämpferkopf
+PositionsAndOffsets.MinDistanceTransomHeadToTransomHead=min. Abstand zwischen Kämpferköpfen einer Seite
+PositionsAndOffsets.MinDistanceEdgeHeadToTransomHeadInStandby=min. Abstand Eckköpfe zu Kämpferkopf Standby-Modus
+PositionsAndOffsets.StandbyBorderTransomHeadCarrier=Positiongrenze Schlittenachse Schweiß/Standby-Modus
+PositionsAndOffsets.VerticalWeldingOffset=VerticalWeldingOffset=Vertikaler Schweißoffset 
+PositionsAndOffsets.HorizontalWeldingOffset=Horizontaler Schweißoffset
+
+DND=Dichtungsniederdrücker
+DND.MinXPosition=Min. Breite für DND
+DND.MinYPosition=Min. Höhe für DND
+DND.StartDelay=Startverzögerung
+DND.WorkTimeSpan_Push=Zeitspanne Drücken
+DND.WorkTimeSpan_Pull=Zeitspanne Ziehen
+
+ControlerData=Reglerparameter
+ControlerData.S1.CurrentControl_max_current=S1: maximaler Strom
+ControlerData.S1.CurrentControl_Ki=S1: Stromregler I-Anteil
+ControlerData.S3.CurrentControl_max_current=S3: maximaler Strom
+ControlerData.S3.CurrentControl_Ki=S3: Stromregler I-Anteil
+ControlerData.S4.CurrentControl_max_current=S4: maximaler Strom
+ControlerData.S4.CurrentControl_Ki=S4: Stromregler I-Anteil
+
+ProfileMeasuring=Profilvermessung
+ProfileMeasuring.Tolerance=Toleranz
+ProfileMeasuring.Calibration=Kalibrierung
+
+AutomaticHandRemovalCheck=Automatische Handentnahme
+AutomaticHandRemovalCheck.CheckSize.Active=Vergleich(Min/Max)
+AutomaticHandRemovalCheck.CheckSize=Vergleich(Breite/Höhe)
+AutomaticHandRemovalCheck.MinSizeHeight=Minimale Höhe
+AutomaticHandRemovalCheck.MaxSizeHeight=Maximale Höhe
+AutomaticHandRemovalCheck.MinSizeWidth=Minimale Breite
+AutomaticHandRemovalCheck.MaxSizeWidth=Maximale Breite
+
+[Parameter ECheckSize namespace="ECheckSize"]
+1=Breite
+2=Höhe
+
+[Parameter ECheckSizeAktiv namespace="ECheckSizeAktiv"]
+1=Minimal
+2=Maximal
+
+
+[Parameter Automatische Handentnahme namespace="WeldingControlGroupConfiguration.AutomaticHandRemovalCheck"]
+CheckSize.Active=Vergleich(Min/Max)
+CheckSize=Vergleich(Breite/Höhe)
+MinSizeHeight=Minimale Höhe
+MaxSizeHeight=Maximale Höhe
+MinSizeWidth=Minimale Breite
+MaxSizeWidth=Maximale Breite
+
+[Parameter ECheckSize namespace="ECheckSize"]
+1=Breite
+2=Höhe
+
+[Parameter ECheckSizeAktiv namespace="ECheckSizeAktiv"]
+1=Minimal
+2=Maximal
+
+[Parameter Schweißen - Konfiguration - Drehbedingungen namespace="WeldingControlGroupConfiguration.RotationConditionSettings"]
+ImportedRotation=Importierte Rotation
+ImportedRotation.Use=Importierte Rotation verwenden
+Yes=Ja
+No=Nein
+
+CompletedTasks=Fertiggestellte Aufträge
+CompletedTasks.Validate=Direkt Validieren?
+
+ProcessingPosition=Stabeinstellung Bearbeitungsposition
+ProcessingPosition.Use=Benutzen?
+
+ThinTaskRotation=Dünne Aufträge
+ThinTaskRotation.Use=Benutzen?
+ThinTaskRotation.WidthThreshold=Schwelle für Breite
+ThinTaskRotation.Rotation=Drehung bei Bearbeitung
+
+Default=Standard
+Default.ElementRotation=Drehung
+
+[Parameter Schweißen - Konfiguration - Drehbedingungen - Stabbedingungen namespace="WeldingControlGroupConfiguration.BarRotationCondition"]
+Yes=Ja
+No=Nein
+
+Enabled=Eingeschalten
+Trigger=Bedingung
+Request=Drehung
+
+[Stabbedingungen Trigger namespace="ERotationConditionTrigger"]
+SchwelleBar=Einzelner Schwellen Stab
+NoBar=Einzelner nicht vorhandener Stab
+StulpBar=Einzelner Stulpstab
+BigBar=Einzelner breiterer Stab
+ThinBar=Einzelner dünnerer Stab
+
+[Stabbedingungen Request namespace="ERotationConditionRotationRequest"]
+BarToTop=Stab nach oben
+BarToRight=Stab nach rechts
+BarToBottom=Stab nach unten
+BarToLeft=Stab nach links
+ToFixedCorner=Stab zur festen Seite
+AwayFromFixedCorner=Stab gegenüber festen Seite
+
+[Stabbedingungen Drehung bei dünnen Aufträgen namespace="EThinTaskRotation"]
+TopToFixedCorner=Oberer Stab zur festen Seite
+TopAwayFromFixedCorner=Oberer Stab gegenüber festen Seite
+BottomToFixedCorner=Unterer Stab zur festen Seite
+BottomAwayFromFixedCorner=Unterer Stab gegenüber festen Seite
+
+[Manual WCG namespace="ManualWCGControl"]
+ReloadWebView=Neuladen
+ShowDeveloperTools=Dev Tools
+
+[Kopf Auswahl namespace="EHeadSelection"]
+General=Allgemein
+Head1=Kopf 1
+Head2=Kopf 2
+Head3=Kopf 3
+Head4=Kopf 4
+Head5=Kopf 5
+Head6=Kopf 6
+Head7=Kopf 7
+Head8=Kopf 8
+
+[Btn Auswahl namespace="CWCGManualFunction"]
+K1_GND=Kopf 1 GND
+K2_GND=Kopf 2 GND
+K3_GND=Kopf 3 GND
+K4_GND=Kopf 4 GND
+K5_GND=Kopf 5 GND
+K6_GND=Kopf 6 GND
+K7_GND=Kopf 7 GND
+K8_GND=Kopf 8 GND
+K5_BSK_GND=Schraubkopf 5 GND
+K6_BSK_GND=Schraubkopf 6 GND
+K7_BSK_GND=Schraubkopf 7 GND
+K8_BSK_GND=Schraubkopf 8 GND
+K1_Hydraulik=IBN K1 Hydraulik
+K2_Hydraulik=IBN K2 Hydraulik
+K3_Hydraulik=IBN K3 Hydraulik
+K4_Hydraulik=IBN K4 Hydraulik
+IBN_K5_Schrauber=IBN K5 Schrauber
+IBN_K6_Schrauber=IBN K6 Schrauber
+IBN_K7_Schrauber=IBN K7 Schrauber
+IBN_K8_Schrauber=IBN K8 Schrauber
+IBN_K1-4_Spanner=IBN K1-4 Spanner
+IBN_K1-4_Spiegel=IBN K1-4 Spiegel
+IBN_K1-4_Schweißvorschub=IBN K1-4 Schweißvorschub
+IBN_K5-8_Spanner=IBN K5-8 Spanner
+IBN_K5-8_Schweißvorschub=IBN K5-8 Schweißvorschub
+IBN_K5-8_Wechsler=IBN K5-8 Wechsler
+IBN_K5-8_Einleger=IBN K5-8 Einleger
+IBN_K5-8_Spiegel=IBN K5-8 Spiegel
+IBN_K1-4_DND_Horizontal=IBN K1-4 DND horiz.
+IBN_K1-4_DND_Zustellung=IBN K1-4 DND Zustell.
+IBN_K1-4_Niederhalter=IBN Niederhalter
+IBN_K1-4_Messerverstellung=IBN K1-4 Messer
+IBN_K1-8_Blasluft=IBN K1-8 Blasluft
+IBN_K1-4_Einleger=IBN K1-4 Einleger
+IBN_K1-4_Separator_HebenSenken=IBN K1-4 Sep. HebenSenken
+IBN_K1-4_Separator_Ausheben=IBN K1-4 Sep. Ausheben
+IBN_K1-4_Separator_Auschieber=IBN K1-4 Sep. Auschieber
+IBN_K1-8_Schweißvorschub=IBN K1-8 Schweißvorschub
+IBN_K5-8_VerstellungBohrSchraubPosition=IBN K5-8 Verstellung Bohr-&Schraubposition
+IBN_K5-8_Stopperzylinder=IBN K5-8 Stopperzylinder
+IBN_K5-8_SchraubenvereinzellungLaengsschieber=IBN K5-8 Schraubenvereinzellung Laengsschieber
+IBN_K5-8_SchraubenvereinzellungQuerschieber=IBN K5-8 Schraubenvereinzellung Querschieber
+IBN_K5-8_Schraubenzufuehrung=IBN K5-8 Schraubenzufuehrung
+IBN_K5-8_ZustellungAbsaugung=IBN K5-8 Zustellung Absaugung
+IBN_K5-8_SchraubeinheitHaupthub=IBN K5-8 Schraubeinheit Haupthub
+IBN_K5-8_SchraubeinheitAnstellung=IBN K5-8 Schraubeinheit Anstellung
+IBN_K5-8_SchraubeinheitGreiferbacken=IBN K5-8 Schraubeinheit Greiferbacken
+IBN_K5-8_SchraubeinheitVakuumAufbauFreiblasen=IBN K5-8 Schraubeinheit Vakuum Aufbau&Freiblasen
+IBN_K5-8_SchraubenzufuehrungBlasluft=IBN K5-8 Schraubenzuführung Blasluft
+
+K1_Spanner_GND=K1 Spanner GND
+K2_Spanner_GND=K2 Spanner GND
+K3_Spanner_GND=K3 Spanner GND
+K4_Spanner_GND=K4 Spanner GND
+K5_Spanner_GND=K5 Spanner GND
+K6_Spanner_GND=K6 Spanner GND
+K7_Spanner_GND=K7 Spanner GND
+K8_Spanner_GND=K8 Spanner GND
+K1_Spanner_ARB=K1 Spanner ARB
+K2_Spanner_ARB=K2 Spanner ARB
+K3_Spanner_ARB=K3 Spanner ARB
+K4_Spanner_ARB=K4 Spanner ARB
+K5_Spanner_ARB=K5 Spanner ARB
+K6_Spanner_ARB=K6 Spanner ARB
+K7_Spanner_ARB=K7 Spanner ARB
+K8_Spanner_ARB=K8 Spanner ARB
+K1_Spiegel_GND=K1 Spiegel GND
+K2_Spiegel_GND=K2 Spiegel GND
+K3_Spiegel_GND=K3 Spiegel GND
+K4_Spiegel_GND=K4 Spiegel GND
+K5_Spiegel_GND=K5 Spiegel GND
+K6_Spiegel_GND=K6 Spiegel GND
+K7_Spiegel_GND=K7 Spiegel GND
+K8_Spiegel_GND=K8 Spiegel GND
+K1_Spiegel_ARB=K1 Spiegel ARB
+K2_Spiegel_ARB=K2 Spiegel ARB
+K3_Spiegel_ARB=K3 Spiegel ARB
+K4_Spiegel_ARB=K4 Spiegel ARB
+K5_Spiegel_ARB=K5 Spiegel ARB
+K6_Spiegel_ARB=K6 Spiegel ARB
+K7_Spiegel_ARB=K7 Spiegel ARB
+K8_Spiegel_ARB=K8 Spiegel ARB
+K1_Einleger_GND=K1 Einleger GND
+K2_Einleger_GND=K2 Einleger GND
+K3_Einleger_GND=K3 Einleger GND
+K4_Einleger_GND=K4 Einleger GND
+K5_Einleger_GND=K5 Einleger GND
+K6_Einleger_GND=K6 Einleger GND
+K7_Einleger_GND=K7 Einleger GND
+K8_Einleger_GND=K8 Einleger GND
+K1_Einleger_ARB=K1 Einleger ARB
+K2_Einleger_ARB=K2 Einleger ARB
+K3_Einleger_ARB=K3 Einleger ARB
+K4_Einleger_ARB=K4 Einleger ARB
+K5_Einleger_ARB=K5 Einleger ARB
+K6_Einleger_ARB=K6 Einleger ARB
+K7_Einleger_ARB=K7 Einleger ARB
+K8_Einleger_ARB=K8 Einleger ARB
+K1_Schweißvorschub_GND=K1 SchwVS GND
+K2_Schweißvorschub_GND=K2 SchwVS GND
+K3_Schweißvorschub_GND=K3 SchwVS GND
+K4_Schweißvorschub_GND=K4 SchwVS GND
+K5_Schweißvorschub_GND=K5 SchwVS GND
+K6_Schweißvorschub_GND=K6 SchwVS GND
+K7_Schweißvorschub_GND=K7 SchwVS GND
+K8_Schweißvorschub_GND=K8 SchwVS GND
+K1_Schweißvorschub_ARB=K1 SchwVS ARB
+K2_Schweißvorschub_ARB=K2 SchwVS ARB
+K3_Schweißvorschub_ARB=K3 SchwVS ARB
+K4_Schweißvorschub_ARB=K4 SchwVS ARB
+K5_Schweißvorschub_ARB=K5 SchwVS ARB
+K6_Schweißvorschub_ARB=K6 SchwVS ARB
+K7_Schweißvorschub_ARB=K7 SchwVS ARB
+K8_Schweißvorschub_ARB=K8 SchwVS ARB
+K1_Blasluft_GND=K1 Blasluft AUS
+K2_Blasluft_GND=K2 Blasluft AUS
+K3_Blasluft_GND=K3 Blasluft AUS
+K4_Blasluft_GND=K4 Blasluft AUS
+K5_Blasluft_GND=K5 Blasluft AUS
+K6_Blasluft_GND=K6 Blasluft AUS
+K7_Blasluft_GND=K7 Blasluft AUS
+K8_Blasluft_GND=K8 Blasluft AUS
+K1_Blasluft_ARB=K1 Blasluft EIN
+K2_Blasluft_ARB=K2 Blasluft EIN
+K3_Blasluft_ARB=K3 Blasluft EIN
+K4_Blasluft_ARB=K4 Blasluft EIN
+K5_Blasluft_ARB=K5 Blasluft EIN
+K6_Blasluft_ARB=K6 Blasluft EIN
+K7_Blasluft_ARB=K7 Blasluft EIN
+K8_Blasluft_ARB=K8 Blasluft EIN
+K1_SpannerBremse_GND=K1 Sp.-Bremse GND
+K2_SpannerBremse_GND=K2 Sp.-Bremse GND
+K3_SpannerBremse_GND=K3 Sp.-Bremse GND
+K4_SpannerBremse_GND=K4 Sp.-Bremse GND
+K1_SpannerBremse_ARB=K1 Sp.-Bremse ARB
+K2_SpannerBremse_ARB=K2 Sp.-Bremse ARB
+K3_SpannerBremse_ARB=K3 Sp.-Bremse ARB
+K4_SpannerBremse_ARB=K4 Sp.-Bremse ARB
+K1_SeparatorHebenSenken_GND=K1 Sep. HebenSenken GND
+K2_SeparatorHebenSenken_GND=K2 Sep. HebenSenken GND
+K3_SeparatorHebenSenken_GND=K3 Sep. HebenSenken GND
+K4_SeparatorHebenSenken_GND=K4 Sep. HebenSenken GND
+K1_SeparatorHebenSenken_ARB=K1 Sep. HebenSenken ARB
+K2_SeparatorHebenSenken_ARB=K2 Sep. HebenSenken ARB
+K3_SeparatorHebenSenken_ARB=K3 Sep. HebenSenken ARB
+K4_SeparatorHebenSenken_ARB=K4 Sep. HebenSenken ARB
+K1_SeparatorAusheben_GND=K1 Sep. Ausheb. GND
+K2_SeparatorAusheben_GND=K2 Sep. Ausheb. GND
+K3_SeparatorAusheben_GND=K3 Sep. Ausheb. GND
+K4_SeparatorAusheben_GND=K4 Sep. Ausheb. GND
+K1_SeparatorAusheben_ARB=K1 Sep. Ausheb. ARB
+K2_SeparatorAusheben_ARB=K2 Sep. Ausheb. ARB
+K3_SeparatorAusheben_ARB=K3 Sep. Ausheb. ARB
+K4_SeparatorAusheben_ARB=K4 Sep. Ausheb. ARB
+K1_SeparatorAusschieber_GND=K1 Sep. Ausschieber GND
+K2_SeparatorAusschieber_GND=K2 Sep. Ausschieber GND
+K3_SeparatorAusschieber_GND=K3 Sep. Ausschieber GND
+K4_SeparatorAusschieber_GND=K4 Sep. Ausschieber GND
+K1_SeparatorAusschieber_ARB=K1 Sep. Ausschieber ARB
+K2_SeparatorAusschieber_ARB=K2 Sep. Ausschieber ARB
+K3_SeparatorAusschieber_ARB=K3 Sep. Ausschieber ARB
+K4_SeparatorAusschieber_ARB=K4 Sep. Ausschieber ARB
+K1_Duplex_EinlegerOben_GND=K1 Einleger oben GND
+K2_Duplex_EinlegerOben_GND=K2 Einleger oben GND
+K3_Duplex_EinlegerOben_GND=K3 Einleger oben GND
+K4_Duplex_EinlegerOben_GND=K4 Einleger oben GND
+K1_Duplex_EinlegerOben_ARB=K1 Einleger oben ARB
+K2_Duplex_EinlegerOben_ARB=K2 Einleger oben ARB
+K3_Duplex_EinlegerOben_ARB=K3 Einleger oben ARB
+K4_Duplex_EinlegerOben_ARB=K4 Einleger oben ARB
+K1_DND_Horizontal_GND=K1 DND horiz. GND
+K2_DND_Horizontal_GND=K2 DND horiz. GND
+K3_DND_Horizontal_GND=K3 DND horiz. GND
+K4_DND_Horizontal_GND=K4 DND horiz. GND
+K1_DND_Horizontal_ARB=K1 DND horiz. ARB
+K2_DND_Horizontal_ARB=K2 DND horiz. ARB
+K3_DND_Horizontal_ARB=K3 DND horiz. ARB
+K4_DND_Horizontal_ARB=K4 DND horiz. ARB
+K1_DND_Vertikal_GND=K1 DND vertik. GND
+K2_DND_Vertikal_GND=K2 DND vertik. GND
+K3_DND_Vertikal_GND=K3 DND vertik. GND
+K4_DND_Vertikal_GND=K4 DND vertik. GND
+K1_DND_Vertikal_ARB=K1 DND vertik. ARB
+K2_DND_Vertikal_ARB=K2 DND vertik. ARB
+K3_DND_Vertikal_ARB=K3 DND vertik. ARB
+K4_DND_Vertikal_ARB=K4 DND vertik. ARB
+K1_DND_Zustellung_GND=K1 DND Zustellung GND
+K2_DND_Zustellung_GND=K2 DND Zustellung GND
+K3_DND_Zustellung_GND=K3 DND Zustellung GND
+K4_DND_Zustellung_GND=K4 DND Zustellung GND
+K1_DND_Zustellung_ARB=K1 DND Zustellung ARB
+K2_DND_Zustellung_ARB=K2 DND Zustellung ARB
+K3_DND_Zustellung_ARB=K3 DND Zustellung ARB
+K4_DND_Zustellung_ARB=K4 DND Zustellung ARB
+K1_Niederhalter_GND=K1 Niederhalter GND
+K2_Niederhalter_GND=K2 Niederhalter GND
+K3_Niederhalter_GND=K3 Niederhalter GND
+K4_Niederhalter_GND=K4 Niederhalter GND
+K1_Niederhalter_ARB=K1 Niederhalter ARB
+K2_Niederhalter_ARB=K2 Niederhalter ARB
+K3_Niederhalter_ARB=K3 Niederhalter ARB
+K4_Niederhalter_ARB=K4 Niederhalter ARB
+K1_Messerverstellung_GND=K1 Messer GND
+K2_Messerverstellung_GND=K2 Messer GND
+K3_Messerverstellung_GND=K3 Messer GND
+K4_Messerverstellung_GND=K4 Messer GND
+K1_Messerverstellung_ARB=K1 Messer ARB
+K2_Messerverstellung_ARB=K2 Messer ARB
+K3_Messerverstellung_ARB=K3 Messer ARB
+K4_Messerverstellung_ARB=K4 Messer ARB
+K5_KämpferstabSpanner_GND=K5 Kämpf. Spanner GND
+K6_KämpferstabSpanner_GND=K6 Kämpf. Spanner GND
+K7_KämpferstabSpanner_GND=K7 Kämpf. Spanner GND
+K8_KämpferstabSpanner_GND=K8 Kämpf. Spanner GND
+K5_KämpferstabSpanner_ARB=K5 Kämpf. Spanner ARB
+K6_KämpferstabSpanner_ARB=K6 Kämpf. Spanner ARB
+K7_KämpferstabSpanner_ARB=K7 Kämpf. Spanner ARB
+K8_KämpferstabSpanner_ARB=K8 Kämpf. Spanner ARB
+K5_Wechsler_GND=K5 Wechsler GND
+K6_Wechsler_GND=K6 Wechsler GND
+K7_Wechsler_GND=K7 Wechsler GND
+K8_Wechsler_GND=K8 Wechsler GND
+K5_Wechsler_ARB=K5 Wechsler ARB
+K6_Wechsler_ARB=K6 Wechsler ARB
+K7_Wechsler_ARB=K7 Wechsler ARB
+K8_Wechsler_ARB=K8 Wechsler ARB
+K1_Schweißspiegel_Aus=K1 Schweißspiegel Aus
+K1_Schweißspiegel_Ein=K1 Schweißspiegel Ein
+K2_Schweißspiegel_Aus=K2 Schweißspiegel Aus
+K2_Schweißspiegel_Ein=K2 Schweißspiegel Ein
+K3_Schweißspiegel_Aus=K3 Schweißspiegel Aus
+K3_Schweißspiegel_Ein=K3 Schweißspiegel Ein
+K4_Schweißspiegel_Aus=K4 Schweißspiegel Aus
+K4_Schweißspiegel_Ein=K4 Schweißspiegel Ein
+K5_Schweißspiegel_Aus=K5 Schweißspiegel Aus
+K5_Schweißspiegel_Ein=K5 Schweißspiegel Ein
+K6_Schweißspiegel_Aus=K6 Schweißspiegel Aus
+K6_Schweißspiegel_Ein=K6 Schweißspiegel Ein
+K7_Schweißspiegel_Aus=K7 Schweißspiegel Aus
+K7_Schweißspiegel_Ein=K7 Schweißspiegel Ein
+K8_Schweißspiegel_Aus=K8 Schweißspiegel Aus
+K8_Schweißspiegel_Ein=K8 Schweißspiegel Ein
+K5_Verstellung_BohrSchweisPos_GND=K5 Verstellung Bohr/Schweißposition GND
+K6_Verstellung_BohrSchweisPos_GND=K6 Verstellung Bohr/Schweißposition GND
+K7_Verstellung_BohrSchweisPos_GND=K7 Verstellung Bohr/Schweißposition GND
+K8_Verstellung_BohrSchweisPos_GND=K8 Verstellung Bohr/Schweißposition GND
+K5_Verstellung_BohrSchweisPos_ARB=K5 Verstellung Bohr/Schweißposition ARB
+K6_Verstellung_BohrSchweisPos_ARB=K6 Verstellung Bohr/Schweißposition ARB
+K7_Verstellung_BohrSchweisPos_ARB=K7 Verstellung Bohr/Schweißposition ARB
+K8_Verstellung_BohrSchweisPos_ARB=K8 Verstellung Bohr/Schweißposition ARB
+K5_Stopperzylinder_LR_GND=K5 Stopperzylinder GND
+K6_Stopperzylinder_LR_GND=K6 Stopperzylinder GND
+K7_Stopperzylinder_LR_GND=K7 Stopperzylinder GND
+K8_Stopperzylinder_LR_GND=K8 Stopperzylinder GND
+K5_Stopperzylinder_LR_ARB=K5 Stopperzylinder ARB
+K6_Stopperzylinder_LR_ARB=K6 Stopperzylinder ARB
+K7_Stopperzylinder_LR_ARB=K7 Stopperzylinder ARB
+K8_Stopperzylinder_LR_ARB=K8 Stopperzylinder ARB
+K5_Einleger_HOR_LR_GND=K5 Einleger horiz. GND
+K6_Einleger_HOR_LR_GND=K6 Einleger horiz. GND
+K7_Einleger_HOR_LR_GND=K7 Einleger horiz. GND
+K8_Einleger_HOR_LR_GND=K8 Einleger horiz. GND
+K5_Einleger_HOR_LR_ARB=K5 Einleger horiz. ARB
+K6_Einleger_HOR_LR_ARB=K6 Einleger horiz. ARB
+K7_Einleger_HOR_LR_ARB=K7 Einleger horiz. ARB
+K8_Einleger_HOR_LR_ARB=K8 Einleger horiz. ARB
+K5_Schraubenvereinzelung_Laengsschieber_GND=K5 Schraubenvereinzelung Laengsschieber GND
+K6_Schraubenvereinzelung_Laengsschieber_GND=K6 Schraubenvereinzelung Laengsschieber GND
+K7_Schraubenvereinzelung_Laengsschieber_GND=K7 Schraubenvereinzelung Laengsschieber GND
+K8_Schraubenvereinzelung_Laengsschieber_GND=K8 Schraubenvereinzelung Laengsschieber GND
+K5_Schraubenvereinzelung_Laengsschieber_ARB=K5 Schraubenvereinzelung Laengsschieber ARB
+K6_Schraubenvereinzelung_Laengsschieber_ARB=K6 Schraubenvereinzelung Laengsschieber ARB
+K7_Schraubenvereinzelung_Laengsschieber_ARB=K7 Schraubenvereinzelung Laengsschieber ARB
+K8_Schraubenvereinzelung_Laengsschieber_ARB=K8 Schraubenvereinzelung Laengsschieber ARB
+K5_Schraubenvereinzelung_Querschieber_GND=K5 Schraubenvereinzelung Querschieber GND
+K6_Schraubenvereinzelung_Querschieber_GND=K6 Schraubenvereinzelung Querschieber GND
+K7_Schraubenvereinzelung_Querschieber_GND=K7 Schraubenvereinzelung Querschieber GND
+K8_Schraubenvereinzelung_Querschieber_GND=K8 Schraubenvereinzelung Querschieber GND
+K5_Schraubenvereinzelung_Querschieber_ARB=K5 Schraubenvereinzelung Querschieber ARB
+K6_Schraubenvereinzelung_Querschieber_ARB=K6 Schraubenvereinzelung Querschieber ARB
+K7_Schraubenvereinzelung_Querschieber_ARB=K7 Schraubenvereinzelung Querschieber ARB
+K8_Schraubenvereinzelung_Querschieber_ARB=K8 Schraubenvereinzelung Querschieber ARB
+K5_Schraubenzufuehrung_GND=K5 Schraubenzuführung GND
+K6_Schraubenzufuehrung_GND=K6 Schraubenzuführung GND
+K7_Schraubenzufuehrung_GND=K7 Schraubenzuführung GND
+K8_Schraubenzufuehrung_GND=K8 Schraubenzuführung GND
+K5_Schraubenzufuehrung_ARB=K5 Schraubenzuführung ARB
+K6_Schraubenzufuehrung_ARB=K6 Schraubenzuführung ARB
+K7_Schraubenzufuehrung_ARB=K7 Schraubenzuführung ARB
+K8_Schraubenzufuehrung_ARB=K8 Schraubenzuführung ARB
+K5_Zustellung_Absaugung_GND=K5 Zustellung Absaugung AUS
+K6_Zustellung_Absaugung_GND=K6 Zustellung Absaugung AUS
+K7_Zustellung_Absaugung_GND=K7 Zustellung Absaugung AUS
+K8_Zustellung_Absaugung_GND=K8 Zustellung Absaugung AUS
+K5_Zustellung_Absaugung_ARB=K5 Zustellung Absaugung EIN
+K6_Zustellung_Absaugung_ARB=K6 Zustellung Absaugung EIN
+K7_Zustellung_Absaugung_ARB=K7 Zustellung Absaugung EIN
+K8_Zustellung_Absaugung_ARB=K8 Zustellung Absaugung EIN
+K5_Schraubeinheit_Haupthub_GND=K5 Schraubeinheit Haupthub GND
+K6_Schraubeinheit_Haupthub_GND=K6 Schraubeinheit Haupthub GND
+K7_Schraubeinheit_Haupthub_GND=K7 Schraubeinheit Haupthub GND
+K8_Schraubeinheit_Haupthub_GND=K8 Schraubeinheit Haupthub GND
+K5_Schraubeinheit_Haupthub_ARB=K5 Schraubeinheit Haupthub ARB
+K6_Schraubeinheit_Haupthub_ARB=K6 Schraubeinheit Haupthub ARB
+K7_Schraubeinheit_Haupthub_ARB=K7 Schraubeinheit Haupthub ARB
+K8_Schraubeinheit_Haupthub_ARB=K8 Schraubeinheit Haupthub ARB
+K5_Schraubeinheit_Anstellung_GND=K5 Schraubeinheit Anstellung GND
+K6_Schraubeinheit_Anstellung_GND=K6 Schraubeinheit Anstellung GND
+K7_Schraubeinheit_Anstellung_GND=K7 Schraubeinheit Anstellung GND
+K8_Schraubeinheit_Anstellung_GND=K8 Schraubeinheit Anstellung GND
+K5_Schraubeinheit_Anstellung_ARB=K5 Schraubeinheit Anstellung ARB
+K6_Schraubeinheit_Anstellung_ARB=K6 Schraubeinheit Anstellung ARB
+K7_Schraubeinheit_Anstellung_ARB=K7 Schraubeinheit Anstellung ARB
+K8_Schraubeinheit_Anstellung_ARB=K8 Schraubeinheit Anstellung ARB
+K5_Schraubeinheit_Greiferbacken_GND=K5 Schraubeinheit Greiferbacken GND
+K6_Schraubeinheit_Greiferbacken_GND=K6 Schraubeinheit Greiferbacken GND
+K7_Schraubeinheit_Greiferbacken_GND=K7 Schraubeinheit Greiferbacken GND
+K8_Schraubeinheit_Greiferbacken_GND=K8 Schraubeinheit Greiferbacken GND
+K5_Schraubeinheit_Greiferbacken_ARB=K5 Schraubeinheit Greiferbacken ARB
+K6_Schraubeinheit_Greiferbacken_ARB=K6 Schraubeinheit Greiferbacken ARB
+K7_Schraubeinheit_Greiferbacken_ARB=K7 Schraubeinheit Greiferbacken ARB
+K8_Schraubeinheit_Greiferbacken_ARB=K8 Schraubeinheit Greiferbacken ARB
+K5_Schraubeinheit_VakuumAufbau_GND=K5 Schraubeinheit Vakuum aufbauen AUS
+K6_Schraubeinheit_VakuumAufbau_GND=K6 Schraubeinheit Vakuum aufbauen AUS
+K7_Schraubeinheit_VakuumAufbau_GND=K7 Schraubeinheit Vakuum aufbauen AUS
+K8_Schraubeinheit_VakuumAufbau_GND=K8 Schraubeinheit Vakuum aufbauen AUS
+K5_Schraubeinheit_VakuumAufbau_ARB=K5 Schraubeinheit Vakuum aufbauen EIN
+K6_Schraubeinheit_VakuumAufbau_ARB=K6 Schraubeinheit Vakuum aufbauen EIN
+K7_Schraubeinheit_VakuumAufbau_ARB=K7 Schraubeinheit Vakuum aufbauen EIN
+K8_Schraubeinheit_VakuumAufbau_ARB=K8 Schraubeinheit Vakuum aufbauen EIN
+K5_Schraubeinheit_VakuumFreiblasen_GND=K5 Schraubeinheit Vakuum freiblasen AUS
+K6_Schraubeinheit_VakuumFreiblasen_GND=K6 Schraubeinheit Vakuum freiblasen AUS
+K7_Schraubeinheit_VakuumFreiblasen_GND=K7 Schraubeinheit Vakuum freiblasen AUS
+K8_Schraubeinheit_VakuumFreiblasen_GND=K8 Schraubeinheit Vakuum freiblasen AUS
+K5_Schraubeinheit_VakuumFreiblasen_ARB=K5 Schraubeinheit Vakuum freiblasen EIN
+K6_Schraubeinheit_VakuumFreiblasen_ARB=K6 Schraubeinheit Vakuum freiblasen EIN
+K7_Schraubeinheit_VakuumFreiblasen_ARB=K7 Schraubeinheit Vakuum freiblasen EIN
+K8_Schraubeinheit_VakuumFreiblasen_ARB=K8 Schraubeinheit Vakuum freiblasen EIN
+K5_Schraubenzufuehrung_Blasluft_GND=K5 Schraubenzuführung Blasluft AUS
+K6_Schraubenzufuehrung_Blasluft_GND=K6 Schraubenzuführung Blasluft AUS
+K7_Schraubenzufuehrung_Blasluft_GND=K7 Schraubenzuführung Blasluft AUS
+K8_Schraubenzufuehrung_Blasluft_GND=K8 Schraubenzuführung Blasluft AUS
+K5_Schraubenzufuehrung_Blasluft_ARB=K5 Schraubenzuführung Blasluft EIN
+K6_Schraubenzufuehrung_Blasluft_ARB=K6 Schraubenzuführung Blasluft EIN
+K7_Schraubenzufuehrung_Blasluft_ARB=K7 Schraubenzuführung Blasluft EIN
+K8_Schraubenzufuehrung_Blasluft_ARB=K8 Schraubenzuführung Blasluft EIN
+K5_Bohrer_aus=K5 Bohrer AUS
+K6_Bohrer_aus=K6 Bohrer AUS
+K7_Bohrer_aus=K7 Bohrer AUS
+K8_Bohrer_aus=K8 Bohrer AUS
+K5_ScrewDriverReset=K5 Schrauber Reset
+K6_ScrewDriverReset=K6 Schrauber Reset
+K7_ScrewDriverReset=K7 Schrauber Reset
+K8_ScrewDriverReset=K8 Schrauber Reset
+K5_ScrewDriverRun=K5 Schrauberzyklus Start
+K6_ScrewDriverRun=K6 Schrauberzyklus Start
+K7_ScrewDriverRun=K7 Schrauberzyklus Start
+K8_ScrewDriverRun=K8 Schrauberzyklus Start
+K5_ScrewDriverSelectPro1=K5 Schraubprogramm 1
+K6_ScrewDriverSelectPro1=K6 Schraubprogramm 1
+K7_ScrewDriverSelectPro1=K7 Schraubprogramm 1
+K8_ScrewDriverSelectPro1=K8 Schraubprogramm 1
+K5_ScrewDriverSelectPro2=K5 Schraubprogramm 2
+K6_ScrewDriverSelectPro2=K6 Schraubprogramm 2
+K7_ScrewDriverSelectPro2=K7 Schraubprogramm 2
+K8_ScrewDriverSelectPro2=K8 Schraubprogramm 2
+IBN_K5_Bohrablauf=IBN K5 Bohrablauf
+IBN_K6_Bohrablauf=IBN K6 Bohrablauf
+IBN_K7_Bohrablauf=IBN K7 Bohrablauf
+IBN_K8_Bohrablauf=IBN K8 Bohrablauf
+IBN_K5_ScrewMagazin=IBN K5 Schraubenmagazin
+IBN_K6_ScrewMagazin=IBN K6 Schraubenmagazin
+IBN_K7_ScrewMagazin=IBN K7 Schraubenmagazin
+IBN_K8_ScrewMagazin=IBN K8 Schraubenmagazin
+IBN_K5_Schrauber_NEU=IBN K5 Schrauber
+IBN_K6_Schrauber_NEU=IBN K6 Schrauber
+IBN_K7_Schrauber_NEU=IBN K7 Schrauber
+IBN_K8_Schrauber_NEU=IBN K8 Schrauber
+IBN_K5_Schraubenmagazin=IBN K5 Schraubenmagazin
+IBN_K6_Schraubenmagazin=IBN K6 Schraubenmagazin
+IBN_K7_Schraubenmagazin=IBN K7 Schraubenmagazin
+IBN_K8_Schraubenmagazin=IBN K8 Schraubenmagazin
+
+
+KalibrierungProfilvermessung=Kalibrierung Profilvermessung
+ZustellungProfilvermessungGND=Zustellventil Profilvermessung GND
+ZustellungProfilvermessungARB=Zustellventil Profilvermessung ARB
+
+[Btn Auswahl namespace="TcpManualFunction"]
+IBN Transport=IBN Transport RAT zu Pufferband
+RAT Einlauf=RAT Einlauf
+RAT Auslauf=RAT Auslauf
+Puffer Einlauf=Pufferband Einlauf
+Puffer Auslauf=Pufferband Auslauf
+IBN RAT Vertikal=IBN RAT-Ventile Vertikal
+IBN RAT/Holm Horizontal=IBN RAT-Ventile Horizontal
+DUPLEX TRANSPORT=IBN Duplex-Transport RAT zu Pufferband
+HolmverriegelungGND=Holmverriegelung GND
+HolmverriegelungARB=Holmverriegelung ARB
+HolmvorschubGND=Holmvorschub GND
+HolmvorschubARB=Holmvorschub ARB
+
+
+[WCG Schweißspiegel namespace="WCG.WeldingMirrors"]
+0=
+1=
+2=
+3=
+4=
+5=
+
+[Machine Management Area -> Bar Configuration -> namespace="EDNDBehavior"]
+non=keine Dichtung
+Pull=Dichtung ziehen ↑
+Push=Dichtung drücken ↓
+
+[Machine Management Area -> BarConfiguration -> namespace="EStulpPosition"]
+non=Keine Stulpbearbeitung
+Top=Oben
+Bottom=Unten
+Middle=Mitte
+
+[Machine Management Area -> BarConfiguration -> namespace="EProcessingPosition"]
+Irrelevant=Irrelevant
+Left=Links
+Top=Oben
+Right=Rechts
+Bottom=Unten
+
+[Machine Management Area -> Fixture Configuration -> namespace="EBarSide"]
+NotDefinied=Nicht definiert
+Inner=Innen
+Outer=Außen
+
+[WeldingTaskManagementPageView -> Combobox -> namespace="EBarCoating"]
+Unknown=Unbekannt
+White=Weiß
+Foiled=Foliert
+Acryl=Akryl
+AnticWhite=Antik Weiß
+Lackiert=Lackiert
+Color6=Farbe 6
+Color7=Farbe 7
+
+[Properties Konfig Page -> Combobox -> namespace="EIsGasketPresent"]
+Unknown=Unbekannt
+False=Nicht Vorhanden
+True=Vorhanden
+
+[Los Status namespace="ELotState"]
+Unkonwn=Unbekannt
+Available=Verfügbar
+Pending=Eingetaktet
+InProgress=Im Prozess
+Completed=Abgearbeitet
+
+[Auftrag Status namespace="EWeldingTaskState"]
+Unknown=Unbekannt
+Available=Verfügbar
+Pending=Eingetaktet
+InInsertionPhase=In Einlegephase
+InHeatingUpPhase=In Erhitzungsphase
+InJoiningPhase=In Fügephase
+;InCoolingDownPhase = 1u << 5,
+;InRemovalPhase = 1u << 6,
+CompletedSuccessfully=Erfolgreich fertig
+CompletedWithErrors=Mit Fehlern fertig
+
+Resetable=Rücksetzbar
+InProgress=Im Prozess
+Completed=Abgearbeitet
+
+[Elementdaten namespace="ElementData"]
+WeldingMirrorTemperature=Schweißspiegeltemperatur
+HeatingUpTimeSpan=Anwärmzeit
+JoiningTimeSpan=Fügezeit
+CoolingDownTimeSpan=Abkühlzeit
+WeldingRiskTimeSpan=Schweißrisiko
+HydraulicRiskTimeSpan=Hydraulikrisiko
+PressingTimeSpan=Fügezeit
+MaximalRuntimeForHydraulic=Max. Hydrauliklaufzeit
+
+[Berechnete Positionen namespace="ComputedElementPositions"]
+PositionS1=Position S1 (Kopf 1)
+PositionS3=Position S3 (Kopf 3)
+PositionS4=Position S4 (Kopf 4)
+
+[Columns namespace="WCG.ComputedElementPositions"]
+0=Einlegeposition
+1=Reduzierte Einlegeposition
+2=Schweißposition
+3=Entnahmeposition
+4=Entnahmeposition V2
+
+[Status Leiste Info Elemente namespace="InfoElement"]
+LogFiles=Fehlerlog
+SequenceListOverview=Status der Abläufe
+IoView=I/O Übersicht
+
+[Namespace Reset]
+ResButton.OverrideLabel=Override
+OverlayModelBase.ToggleVisibility=Ausblenden
+Cyc=Hauptgruppe
+Tcp=Transport
+WCG=Schweißen
+
+CSIReadOnlyAxis_View.TableHeader=Tabelle
+
+LogInfoModel.ExportLog=Export Log
+LogInfoModel.QuitErrors=Fehlerquittierung
+
+[Sphinx Override Manager namespace="COverrideManager"]
+Down10=-10
+Down1=-1
+Up1=+1
+Up10=+10
+
+[Einheiten namespace="Units"]
+Second=Sekunde
+Second.Short=s
+Second.Multi=Sekunden
+Celsius=Grad Celsius
+Celsius.Short=°C
+Millimeter=Millimeter
+Millimeter.Short=mm
+
+[StartUp Message Boxen namespace="StartUp"]
+PingCb.Message=Soll in Simulation gestartet werden?
+PingCb.Caption=Steuerung ist nicht erreichbar!
+
+[CInfoLeiste.xaml namespace="CInfoLeiste"]
+LightCurtain=Sicherheitslichtschranke unterbrochen!
+EmergencyBreak=NOT AUS!
+CompressedAirNotAvailable=Druckluft nicht verfügbar!
+
+[ELogExportType namespace="ELogExportType"]
+XML=XML
+JSON=JSON
+
+[ELotImportDuplicateHandling namespace="ELotImportDuplicateHandling"]
+NoImport=Nicht importieren
+ReplaceExisting=Überschreiben
+
+[Lot Import namespace="LotImport"]
+FirstAtLine=Zuerst in Zeile
+PropertyCodeTranslationMissing=Farb- und Dichtungscode Übersetzungsdatei ist fehlerhaft oder existiert nicht!
+InFile=in Datei
+
+AdditionalInfo.LineIDs=Kennungen:
+AdditionalInfo.BarNames=Stäbe:
+AdditionalInfo.Number=Nummer:
+
+ELotImportResult.OK=Import erfolgreich
+ELotImportResult.A1_missing=Kennung A1 fehlt
+ELotImportResult.N1_missing=Kennung N1 fehlt
+ELotImportResult.N2_missing=Kennung N2 fehlt
+ELotImportResult.N4_missing=Kennung N4 fehlt
+ELotImportResult.N5_missing=Kennung N5 fehlt
+ELotImportResult.Wrong_Parameter_Count=Falsche Anzahl an Parametern
+ELotImportResult.Wrong_Parameter_Length=Falsche Länge eines Parameters
+ELotImportResult.Unkown_LineID=Kennung unbekannt
+ELotImportResult.Unkown_Bar=Stab Artikelnummer unbekannt
+ELotImportResult.Wrong_LotID_Start=Falsche LosID
+ELotImportResult.Task_Count_eq_Zero=Anzahl der Aufträge gleich 0
+ELotImportResult.Wrong_Property_Code_Translation=Properties konnten nicht übersetzt werden
+ELotImportResult.Wrong_Number_Format=Eine erwartete Nummer hatte ein falsches Format und konnte nicht gelesen werden
+ELotImportResult.Error=Import fehlgeschlagen
+
+[Navigation -> Pages namespace="Navigation.Pages"]
+Production=Produktion
+Production.MainPage=Produktion
+Production.WeldingTaskManagement=Handeingabe
+Production.LotDataManagement=Losdaten- verwaltung
+Production.ProductionOverview=Berechnungs- übersicht
+Production.ReadOnlyAxis=Achsen- übersicht
+Production.SingleHeadWelding=1-Kopf Schweißen
+Production.Diagnose=Diagnose
+Production.Leave=Möchten Sie die Produktion wirklich verlassen?
+Production.CanNotLeave=Produktion darf momentan nicht verlassen werden!
+Production.SingleHeadWelding.CanNotGoToProductionMainPage=Es läuft noch ein Schweißvorgang im 1-Kopf-Modus!
+
+Production.MainPage.CanNotGoToSingleHeadWelding=Es läuft noch ein Schweißvorgang!
+
+Production.Overview.Configuration.ProductionAdjustmentParameters=Korrekturparameter
+Production.Overview.Configuration.ElementData=Zu schweißendes Element
+Production.Overview.Configuration.ComputedElementPositions=Berechnete Positionen
+Production.Overview.Configuration.ComputedInnerBarPositions=Berechnete Querstab Positionen
+Production.Overview.Configuration.ManualInnerBarPositions=Testpositionen Kämpferköpfe
+
+Production.TwinMachine=Achten Sie auf die Partnermaschine!
+
+Manual=Handbetrieb
+Manual.Cyc=Maschine
+Manual.Cyc.ManualFunctionGeneral=Allgemeine Funktionen
+Manual.TCP=Transport
+Manual.WCG=Schweißen
+Manual.Axis=Achsen
+Manual.IO=I/O Anzeige
+
+Resources=Produktions- mittel
+Resources.ProductResources=Konfiguration
+Resources.ExportImport=Import / Export
+
+SysConfig=Maschinen-\nverwaltung
+SysConfig.UserAdministration=Benutzer-\nverwaltung
+SysConfig.Maschine=Maschine
+SysConfig.Axis=Achsen
+SysConfig.TCP=Transport
+SysConfig.WCG=Schweißen
+SysConfig.ImportExport=Import / Export
+
+[ManualInnerBarPositions namespace="ComputedInnerBarPositions"]
+InnerBar=Innerer Stab
+Fixed=S5
+HeadPosition=Hauptachse
+CarriagePosition=Schlitten
+FixturePosition=Zulage
+Movable=S6
+
+[WCG ManualInnerBarPositions Datasets namespace="WCG.ComputedInnerBarPositions"]
+0=Erster Querstab
+1=Zweiter Querstab
+
+[Navigation -> Pages -> UserManagement namespace="SystemConfigurationUserAdministrationControl"]
+NewCmd=Neu
+DelCmd=Löschen
+PasswordCmd=Passwort
+EditCmd=Ändern
+ApplyCmd=Übernehmen
+CancelCmd=Abbrechen
+
+[Namespace Reset]
+DigitalIO=Digitale IO
+AnalogIO=Analoge IO
+Valve=Ventile
+Valve.Valve=Ventil
+FunctionCallButtons=FunctionCall Buttons
+CoordinateSelector=Koordinatenauswahl
+PlcDialog=PLC Dialog
+HmiDialogAbleManagements=HMI-Dialog-Managements
+HmiDialogAbleManagements.HmiDialogAbleManagements=HMI-Dialog-Management
+FunctionNumberButtons=Handbetrieb Buttons
+WCG.HmiDatasets.FunctionNumberButtons=Kopfauswahl
+
+
+[Configuration CYC - machine management -> machine parameters namespace="cycManagerConfig"]
+
+CycConfigName=Maschinendaten
+
+General=Allgemeine Maschinenparameter
+General.UsedFuncGroup=Verwendete Funktionsgruppen
+General.OutFeedBufferLength=Anzahl der Plätze auf Puffertisch
+General.LifetimePieceCounter=Gesamtstückzähler
+General.ResetDailyCounter=Tagesstückzähler automatisch rücksetzen
+General.ResetDailyCounter.No=Nein
+General.ResetDailyCounter.Yes=Ja
+General.dailyPieceCounter=Tagesstückzähler
+General.DefaulBackupPath=Standard Verzeichnis für Backup
+General.ProductionLineOptions=Produktionslinienausbau
+General.ProductionLineOptions.Single=Autarke Maschine
+General.ProductionLineOptions.WithOutFeed=Mit Austransport
+General.ProductionLineOptions.WithBufferTable=Mit Puffertisch
+General.ProductionLineOptions.WithStulpProcessing=Mit Stulpstabbearbeitung
+General.ProductionLineOptions.WithCornerCleaner=Mit Eckenputzer
+General.ProductionLineOptions.WithOutFeedV2=Mit neuem Austransport
+General.ProductionLineOptions.OnlyManualRemoval=Nur Handentnahme
+General.InitialOperationMode=Inbetriebnahme Modus
+General.InitialOperationMode.No=Nein
+General.InitialOperationMode.Yes=Ja
+General.ShowActionText=Bedienerführung
+General.ShowActionText.No=Nein
+General.ShowActionText.Yes=Ja
+General.LubricationIntervall=Schmierintervall
+General.LubricationIntervallCounter=Schmierintervall Zählerstand
+General.MachineType=Schweißmaschinen Typ
+General.InnerBarMode=Querstab Bearbeitung
+
+Communication=Kommunikation
+Communication.CycConfigComm=Hmi-Plc Communication Timeout
+Communication.CycStatusTelegramTime=MCG Status Telegram Intervall Zeit
+Communication.IOStatusTelegramTime=IO Status Telegram Intervall Zeit
+Communication.SeqStatusTelegramTime=Sequence Status Telegram Intervall Zeit
+Communication.GeberIncrementTime=Geber Inkremente Status Telegram Intervall Zeit
+Communication.ConnectToCommunicationServer=Kommunikationsserver Verbindung
+Communication.ConnectToCommunicationServer.No=Offline
+Communication.ConnectToCommunicationServer.Yes=Verbinden
+Communication.CornerCleaner.Name=Eckenputzer Name
+Communication.CornerCleaner.Timeout=Eckenputzer Timeout
+Communication.CommunicationServerIP=Kommunikationsserver IP
+Communication.CommunicationServerPort=Kommunikationsserver Port
+
+OpcUaServer=OpcUa Server
+OpcUaServer.Activate=Aktivieren
+OpcUaServer.Activate.No=Nein
+OpcUaServer.Activate.Yes=Ja
+OpcUaServer.Port=Port
+OpcUaServer.HostName=Hostname
+
+AutoLogExport=Automatischer Fehler Log Export
+AutoLogExport.Enable=Aktiviert
+AutoLogExport.ExportType=Export Datei Type
+AutoLogExport.ExportType.XML=XML-Datei
+AutoLogExport.ExportType.JSON=JSON-Datei
+AutoLogExport.Directory=Export Ordner
+AutoLogExport.FilePrefix=Datei Prefix
+AutoLogExport.Interval=Export Intervall
+AutoLogExport.LastExport=Letzter Export
+
+MqttSettings=MQTT Client
+
+TwinWeldingMachineSettings=Doppelschweißmaschine
+
+[Configuration CYC - machine management -> machine type namespace="EMachineType"]
+
+Welding4Head=4 Kopf Schweißmaschine
+Welding6Head=6 Kopf Schweißmaschine
+Welding8Head=8 Kopf Schweißmaschine
+
+[Configuration CYC - machine management -> machine type namespace="EInnerBarMode"]
+Welding=Schweißen
+Screwing=Schrauben
+
+[Configuration CYC - machine management -> machine type namespace="CSISystemConfigurationMaschineControl"]
+HResetLifetimePieceCounter=Reset Ges.-zähler
+Import=Import
+Export=Export
+
+[Navigation -> Pages -> SysConfig Allgmein DigitalIO namespace="DigitalIO"]
+DigitalInputList=Digital Input Liste
+DigitalOutputList=Digital Output Liste
+DigitalInputListObject=Digital Input Listen Objekt
+DigitalInputListObjects=Digital Input List Objekte
+DigitalOutputListObject=Digital Output Listen Objekt
+DigitalInputMaskList=Digital Input Mask List
+DigitalRouter=Digital Router
+
+[Navigation -> Pages -> SysConfig Allgmein DigitalInputListObjects namespace="DigitalInputListObjects"]
+DigitalInputListObject0=Digital Input Listen Objekt 0
+DigitalInputListObject1=Digital Input Listen Objekt 1
+DigitalInputListObject2=Digital Input Listen Objekt 2
+DigitalInputListObject3=Digital Input Listen Objekt 3
+DigitalInputListObject4=Digital Input Listen Objekt 4
+DigitalInputListObject5=Digital Input Listen Objekt 5
+
+[Navigation -> Pages -> SysConfig Allgmein AnalogIO namespace="AnalogIO"]
+AnalogInputList=Analoge Eingänge
+AnalogInputList.AnalogInput=Eingang
+AnalogValueConfiguration=Analoge IO Konfiguration
+
+
+[Navigation -> Pages -> SysConfig -> Machine namespace="Navigation.Pages.SysConfig.Machine"]
+Configuration=Konfiguration
+SequenceLists=Abläufe
+ProductFlow=Produktfluss
+
+[Navigation -> Pages -> SysConfig -> Machine -> Configuration namespace="Navigation.Pages.SysConfig.Machine.Configuration"]
+General=Maschinenverwaltung
+ReferencePositions=Maschinenbezugs-\npositionen
+TemporaryParameters=Temporäre Parameter
+MqttStringPublisher=Mqtt String Publisher
+Counter=Zähler
+Stopwatch=Stoppuhr
+Timer=Zeitgeber
+CoordinateClient=Koordinaten Client
+ProductFlowClient=Produktfluss Client
+Productivity=Produktivität
+ProductPool=Product Pool
+RealValueList=allgemeine Parameterliste
+StatusIcon=Status Icon
+TraceConfiguration=Trace Konfiguration
+TraceConfiguration.TraceConfiguration=Trace-Konfiguration
+HmiAlarmText=HMI Alarm Texte
+HmiAlarmText.HmiAlarmText=Hmi-Alarm-Text
+
+
+MachineOutputMatrix=Maschinen-Ausgangs-Matrix
+MaschineOutputMatrix=Maschinen-Ausgangs-Matrix
+Config=Konfiguration
+OutputList=Ausgangsliste
+MachineOutputMatrix.MachineOutputMatrixMapping=Ausgangs-Mapping
+MaschineOutputMatrix.MachineOutputMatrixMapping=Ausgangs-Mapping
+
+SafetyCircuit=Sicherheitskreis
+SafetyCircuits=Sicherheitskreise
+SafetyCircuits.SafetyCircuit_0=Sicherheitskreis 1
+SafetyCircuits.SafetyCircuit_1=Sicherheitskreis 2
+SafetyCircuits.SafetyCircuit_2=Sicherheitskreis 3
+
+[Navigation -> Pages -> SysConfig -> Processing namespace="Navigation.Pages.SysConfig.Processing"]
+Configuration=Konfiguration
+SequenceLists=Abläufe
+DinFiles=DIN
+
+[Navigation -> Pages -> SysConfig -> Processing namespace="Navigation.Pages.SysConfig.Processing.Configuration"]
+MachinePositions=NC-Positionen
+ToolMagazinePositions=Werkzeugmagazin\nPositionen
+Ionization=Ionisierung
+VacuumCleaners=Absaugungen
+VacuumCleaners.VacuumCleaner=Absaugung
+PCBCleaner=Reinigungsbox
+QBitModifierList=Q Bit Modifier List
+
+[Navigation -> Pages -> SysConfig -> Transport namespace="Navigation.Pages.SysConfig.Transport"]
+Configuration=Konfiguration
+SequenceLists=Abläufe
+
+[Navigation -> Pages -> SysConfig -> Transport namespace="Navigation.Pages.SysConfig.Transport.Configuration"]
+Linien-Anzeige=Linien-Anzeige
+Shuttle Output Interface=Shuttle Output Schnittstelle
+Positions=Positionen
+Shuttle Positions=Shuttle Positionen
+RestrictedPositions=Beschränkte Positionen
+
+[Navigation -> Pages -> SysConfig -> WCG namespace="Navigation.Pages.SysConfig.WCG"]
+Configuration=Konfiguration
+SequenceLists=Abläufe
+
+[Navigation -> Pages -> SysConfig -> WCG -> Configuration namespace="Navigation.Pages.SysConfig.WCG.Configuration"]
+General=Allgemein
+HmiParameters=HMI Parameter
+Welding Mirrors=Schweißspiegel
+PositionList=Positionen
+PositionList.WCG.PositionList=S1 Positionen
+PositionList.WCG.PositionList_1=S3 Positionen
+PositionList.WCG.PositionList_2=S4 Positionen
+PositionList.WCG.PositionList_3=S5 Positionen
+PositionList.WCG.PositionList_4=S6 Positionen
+PositionList.WCG.PositionList_5=S7 Positionen
+PositionList.WCG.PositionList_6=S8 Positionen
+VelocityList=Geschwindigkeiten
+VelocityList.WCG.VelocityList=S1 Geschwindigkeiten
+VelocityList.WCG.VelocityList_1=S3 Geschwindigkeiten
+VelocityList.WCG.VelocityList_2=S4 Geschwindigkeiten
+VelocityList.WCG.VelocityList_3=S5 Geschwindigkeiten
+VelocityList.WCG.VelocityList_4=S6 Geschwindigkeiten
+VelocityList.WCG.VelocityList_5=S7 Geschwindigkeiten
+VelocityList.WCG.VelocityList_6=S8 Geschwindigkeiten
+Counter=Zähler
+Stopwatch=Stoppuhr
+Timer=Zeitmesser
+PIDController=PID Regler Schweißspiegel
+PIDController.PIDController=Schweißspiegel Kopf
+HydraulicAggregate=Hydraulikaggregate
+HydraulicAggregate.HydraulicAggregate=Hydraulikaggregat Kopf
+RotationConditionSettings=Drehung von Aufträgen
+GeneralRotationConditions=Allgemeine Bedingungen
+BarRotationCondition=Einzelstab Bedingungen
+BarRotationCondition.BarRotationCondition=Stab Bedingung
+
+[Navigation -> Pages -> SysConfig -> Handling namespace="Navigation.Pages.SysConfig.Handling"]
+Configuration=Konfiguration
+SequenceLists=Abläufe
+
+[Navigation -> Pages -> SysConfig -> Handling -> Configuration namespace="Navigation.Pages.SysConfig.Handling.Configuration"]
+ZimmerGrippers=Zimmer Greifer
+ZimmerGrippers.ZimmerGripper=Zimmer Greifer
+GripperFingerPairList=Greifer Finger Paar Liste
+GripperFingerPairList.GripperFingerPair=Greifer Finger Paar
+ToolPoolList=Tool Pool Liste
+GripperToolMagazine=Greifer Magazin
+GripperToolMagazine.GripperToolDepot=Greifer Tool Depot
+MQTT Topics=MQTT Topics
+MQTT Topics.MQTT Topic=MQTT Topic
+
+[Navigation -> Pages -> Import/Export namespace="SystemConfigurationTexteModel"]
+BackUp=Backup HMI
+Update=Update HMI
+ExportConfig=Export Konfig
+ImportSequences=Import Sequences
+ErrorOnCreateLanguage=Es sind keine Umlaute erlaubt!\nBitte durch [ae, ue, oe] ersetzen
+
+[Rechte namespace="Authority.Rights"]
+AvailableRights=Auswahl der Rechte
+Configuration=Konfiguration
+Axes=Achsen
+Automatic=Automatik
+Manual=Handbedienung
+Management=Allgemeine Rechte
+ImportExport=Import & Export
+Test=Test-Funktionen
+LotManagement=Losdaten Management
+
+[Rechnte Automatik namespace="Authority.Rights.Automatic"]
+WCG.ManualCleaning=Einleger hoch fahren
+WCG.ResetProduction=Reset Produktion
+WCG.SingleHeadWelding=1 - Kopf - Modus
+WCG.ManualFunction=Schweißprozess
+
+[Rechte Losdatenmanagement namespace="Authority.Rights.LotManagement"]
+HMI.DeleteLots=Lose löschen
+HMI.DeleteTasks=Aufträge löschen
+HMI.ExportLotDB=Lose exportieren
+HMI.ExportLotLog=Los Log exportieren
+
+[Rechte Handbedienung namespace="Authority.Rights.Manual"]
+MCG.ManualFunction=Maschine
+MCG.ManualIOs=Forcen Ein-/Ausgänge
+MCG.ResetAllIOs=Ein-/Ausgänge zurücksetzen
+Axle.Manual=Achsen verfahren
+WCG.ManualFunctionsConfig=Handbedienung Schweißen
+TCP.Manual=Handbedienung Transport
+
+[Rechte Management namespace="Authority.Rights.Management"]
+HMI.UserManagement=Nutzerverwaltung
+HMI.QuitErrors=Fehlerquittierung
+HMI.ExportErrors=Fehlerexportierung
+HMI.EditProductResources=Bearbeitung Produktionsmittel
+HMI.Override=Override
+HMI.NoAutoLogOut=Kein automaticher Logout
+MCG.ResetLifetimePieceCounter=Gesamtstückzähler zurück setzen
+MCG.ResetDailyPieceCounter=Tagesstückzähler zurück setzen
+
+[Rechte Import & Export namespace="Authority.Rights.ImportExport"]
+HMI.BackUp=Maschinen Backup
+HMI.Update=HMI Update
+HMI.EditTextDBs=Bearbeitung Texte
+HMI.EditConfigFiles=Bearbeitung MK-File 
+HMI.EditSpsData=Bearbeitung SPS-Daten
+
+[Rechte Konfiguration namespace="Authority.Rights.Configuration"]
+HMI.Sequences=Bearbeitung Sequenzen
+
+WCG.ManualFunctionsConfig=Konfigurierte Taster
+
+MCG.Configuration=Bearbeitung Maschine
+WCG.Configuration=Bearbeitung Schweißen
+TCP.Configuration=Bearbeitung Transport
+Axle.Configuration=Bearbeitung Achsen
+
+Axle.Parameter=Bearbeitung Achsen Parameter
+Axle.Controller=Bearbeitung Achsen Regler
+
+[Rechte Verwaltung der Achsen namespace="Authority.Rights.Axes.Axes"]
+Configuration=Bearbeitung Konfiguration
+Paramerter=Bearbeitung Parameter
+Controler=Bearbeitung Regler
+
+[Web View 2 namespace="WebView2"]
+Loading=lädt noch
+NotInstalled=Edge Runtime ist nicht installiert
+Download=Bitte hier herunterladen und installieren:
+
+[Sequence Listen namespace="SequenceList"]
+FunctionNumber=Funktionsnummer
+ItemData=Element Daten
+ItemDataShort=Daten
+ItemType=Element Typ
+ItemTypeShort=Typ
+JumpNumber=Sprungnummer
+JumpType=Sprungtyp
+ReturnValue=Rückgabewert
+
+[Sequence Listen Sprung Typen namespace="SequenceList.ESequenceJump"]
+Type0=Typ 0
+Type1=Typ 1
+Type2=Typ 2
+Type3=Typ 3
+Type4=Typ 4
+Type5=Typ 5
+Type6=Typ 6
+Type7=Typ 7
+Type8=Typ 8
+Type9=Typ 9
+Jump=Sprung
+JumpTarget=Sprung Ziel
+JumpAlways=Sprung Immer
+JumpNever=Sprung Nie
+
+[Sequence Listen Sprung Typen namespace="SequenceList.ESequenceResult"]
+DontJump=Kein Sprung
+Jump=Sprung
+JumpType0=Sprung Typ 0
+JumpType1=Sprung Typ 1
+JumpType2=Sprung Typ 2
+JumpType3=Sprung Typ 3
+JumpType4=Sprung Typ 4
+JumpType5=Sprung Typ 5
+JumpType6=Sprung Typ 6
+JumpType7=Sprung Typ 7
+JumpType8=Sprung Typ 8
+JumpType9=Fehlersprung
+
+
+[Sequence Listen -> Editor namespace="SequenceList.Editor"]
+MetaData=Metadaten
+SequenceElements=Ablaufelemente
+JumpList=Sprünge
+FunctionList=Funktionen
+Info=Information
+ErrorLog.Dialog.CopyErrorText=Fehlertext kopieren
+ErrorLog.Dialog.CopyTranslationTemplate=Übersetzungstemplate kopieren
+SequenceEditor.FunctionDialog.InvalidConfiguration=Ungültige Konfiguration
+SequenceEditor.FunctionDialog.Action.Caption=Aktion
+SequenceEditor.FunctionDialog.Action.Run=Ausführen
+SequenceEditor.FunctionDialog.Action.Jump=Springen
+SequenceEditor.FunctionDialog.Action.FunctionTree=Funktionsbaum
+SequenceEditor.FunctionDialog.Condition.Caption=,wenn Bedingung
+SequenceEditor.FunctionDialog.Condition.And=UND (&&)
+SequenceEditor.FunctionDialog.Condition.Or=ODER (||)
+SequenceEditor.FunctionDialog.Condition.Exist=F(x) existiert
+SequenceEditor.FunctionDialog.Condition.NotExist=F(x) nicht existiert
+SequenceEditor.FunctionDialog.Condition.Idle=F(x) unbeschäftigt ist
+SequenceEditor.FunctionDialog.Condition.Busy=F(x) beschäftigt ist
+SequenceEditor.FunctionDialog.Condition.Enabled=F(x) freigegen ist
+SequenceEditor.FunctionDialog.Condition.Disabled=F(x) gesperrt ist
+SequenceEditor.FunctionDialog.Options.Caption=mit Option
+SequenceEditor.FunctionDialog.Options.NoDataFromPrevious=Vorgänger-Daten blockieren
+SequenceEditor.FunctionDialog.Options.NoDataToNext=Nachfolger-Daten blockieren
+SequenceEditor.FunctionDialog.Options.WithListEnd=Sequenzlisten-Ende nach F(x)
+SequenceEditor.FunctionDialog.Options.Deactivated=Auskommentieren (//)
+
+[Produkt Owner Option Bits namespace="EProductOwnerOptionBits"]
+EnableProductOwner=
+EnableNotifyAreProductsReadyForOfferCalled=
+EnableNotifyAreProductsReadyForSharingCalled=
+EnableNotifyGetProductCalled=
+EnableNotifyGetProductAndAssignProductIDCalled=
+EnableNotifyGripProductCalled=
+EnableNotifyOfferProductCalled=
+EnableNotifyReleaseProductCalled=
+EnableNotifyShareProductCalled=
+EnableNotifyUpdateProductCalled=
+EnableNotifyAreStillProductsExpected=
+
+1=
+2=
+4=
+8=
+16=
+32=
+64=
+128=
+256=
+512=
+1024=
+
+[Produkt Owner Prozess Info Option Bits namespace="EProductOwnerProcessInfoOptionBits"]
+GetProcessInfoIfAreProductsReadyForOfferCalled=
+GetProcessInfoIfAreProductsReadyForSharingCalled=
+GetProcessInfoIfGetProductCalled=
+GetProcessInfoIfGetProductAndAssignProductIDCalled=
+GetProcessInfoIfGripProductCalled=
+GetProcessInfoIfOfferProductCalled=
+GetProcessInfoIfReleaseProductCalled=
+GetProcessInfoIfShareProductCalled=
+GetProcessInfoIfUpdateProductCalled=
+GetProcessInfoIfAreStillProductsExpected=
+
+1=
+2=
+4=
+8=
+16=
+32=
+64=
+128=
+256=
+512=
+
+[Default Buttons namespace="EButtonCommand"]
+Edit=Ändern
+Apply=Übernehmen
+Save=Speichern
+Cancel=Abbrechen
+Import=Importieren
+Export=Exportieren
+Load=Laden
+Rename=Umbenennen
+Copy=Kopieren
+Lock=Sperren
+Unlock=Entsperren
+Delete=Löschen
+New=Neu
+Zuweisen=Zuweisen
+Hidden=Versteckt
+Calc=Berechnen
+Scannen=Scannen
+Transfer=Übertragen
+Default=Default
+Einlesen=Einlesen
+NumberOfItems=Anzahl
+
+
+[Translation Singleton namespace="CDIO2TranslationSingelton"]
+FunctionActivated=Übersetzungsdialog aktiviert!
+FunctionDeactivated=Übersetzungsdialog deaktiviert!
+ShowTranslationByRightClick=Zeige Übersetzungskeys mit Rechts-Klick
+ShowTranslationString=Zeige Übersetzung
+
+[Translation Dialog namespace="TranslationDialog"]
+TextId=Text Key
+Translation=Übersetzung
+DbEntries=DB-Eintrag
+CutString=Cut String
+ButtonCopyTextId=Kopiere Text Key
+ButtonCopyItems=Kopiere Items
+CR=CR
+Title=Übersetzungsdialog
+
+[Bool Operatoren namespace="EBoolOperator"]
+0=OR
+1=AND
+2=XOR
+OperatorOR=OR
+OperatorAND=AND
+OperatorXOR=XOR
+[EBoolOperator]
+EBoolOperator.0=OR
+EBoolOperator.1=AND
+EBoolOperator.2=XOR
+
+[Unit Enum namespace="EUnit"]
+um=um
+mm=mm
+cm=cm
+dmdm
+m=m
+km=km
+l=l
+qm=qm
+ccm=ccm
+bar=bar
+A=A
+V=V
+Ohm=Ohm
+deg=deg
+rad=rad
+NoUnit=NoUnit
+
+0=um
+1=mm
+2=cm
+3dm
+4=m
+5=km
+6=l
+7=qm
+8=ccm
+9=bar
+10=A
+11=V
+12=Ohm
+13=deg
+14=rad
+15=NoUnit
+
+[stupid Axle Manual Status Labels namespace="CAXLEManualStatus"]
+Pos=Pos:
+V=V:
+
+[CYC In Out Manager namespace="CCYCInOutManager"]
+ForceHigh=Forcen '1'
+ForceLow=Forcen '0'
+ForceClear=Forcen rücksetzen
+ForceAnalog=Forcen Wert
+ForceClearAll=Alles rücksetzen
+ForceClearAllDialog=Alle geforcten Eingänge zurücksetzen?
+
+
+[Achsen Manager Configuration namespace="axleManagerConfig"]
+MetaData=Meta Daten
+FnMotionControlCommand=Funktionsnummer Motion Control
+FnMoveToPosition=Funktionsnummer Move To Position
+Name=Name
+SafetyCircuitFunctionNumber=Funktionsnummer Sicherheitskreis
+SafetyCircuitOptions=Optionen Sicherheitskreis
+SafetyCircuitOptions.SwitchOffAxisIfSafetyDoorIsOpen=Achsen ausschalten, wenn Sicherheitstür offen
+SafetyCircuitOptions.ServiceModeActivatesSafetyVelocity=Service Modus aktiviert sichere Geschwindigkeit
+SafetyCircuitOptions.ActivateStandStillMonitoring=Stillstandsüberwachung
+SafetyCircuitSwitchBehaviorEnum=Sicherheitskreis Einschaltverhalten
+SafetyCircuitSwitchBehaviorEnum.none=Undefiniert
+SafetyCircuitSwitchBehaviorEnum.disableAxisWithOpenDoor=Ausschalten bei geöffneter Tür
+SafetyCircuitSwitchBehaviorEnum.enableAxisWithServiceMode=Einschalten mit Schlüsselschalter
+SafetyCircuitSwitchBehaviorEnum.enableAxisWithServiceModeAndEnablingSwitch=Einschalten mit Schlüsselschalter und Zustimmtaster
+SafetyCircuitSwitchBehaviorEnum.enableAxisAlways=Immer einschalten
+SafetyMoveSwitchBehaviorEnum=Sicherheitskreis Bewegungsfreigabe
+SafetyMoveSwitchBehaviorEnum.none=Keine Bewegung erlauben
+SafetyMoveSwitchBehaviorEnum.enableInching=Tippen erlauben
+SafetyMoveSwitchBehaviorEnum.enableComplexMovement=Komplexe Bewegungen erlauben
+Options=Optionen
+Options.EnableAutomaticSwitchOn=Automatisches Einschalten der Achsen
+ControlerAxisIndex=Regler Achsen Index
+ManualFunctions=Erlaubte Handbetriebsfunktionen
+CmdTimeout=Überwachungszeit
+AC_TypeOfAxis=Type der Achse
+
+AC_Interface=Interface
+AC_Interface.CAN1=CAN1
+AC_Interface.CAN2=CAN2
+AC_Interface.CAN3=CAN3
+AC_Interface.CAN4=CAN4
+AC_Interface.Ethercat=Ethercat
+
+AC_MotionType=MotionType
+AC_MotionType.NC=NC
+AC_MotionType.MC=MC
+AC_MotionType.PLC=PLC
+
+AC_AxisLetter=Axis Letter
+AC_AxisLetter.X_Axis=X-Achse
+AC_AxisLetter.Y_Axis=Y-Achse
+AC_AxisLetter.Z_Axis=Z-Achse
+AC_AxisLetter.C_Axis=C-Achse
+AC_AxisLetter.U_Axis=U-Achse
+AC_AxisLetter.V_Axis=V-Achse
+AC_AxisLetter.W_Axis=W-Achse
+AC_AxisLetter.A_Axis=A-Achse
+AC_AxisLetter.B_Axis=B-Achse
+AC_AxisLetter.u_Axis=u-Achse
+AC_AxisLetter.v_Axis=v-Achse
+AC_AxisLetter.w_Axis=w-Achse
+AC_AxisLetter.x_Axis=x-Achse
+AC_AxisLetter.y_Axis=y-Achse
+AC_AxisLetter.z_Axis=z-Achse
+AC_AxisLetter.a_Axis=a-Achse
+AC_AxisLetter.b_Axis=b-Achse
+AC_AxisLetter.c_Axis=c-Achse
+AC_AxisLetter.Undefined=Undefinierter-Achsbuchstabe
+
+AC_ControllerType=Controllertyp
+AC_ControllerType.0=Undefiniert
+AC_ControllerType.1=ECOSTEP 200
+AC_ControllerType.2=ECOSTEP 216
+AC_ControllerType.3=ECOSTEP 100
+AC_ControllerType.4=ECOSTEP 54
+AC_ControllerType.5=ECOVARIO 414/214/114/114D/ECOCompact
+AC_ControllerType.6=MIDDEX SC5-CAN
+AC_ControllerType.7=JAT ECOVARIO 616
+AC_ControllerType.8=JAT ECOMiniDual
+
+
+AC_AxleGroups=Zugehörige Achsgruppen
+AC_AxleGroups.Group0=Alle Achsen
+AC_AxleGroups.Group1=S3|S4
+AC_AxleGroups.Group2=S5|S6
+AC_AxleGroups.Group3=S7|S8
+AC_AxleGroups.Group4=Gruppe 5 -
+AC_AxleGroups.Group5=Gruppe 6 -
+AC_AxleGroups.Group6=Gruppe 7 -
+AC_AxleGroups.Group7=Gruppe 8 - 
+AC_AxleGroups.Group8=Gruppe 9 -
+AC_AxleGroups.Group9=S5|S6 - Schlitten
+AC_AxleGroups.Group10=S5|S6 - Zulagen
+AC_AxleGroups.Group11=S5|S6 - Bohr-/Schraub Verstellung
+AC_AxleGroups.Group12=S5|S6 - Bohrantriebe
+AC_AxleGroups.Group13=Gruppe 14 - 
+AC_AxleGroups.Group14=Gruppe 15 - 
+AC_AxleGroups.Group15=Gruppe 16 - 
+AC_AxleGroups.Group16=Gruppe 17 - 
+AC_AxleGroups.Group17=Gruppe 18 - 
+AC_AxleGroups.Group18=Gruppe 19
+AC_AxleGroups.Group19=S7|S8 - Schlitten
+AC_AxleGroups.Group20=S7|S8 - Zulagen
+AC_AxleGroups.Group21=S7|S8 - Bohr-/Schraub Verstellung
+AC_AxleGroups.Group22=S7|S8 - Bohrantriebe
+AC_AxleGroups.Group23=Gruppe 24
+AC_AxleGroups.Group24=Gruppe 25
+AC_AxleGroups.Group25=Gruppe 26
+AC_AxleGroups.Group26=Gruppe 27
+AC_AxleGroups.Group27=Gruppe 28
+AC_AxleGroups.Group28=Gruppe 29
+AC_AxleGroups.Group29=Gruppe 30
+AC_AxleGroups.Group30=Gruppe 31
+AC_AxleGroups.Group31=Gruppe 32
+
+AC_AxleGroups.1=Alle Achsen
+AC_AxleGroups.2=S3|S4
+AC_AxleGroups.3=S5|S6
+AC_AxleGroups.4=S7|S8
+AC_AxleGroups.5=Gruppe 5 -
+AC_AxleGroups.6=Gruppe 6 -
+AC_AxleGroups.7=Gruppe 7 -
+AC_AxleGroups.8=Gruppe 8 - 
+AC_AxleGroups.9=Gruppe 9 -
+AC_AxleGroups.10=S5|S6 - Schlitten
+AC_AxleGroups.11=S5|S6 - Zulagen
+AC_AxleGroups.12=S5|S6 - Bohr-/Schraub Verstellung
+AC_AxleGroups.13=S5|S6 - Bohrantriebe
+AC_AxleGroups.14=Gruppe 14 - 
+AC_AxleGroups.15=Gruppe 15 - 
+AC_AxleGroups.16=Gruppe 16
+AC_AxleGroups.17=Gruppe 17
+AC_AxleGroups.18=Gruppe 18
+AC_AxleGroups.19=S7|S8 - Schlitten
+AC_AxleGroups.20=S7|S8 - Zulagen
+AC_AxleGroups.21=S7|S8 - Bohr-/Schraub Verstellung
+AC_AxleGroups.22=S7|S8 - Bohrantriebe
+AC_AxleGroups.23=Gruppe 23
+AC_AxleGroups.24=Gruppe 24
+AC_AxleGroups.25=Gruppe 25
+AC_AxleGroups.26=Gruppe 26
+AC_AxleGroups.27=Gruppe 27
+AC_AxleGroups.28=Gruppe 28
+AC_AxleGroups.29=Gruppe 29
+AC_AxleGroups.30=Gruppe 30
+AC_AxleGroups.31=Gruppe 31
+AC_AxleGroups.32=Gruppe 32
+
+AC_EngineAddress=NC/MC=Motoradresse (1..64); PLC=CanNodeID/EthercatAddress
+BusTopologie=NC/MC=Bustopologie; PLC=I/O-Mapping in ByteOrder
+AC_EngineID=Motor ID
+
+AC_AxleType=Achsart
+AC_AxleType.Linear=Linear
+AC_AxleType.0=Linear
+AC_AxleType.Rotatorisch=Rotatorisch
+AC_AxleType.1=Rotatorisch
+AC_AxleType.Drehzahl=Drehzahl
+AC_AxleType.2=Drehzahl
+
+AC_Coupled=Coupled
+AC_Coupled.none=none
+AC_Coupled.0=none
+AC_Coupled.master=master
+AC_Coupled.1=master
+AC_Coupled.slave=slave
+AC_Coupled.2=slave
+
+AC_EncoderType=Encoder Typ
+AC_EncoderType.Incrementell=Incrementell
+AC_EncoderType.0=Incrementell
+AC_EncoderType.Absolute=Absolute
+AC_EncoderType.1=Absolute
+
+AC_AxisElectricCurrentLimit=Strombegrenzung
+AC_PositionToleranceIfElectricCurrentLimitReached=Positionstoleranz bei erreichter Strombegrenzung
+
+[Achsen Manager Configuration -> Achsnamen namespace="axleManagerConfig"]
+AxisNames.0=S1
+AxisNames.1=S3
+AxisNames.2=S4
+AxisNames.3=S5
+AxisNames.4=S5-Schlitten
+AxisNames.5=S5-Zulage/Vorschub
+AxisNames.6=S6
+AxisNames.7=S6-Schlitten
+AxisNames.8=S6-Zulage/Vorschub
+AxisNames.9=S5-Bohrantrieb
+AxisNames.10=S6-Bohrantrieb
+AxisNames.11=S5-Verstellung Bohr/Schraub
+AxisNames.12=S6-Verstellung Bohr/Schraub
+AxisNames.13=S7
+AxisNames.14=S7-Schlitten
+AxisNames.15=S7-Zulage/Vorschub
+AxisNames.16=S8
+AxisNames.17=S8-Schlitten
+AxisNames.18=S8-Zulage/Vorschub
+AxisNames.19=S7-Bohrantrieb
+AxisNames.20=S8-Bohrantrieb
+AxisNames.21=S7-Verstellung Bohr/Schraub
+AxisNames.22=S8-Verstellung Bohr/Schraub
+
+AxisAbbreviation.0=1
+AxisAbbreviation.1=2
+AxisAbbreviation.2=3
+AxisAbbreviation.3=4
+AxisAbbreviation.4=5
+AxisAbbreviation.5=6
+AxisAbbreviation.6=7
+AxisAbbreviation.7=8
+AxisAbbreviation.8=9
+AxisAbbreviation.9=10
+AxisAbbreviation.10=11
+AxisAbbreviation.11=12
+AxisAbbreviation.12=13
+AxisAbbreviation.13=14
+AxisAbbreviation.14=15
+AxisAbbreviation.15=16
+AxisAbbreviation.16=17
+AxisAbbreviation.17=18
+AxisAbbreviation.18=19
+AxisAbbreviation.19=20
+AxisAbbreviation.20=21
+AxisAbbreviation.21=22
+AxisAbbreviation.22=23
+
+[Nochmal Achsnamen.. namespace="H_AxleNames"]
+0=S1
+1=S3
+2=S4
+3=S5
+4=S5-Schlitten
+5=S5-Zulage
+6=S6
+7=S6-Schlitten
+8=S6-Zulage
+9=S5-Bohrantrieb
+10=S6-Bohrantrieb
+11=S5-Verstellung Bohr/Schraub
+12=S6-Verstellung Bohr/Schraub
+13=Achse-S7
+14=Achse-S7-Schlitten
+15=Achse-S7-Zulage/Vorschub
+16=Achse-S8
+17=Achse-S8-Schlitten
+18=Achse-S8-Zulage/Vorschub
+19=Achse-S7-Bohrantrieb
+20=Achse-S8-Bohrantrieb
+21=Achse-S7-Verstellung Bohr/Schraub
+22=Achse-S8-Verstellung Bohr/Schra
+
+[Achsen Buchstabe namespace="EAxisLetter"]
+NOT_defined=Nicht definiert!
+X_Axis=X-Achse
+Y_Axis=Y-Achse
+Z_Axis=Z-Achse
+C_Axis=C-Achse
+A_Axis=A-Achse
+B_Axis=B-Achse
+
+[Achsen Manager Parameter namespace="axleManagerConfig"]
+AG_GeneralParameterAxis=Allgemeine Parameter der Achse
+AG_ParameterDownload=Parameter Übertragen
+AG_ParameterDownload.On=Ein
+AG_ParameterDownload.Off=Aus
+
+AG_Options=Optionen
+AG_Options.1=Bit01
+AG_Options.2=Bit02
+AG_Options.3=Bit03
+AG_Options.4=Bit04
+AG_Options.5=Bit05
+AG_Options.6=Bit06
+AG_Options.7=Bit07
+AG_Options.8=Bit08
+AG_Options.9=Bit09
+AG_Options.10=Bit10
+AG_Options.11=Bit11
+AG_Options.12=Bit12
+AG_Options.13=Bit13
+AG_Options.14=Bit14
+AG_Options.15=Bit15
+AG_Options.16=Bit16
+AG_Options.17=Bit17
+AG_Options.18=Bit18
+AG_Options.19=Bit19
+AG_Options.20=Bit20
+AG_Options.21=Bit21
+AG_Options.22=Bit22
+AG_Options.23=Bit23
+AG_Options.24=Bit24
+AG_Options.25=Bit25
+AG_Options.26=Bit26
+AG_Options.27=Bit27
+AG_Options.28=Bit28
+AG_Options.29=Bit29
+AG_Options.30=Bit30
+AG_Options.31=Bit31
+AG_Options.32=Bit32
+
+AG_StepsPerRev=Impulse pro Umdrehung
+AG_DisplacementPerRev=Weg pro Umdrehung
+AG_StepsPerRevVC=Impulse pro Umdrehung (Motormesssystem)
+AG_DisplacementPerRevVC=Weg pro Umdrehung (Motormesssystem)
+AG_DeviceOffset=Geberoffset
+AG_SwLimMin=Negative Softwareendlage
+AG_SwLimMax=Positive Softwareendlage
+AG_VelocityMax=Maximale Geschwindigkeit
+AG_Acceleration=Maximale Beschleunigung
+AG_Deceleration=Maximale Verzögerung
+AG_DecelerationQStop=Maximale Verzögerung bei Nothalt
+AG_MaxCurrentCurrentMode=Maximale Strom für Strommodus
+AG_VelocityMan=Maximale Handgeschwindigkeit
+ag_velocity_safety=Sichere Geschwindigkeit
+AG_FollowingErrorWindow=Schleppfehlerfenster
+AG_PositionWindow=Zielfenster
+AG_PositionWindowTime=Überwachungszeit für Zieleinlauf
+AG_HomeOffset=Home Offset
+AG_HomingMethod=Referenzmethode
+AG_SpeedDuringSearchSwitch=Geschwindigkeit suche Referenzschalter
+AG_SpeedDuringSearchZero=Geschwindigkeit suche Referenzpunkt
+AG_HomingAcceleration=Beschleunigung Referenzfahrt
+AG_HomeLsMaxCurr=Strom für Referenzfahrt gegen Anschlag
+AG_HomeLsPosOffset=Freifahren nach Referenzfahrt gegen Anschlag
+AG_HomeLsDelay=Wartezeit bei Referenzfahrt gegen Anschlag
+AG_HomingExtra=Paramter für Referenzfahrt bei Stillstand
+AG_HomingRange=max. Weg für Referenzsuche
+AG_HomingIndexPulsRange=Abstand der Indexpulse, max. Weg nach Referenzschalter
+AG_MovementParameterAxis=Movement Parameter
+AG_RampTime=Rampen Zeit
+AG_HomingParameterAxis=Homing Parameter
+
+[Achsen Manager Regler namespace="axleManagerConfig"]
+CP_Ecovario=ECOVARIO
+CP_ParameterDownload=Parameter Übertragen
+CP_ParameterDownload.On=Ein
+CP_ParameterDownload.Off=Aus
+CP_MaxCurrent=maximaler Strom
+CP_InputPolarity=Polarität Eingänge
+CP_PosLockInputMask=pos. Endlage Eingangsmaske
+CP_NegLockInputMask=neg. Endlage Eingangsmaske
+CP_Polarity=Richtungspolaritäten
+CP_Polarity.1=v-sorum p-sorum
+CP_Polarity.2=v-andersrum p-sorum
+CP_Polarity.3=v-sorum p-andersrum
+CP_Polarity.4=v-andersrum p-andersrum
+CP_EncoderIncrements=Encoderinkremente
+
+CP_AbortConnOptionCode=Verhalten bei Kommunikationsverlust
+CP_AbortConnOptionCode.0=0 Only Emg.Message
+CP_AbortConnOptionCode.1=1 Error + Axle-Off + Emg.Message
+CP_AbortConnOptionCode.2=2: Silend Axle-Off
+CP_AbortConnOptionCode.3=3: use quick_stop_option_code
+
+CP_QuickStopOptionCode=Verhalten bei Schnellstop
+CP_QuickStopOptionCode.0=0: Only Axle-Off
+CP_QuickStopOptionCode.1=1: Stop + Axle-Off
+CP_QuickStopOptionCode.2=2: QuickStop + Axle-Off
+CP_QuickStopOptionCode.3=3: QuickStop + Axle-Off
+CP_QuickStopOptionCode.4=4: QuickStop + Axle-Off
+CP_QuickStopOptionCode.5=5: Stop + State QuickStop
+CP_QuickStopOptionCode.6=6: QuickStop + State QuickStop
+CP_QuickStopOptionCode.7=7: QuickStop + State QuickStop
+CP_QuickStopOptionCode.8=8: QuickStop + State QuickStop
+
+CP_ShutdownOptionCode=Verhalten bei Abschalten
+CP_ShutdownOptionCode.0=0: Only Axle-Off
+CP_ShutdownOptionCode.1=1: Stop + Axle-Off
+
+CP_DisableOperationOptionCode=Verhalten bei Betriebsende
+CP_DisableOperationOptionCode.0=0: Only Axle-Off
+CP_DisableOperationOptionCode.1=1: Stop + Axle-Off
+
+CP_StopOptionCode=Verhalten bei Stop
+CP_StopOptionCode.0=0: Only Axle-Off
+
+CP_FaultReactionOptionCode=Verhalten bei Fehler
+CP_FaultReactionOptionCode.0=0: Only Axle-Off
+CP_FaultReactionOptionCode.1=1: Stop
+CP_FaultReactionOptionCode.2=2: QuickStop
+CP_TcCommuLength=tc_commu_length
+CP_TcCommuPoles=tc_commu_poles
+CP_TcCommu_V_PrephaseFactor=tc_commu_v_prephase_factor
+CP_TcCommu_C_PrephaseFactor=tc_commu_c_prephase_factor
+CP_TcCommu_MaxPrephase=tc_commu_max_prephase
+CP_TcCommu_Find_Current=tc_commu_find_current
+CP_TcCommu_Find_Delay=tc_commu_find_delay
+CP_TcCommu_Find_Damping=tc_commu_find_damping
+CP_TcCommu_Find_Method=tc_commu_find_method
+CP_TcBrakeDelay=tc_break_delay
+CP_TcIxixtCurrent=tc_ixixt_current
+CP_TcIxixtThau=tc_ixixt_thau
+CP_VcKp=vc_kp
+CP_VcKi=vc_ki
+CP_VcIlim=vc_ilim
+CP_VcErrorFilterLength=vc_error_filter_length
+CP_Vc_OutputFilterLength=vc_output_filter_length
+CP_Pc_Kp=pc_kp
+CP_Pc_Vfff=pc_vfff
+CP_Pc_Cffo=pc_cffo
+CP_Psp_Kp_Reg=Stromregler P-Anteil
+CP_Psp_Ki_Reg=Stromregler I-Anteil
+CP_Psp_Kd_Reg=Stromregler D-Anteil
+CP_Psp_Kff_Reg=Stromregler I*R Vorsteuerung
+CP_Psp_Kff_CompReg=Stromregler EMK Vorsteuerung
+CP_Psp_Ki_Sat=Stromregler I Begrenzung
+CP_Psp_Ke_Filter=Stromregler Errorfilter
+CP_Psp_Vst_Anp=Stromregler Verstärkungsanpassung
+CP_Psp_Sat_P=Stromregler Sättigungsstartpunkt
+CP_ControlMappingVeloenctype=Encoderzuordnungsmatrix Geschwindigkeitsregler
+CP_ControlMappingPosenctype=Encoderzuordnungsmatrix Postionsregler
+CP_ControlMappingMasterenctype=Encoderzuordnungsmatrix Masterencoder
+CP_ControlMappingEmuport=Encoderzuordnungsmatrix Emulationsport
+CP_MotorDataEncoderType=Encoderzuordnungsmatrix Motorencoder
+CP_EncoderAccessEncCommuOffset=Motorencoder Kommutierungsoffset
+CP_MotorDataTcfg=Motordaten Temperatursensor
+CP_CanSyncCfg=Interpolationsmodus, Slave Synchronisationszeit
+CP_DpuPwrstageConfig=Leistungsgruppe Ausgabemodus
+CP_CanMasterSyncTime=Interpolationsmodus, Master Synchronisationszeit
+CP_CanMasterSyncMode=Interpolationsmodus, Master Betriebsart
+CP_MotorDataTvalue=Motordaten - Temperatursensor, Abschaltschwelle
+CP_PcAfff=Beschleunigungsvorsteuerung
+CP_Cntrtype=Controlertyp
+CP_FirmwareId=Firmware
+
+[Namespace Reset]
+CNC.MFuncNumberForToolChangeStart=Werkzeugwechsel Start
+CNC.MFuncNumberForToolChangeFinished=Werkzeugwechsel Ende
+CNC.MFuncNumberForToolControlStart=Werkzeugkontrolle Start
+CNC.MFuncNumberForToolControlFinished=Werkzeugkontrolle Ende
+CNC.PFieldForTargetToolNumber=Werkzeugnummer
+CNC.PFieldForTargetToolType=Werkzeugtype
+CNC.ToolDiameterAllowance= Toleranz Werkzeugdurchmesser
+CNC.PFieldForSavingActualToolLife=Sichern noch verfügbare Lebensdauer
+CNC.ToolMagazineLockControl=Digitaler Eingang: Magazinverriegelung
+CNC.RouterBitRefuseControl=Digitaler Eingang: Abfallkontrolle
+CNC.RouterBitDimensionControl=Digitaler Eingang: Durchmesserkontrolle
+CNC.RouterBitBreakControl=Digitaler Eingang: Bruchkontrolle
+
+[Ja / Nein - An / Aus Auswahl namespace="YesNoSelection"]
+Off=Aus
+On=Ein
+Yes=Ja
+No=Nein
+yes=Ja
+no=Nein
+
+[Achsen Regler Typ namespace="EAxisControllerType"]
+Undefined=Undefiniert
+Ecovario616=Ecovario 616
+Ecostep200=Ecostep 200
+Ecostep216=Ecostep 216
+Ecostep100=Ecostep 100
+Ecostep54=Ecostep 54
+Ecovario=Ecovario
+Middex_SC5_Can=Middex SC5 CAN
+EcoMiniDual=Eco Mini Dual
+EDarcK10=EDarcK 10
+EDarcK4=EDarcK 4
+SchneiderLexium32=Schneider Lexium 32
+ACD_MC_1_0=ACD MC 1 0
+SPAT=SPAT
+SycoTec_EasyDrive=SycoTec EasyDrive
+EcoModul113=EcoModul 113
+
+[Achsen Manual Buttons namespace="CAXLEManualButtons"]
+StepPositiv=Step+
+StepNegativ=Step-
+RotationPlus=Dreh+
+RotationMinus=Dreh-
+TipPositiv=Tip+
+TipNegativ=Tip-
+Reference=Referenz
+Position=Position
+Stop=Stop
+Reset=Reset
+InputStepWide=Schrittweite
+PositionInput=Position
+Velocity=Geschwindigkeit
+
+[PLC Objekte namespace="PlcObjects"]
+Configuration=Konfiguration
+Type=Typ des PLC-Objektes
+MetaData=Metadaten
+TimeOut=Timeout
+MetaData=Metadaten
+MetaData.FunctionNumber=Funktionsnummer
+MetaData.Name=Name
+MetaData.Options=Optionen
+MetaData.Options.Enable=Freigeben
+MetaData.Options.EnableCondition=Bediengung aktivieren
+MetaData.Options.NotifyMemberChangeEnable=Benachrichtigung bei Änderung aktivieren
+MetaData.AppVersion=Version
+MetaData.AppDescription=Beschreibung
+MetaData.AppLog=Versionslog
+
+HmiDialogAbleManagementConfigurationData.CountOfFunctionsOfHmiDialogAble=Anzahl dialogfähiger Funktionen
+PlcDatasets.HmiDialogAbleManagementConfigurationData.FunctionNumber=Funktionsnummer
+
+[Plc Objekte Shuttle Output Interface Configuration namespace="ShuttleOutputInterfaceConfigurationData"]
+Options=Optionen
+ShuttleOutputInterfaceOption=Schnittstellen Optionen
+keepAliveTime=Keep Alive Time
+PermissionToMove=Erlaubnis zur Bewegung
+ReadyToRemove=Bereit zum Entfernen
+FunctionNumbers=Funktionsnummern
+DigitalInputListProductsRemoved=DI List Produkte entfernt
+DigitalOutputListProductsReadyForRemove=DO List Produkte bereit zum Entfernen
+DigitalInputListProductsScanned=DI List Produkte gescannt
+DigitalOutputListProductsReadyForScan=DO List Produkte bereit zum scannen
+DigitalInputListProductsOfferRequest=DI List Produkte Request
+DigitalOutputListProductsOffered=DO List Produkte bereitsgestellt
+DigitalOutputListProductStates=DO List Produkt Stati
+
+[Shuttle Output Interface Option Enum namespace="ShuttleOutputInterfaceOptionEnum"]
+OPCUA=OPCUA
+Digital=Digital
+
+[PLC Objekte Digital Input Configuration namespace="PlcObjects"]
+DigitalInputConfigurationData.IndexOFInputByteField=Index der Adresse des Eingang
+DigitalInputConfigurationData.DigitOfByteField=Digit im Byte
+DigitalInputConfigurationData.TimeToDebounce=Einschalt-Entprellzeit
+DigitalInputConfigurationData.TimeToDamping=Ausschalt-Entprellzeit
+DigitalInputConfigurationData.Inverted=Invertiert
+DigitalOutputConfigurationData.IndexOfOutputByteField=Index der Adresse des Ausgangs
+DigitalOutputConfigurationData.DigitOfByteField=Digit im Byte
+DigitalOutputConfigurationData.TimeLow=Schaltzeit zu Low
+DigitalOutputConfigurationData.TimeHigh=Schaltzeit zu High
+DigitalOutputConfigurationData.Inverted=Invertiert
+DigitalInputMaskConfigurationData.IndexOFInputByteField=Index der Adresse
+DigitalInputMaskConfigurationData.InvertingMask=Invertier-Maske
+DigitalInputMaskConfigurationData.DontCareMask=Ignorier-Maske
+DigitalInputMaskConfigurationData.CompareMask=Vergleichs-Maske
+DigitalInputListObjectMetaData.BoolOperator=Boolscher Operator
+DigitalInputListObjectMetaData.DigitalInputSelectionMask=Vergleichsmaske Digitaleingänge
+DigitalInputListObjectMetaData.TimeOut=Timeout
+FunctionCallButtonConfigurationData.FunctionNoSafetyCircuit=Funktionsnummer des\nSicherheitskreises
+FunctionCallButtonConfigurationData.FunctionNoToInvoke=Aufzurufende Funktion
+FunctionCallButtonConfigurationData.Options=spezifische Optionen
+FunctionCallButtonConfigurationData.TimeErrorAcknowledge=Drückzeit: Fehlerquittierung
+FunctionCallButtonConfigurationData.Timeout=Timeout
+CounterFunction.ExtendedOptions=Erweiterte Optionen
+CounterFunction.ExtendedOptions.WarningThresholdEnable=Warnschwelle aktivieren
+CounterFunction.ExtendedOptions.AlarmThresholdEnable=Alarmschwelle aktivieren
+CounterFunction.ExtendedOptions.NotifyWarningAsErrorReport=Benachrichtigung bei erreichter Warnschwelle im Fehlerlog
+CounterFunction.ExtendedOptions.NotifyAlarmAsErrorReport=Benachrichtigung bei erreichter Alarmschwelle im Fehlerlog
+CounterFunction.ExtendedOptions.ForceCounterValueEnable=Gesetzen Zählerwert aktivieren
+CounterFunction.CounterValueToForce=Zu setzender Zählerwert
+CounterFunction.WarningThreshold=Warnschwelle
+CounterFunction.AlarmThreshold=Alarmschwelle
+
+GripperConfigurationData.Options=Optionen
+GripperConfigurationData.OffsetFromCartesianPortalPoint.X=X-Offset
+GripperConfigurationData.OffsetFromCartesianPortalPoint.Y=Y-Offset
+GripperConfigurationData.DistancePosition=Distanz Position
+GripperConfigurationData.Velocity=Geschwindigkeit
+GripperConfigurationData.FunctionNumberOfToolPool=Funktionsnummer Tool Pool
+GripperConfigurationData.ConfigurationDataOccupancySensor=Occupancy Sensor
+
+GripperManagementConfigurationData.GripperType=Greifer Typ
+GripperManagementConfigurationData.CountOfGripper=Anzahl
+GripperManagementConfigurationData.GroupedAxesId=Achsgruppen ID
+GripperManagementConfigurationData.ProductDirection=Produkt Richtung
+GripperManagementConfigurationData.ProductOrder=Produkt Reihenfolge
+GripperManagementConfigurationData.MultiGripperAlignment=MultiGreifer Anordnung
+GripperManagementConfigurationData.ExternalFunctionDependencies=Externe Funktions Abhängigkeiten
+GripperManagementConfigurationData.FunctionNumberOfGripperAdjustment=Funktionsnummer Greifer Anordnung
+GripperManagementConfigurationData.FunctionNumbers=Funktionsnummern
+GripperManagementConfigurationData.FunctionNumberOfGrippers=Funktionsnummer der Greifer
+
+
+CoordinateData.ID=ID
+CoordinateData.XValue=X
+CoordinateData.YValue=Y
+CoordinateData.ZValue=Z
+CoordinateData.CValue=C
+
+[Doppelschweißmaschine Overlay namespace="TwinStateOverlay"]
+Bridge.Health=Bridge
+Twin.Channel=Channel
+TwinWorkState=Arbeitsstatus
+BrokerState=Brokerstatus
+BaseTopic=Standardpfad
+TwinConnection=Gestartet?
+ChannelHealth=Channel ok?
+BridgeHealth=Bridge ok?
+RefreshRate=Aktualisierungszeit
+TwinState=Partnerstatus
+TwinMSNR=Maschinenseriennummer
+TwinPhase=Phase
+TwinCurrentTaskWith=Breite aktueller Auftrag
+TwinNextTaskWith=Breite nächster Auftrag
+LastMessage=Uhrzeit der letzten Nachricht
+OwnState=Eigener Status
+OwnMSNR=Maschinenseriennummer
+OwnPhase=Phase
+OwnWorkState=Arbeitsstatus
+OwnCurrentTaskWith=Breite aktueller Auftag
+OwnNextTaskWith=Breite nächster Auftrag
+IsAllActive=Status
+TwinTaskListCount=Anzahl der Aufträge
+
+[Doppelschweißmaschine Zustände namespace="TwinState"]
+unknown=Unbekannt
+Manual=Handbetrieb
+idle=Idle
+FirstInitPhaseState=1.Init
+CleaningState=Räumung
+SecondInitPhaseState=2.Init
+IdleState=Idle
+WeldingState=Schweißen
+SetUp=Rüstphase
+Insertion=Einlegephase
+HeatingUp=Anwärmphase
+Joining=Fügephase
+CoolingDown=Abkühlphase
+UninitializedState=Uninitialisiert
+Parkposition=Parkposition
+Waiting=Wartend
+
+[Doppelschweißmaschine Einstellungen namespace="TwinWeldingMachineSettings"]
+Activate=Teil einer Doppelschweißmaschine
+BaseTopic=Basis Topic
+CompleteWidth=Breite zwischen den Maschinen
+PufferWidth=Puffer
+TwinCanWorkWhileInManualMode=Partner arbeitet während Handbetriebs
+IsWorkEnabledIfNoTwinIsAvailable=Einzelarbeit erlaubt?
+ParkPositionWidth=Breite Parkposition
+TwinParkPositionWidth=Breite Parkposition der Partnermaschine
+OwnEquipPosition=Rüstposition
+
+[ClearingPage Doppelschweißmaschine namespace="ClearingPage"]
+ShowInfo=Achten Sie auf die Partnermaschine!
+
+[Auftragsvisualisierung namespace="WeldingElementVisualisation"]
+InnerBars=Innere Stäbe
+
+[Namespace Reset]
+
+PlcObjects.MachineStatusClientConfigurationData.EnableWaitForResponse=Warten auf Antwort aktivieren
+PlcObjects.MachineStatusClientConfigurationData.RefreshTime=Aktualisierungszeit
+PlcObjects.RemoteProcedureCallConfigurationData=Konfigurationsdaten für RPC
+PlcObjects.RemoteProcedureCallConfigurationData.Topic=Topic
+PlcObjects.RemoteProcedureCallConfigurationData.NumberOfRetries=Anzahl der Wiederholungsversuche
+PlcObjects.RemoteProcedureCallConfigurationData.TimeOut=TimeOut
+PlcObjects.MachineStatusClientConfigurationData.FunctionNumberDefinitions=Funktionsnummer Definitionen
+PlcObjects.MachineStatusClientConfigurationData.FunctionNumberOfAutomaticRootSequenceList=Funktion Nummer der Automatik Root Sequenzliste
+PlcObjects.MachineStatusClientConfigurationData.FunctionNumberOfHomingRootSequenceList=Funktion Nummer der Homing Root Sequenzliste
+PlcObjects.MachineStatusClientConfigurationData.FunctionNumberOfSafetyCircuit=Funktionsnummer des Sicherheitskreises
+PlcObjects.MachineStatusClientConfigurationData.FunctionNumberOfMaintenance=Funktionsnummer der Wartung
+PlcObjects.MachineStatusClientConfigurationData.FunctionNumberOfMaterialJam=Funktionsnummer des Materialstaus
+PlcObjects.MachineStatusClientConfigurationData.FunctionNumberOfMaterialShortage=Funktionsnummer des Materialmangels
+
+
+
+PlcObjects.MachineOutputMatrix.ConfigurationData.MachineStateBootupOptions=Maschinenstatus-Bootup-Optionen
+PlcObjects.MachineOutputMatrix.ConfigurationData.RefreshTime=Aktualisierungszeit
+PlcObjects.MachineOutputMatrix.ConfigurationData.FunctionNumberOfMachineStatusData=Funktionsnummer des Maschinen-Status-Clients
+PlcObjects.MachineOutputMatrix.SignalConfigurationData.TimeLow=Zeit "aus"
+PlcObjects.MachineOutputMatrix.SignalConfigurationData.TimeHigh=Zeit "an"
+PlcObjects.MachineOutputMatrix.SignalConfigurationData.RepeatCounter=Anzahl an Wiederholungen
+
+PlcObjects.MachineOutputMatrix.MappingEntry.MachineOutputMatrixMachineModeEnum=Maschinen-Modus
+PlcObjects.MachineOutputMatrix.MappingEntry.MachineOutputMatrixMachineState=Maschinen-Status
+PlcObjects.MachineOutputMatrix.MappingEntry.FunctionNumber=Funktionsnummer
+PlcObjects.MachineOutputMatrix.MappingEntry.BehaviorModelStateEnum=Status von\nFunktionsnummer
+PlcObjects.MachineOutputMatrix.MappingEntry.Priority=Priorität (0 = höchste)
+PlcObjects.MachineOutputMatrix.MappingEntry.DigitalOutputAction=Digitaler Ausgang\n"Aktion"
+
+PlcObjects.DigitalOutputActionEnum.NotUsed=Ignorieren
+PlcObjects.DigitalOutputActionEnum.Off=Aus
+PlcObjects.DigitalOutputActionEnum.On=An
+PlcObjects.DigitalOutputActionEnum.BlinkFrequency1=Blink-Frequenz 1
+PlcObjects.DigitalOutputActionEnum.BlinkFrequency1=Blink-Frequenz 2
+PlcObjects.DigitalOutputActionEnum.BlinkFrequency1=Blink-Frequenz 3
+PlcObjects.DigitalOutputActionEnum.BlinkFrequency1=Blink-Frequenz 4
+PlcObjects.DigitalOutputActionEnum.BlinkFrequency1=Blink-Frequenz 5
+
+PlcObjects.MachineOutputMatrixMachineModeEnum.Ignore=Ignorieren
+PlcObjects.MachineOutputMatrixMachineModeEnum.MachineIsInConfigurationMode=Maschinenverwaltungs-Seite
+PlcObjects.MachineOutputMatrixMachineModeEnum.MachineIsInManualMode=Handbetrieb-Seite
+PlcObjects.MachineOutputMatrixMachineModeEnum.MachineIsInAutomaticMode=Produktions-Seite
+PlcObjects.MachineOutputMatrixMachineModeEnum.MachineIsInProductProgrammingMode=Programm-Seite
+
+PlcObjects.MachineOutputMatrixMachineState.EmergencyDetected=Not-Aus erkannt
+PlcObjects.MachineOutputMatrixMachineState.ErrorDetected=Fehler erkannt
+PlcObjects.MachineOutputMatrixMachineState.MaterialShortageDetected=Materialmangel erkannt
+PlcObjects.MachineOutputMatrixMachineState.MaterialJamDetected=Materialstau erkannt
+PlcObjects.MachineOutputMatrixMachineState.MaintenanceIsNecessary=Wartung ist notwendig
+PlcObjects.MachineOutputMatrixMachineState.OperatorIsRequired=Bediener wird benötigt
+PlcObjects.MachineOutputMatrixMachineState.HomingSequenceListIsBusy="Grundstellungs"-Ablauf ist aktiv
+PlcObjects.MachineOutputMatrixMachineState.EquippingSequenceListIsBusy="Rüst"-Ablauf ist aktiv
+PlcObjects.MachineOutputMatrixMachineState.AutomaticSequenceListIsBusy="Automatik"-Ablauf ist aktiv
+
+PlcObjects.MaterialFlowMonitoringConfigurationData.GlobaleDebounceTime=Globale Entprellungszeit
+PlcObjects.MaterialFlowMonitoringConfigurationData.RefreshTime=Aktualisierungszeit
+PlcObjects.MaterialFlowMonitoringConfigurationData.MaterialJamBehavior=Verhalten bei Materialstau
+MaterialJamBehaviorEnum.JamIfAllHaveJam=Stau, wenn alle Stau haben
+MaterialJamBehaviorEnum.JamIfAnyHasJam=Stau, wenn einer Stau hat
+PlcObjects.MaterialFlowMonitoringConfigurationData.MaterialShortageBehavior=Verhalten bei Materialmangel
+MaterialShortageBehaviorEnum.ShortageIfAllHaveShortage=Mangel, wenn alle Mangel haben
+MaterialShortageBehaviorEnum.ShortageIfAnyHasShortage=Mangel, wenn einer Mangel hat
+PlcObjects.MaterialFlowMonitoringConfigurationData.CountOfFunctionNumberOfMaterialJam=Anzahl der Funktionsnummern von Materialstaus
+PlcObjects.MaterialFlowMonitoringConfigurationData.CountOfFunctionNumberOfMaterialShortage=Anzahl der Funktionsnummern von Materialmängel
+PlcObjects.MaterialFlowMonitoringConfigurationData.FunctionNumbersOfMaterialJam=Funktionsnummern von Materialstau
+PlcObjects.MaterialFlowMonitoringConfigurationData.FunctionNumberOfMaterialJam=Funktionnummer des Materialstaus
+PlcObjects.MaterialFlowMonitoringConfigurationData.FunctionNumbersOfMaterialShortage=Funktionsnummern der Materialmängel
+PlcObjects.MaterialFlowMonitoringConfigurationData.FunctionNumberOfMaterialShortage=Funktionnummer des Materialmangels
+
+PlcObjects.MqttStringPublisherConfigurationData.Topic=Topic
+PlcObjects.MqttStringPublisherConfigurationData.Timeout=Timeout
+
+[Namespace Reset]
+EBoolOperator.0=OR
+EBoolOperator.1=AND
+EBoolOperator.2=XOR
+
+[Produktfluss Client namespace="PlcObjects.ProductFlowClient"]
+FunctionNumberOfHmiPanelStatusInfo=Funktionsnummer HMI Panel Status Info
+Topic=Topic
+NumberOfRetries=Anzahl Versuche
+TimeOut=Timeout
+MaxArraySizeOfProductDataArray=Maximale Anzahl Produkt Daten
+MaxCountOfSameObservableSubject=Maximale Anzahl gleiche ObservableSubject
+
+[Plc Object Types namespace="EPlcObjectTypes"]
+tMqttStringPublisher=Mqtt String Publisher
+tCounterFunction=Zähler
+tStopWatch=Stop Uhr
+tTimer=Timer
+tPIDController=PID Regler
+tCoordinatesClient=Koordinaten Client
+tProductFlowClient=Produkt Fluss Client
+tProductivity=Productivity
+tProductPool=Produkt Pool
+tCoordinatesSelector=Koordinaten Selector
+tHmiDialogBox= Hmi Dialog
+tValve=Ventil
+tAnalogValue=Analog Wert
+tAnalogInput=Analog Eingang
+tDigitalInput=Digital Eingang
+tDigitalOutput=Digital Ausgang
+tDigitalInputMask=Digital Input Mask
+tFunctionCallButton=Funktionsbutton
+
+[PLC State namespace="EPlcState"]
+Initialising=Initial
+Idle=Leerlauf
+Preparing=Vor-Ausführen
+Executing=Ausführen
+Done=Fertig
+Error=Fehler
+Pausing=Pausieren
+Paused=Pausiert
+Aborting=Abbrechen
+Aborted=Abgebrochen
+Resetting=Rücksetzen
+
+[Scaler Device Type namespace="EScalerDeviceType"]
+Range0To10V=0-10V
+Range0To20mA=0-20mA
+Range0To5V=0-5V
+Range150Ohm=150Ohm
+Range1kOhm=1kOhm
+Range1To5V=1-5V
+Range2KOhm=2 kOhm
+Range2To10V=2-10V
+Range300Ohm=300Ohm
+Range40Ohm=40Ohm
+Range4KOhm=4kOhm
+Range4To20mA=4-20mA
+Range500Ohm=500Ohm
+Range80Ohm=80Ohm
+RangeCu10=Cu10
+RangeNi100=Ni10
+RangeNi120=Ni120
+RangeNi200=Ni200
+RangeNi500=Ni500
+RangeNi1000=Ni1000
+RangePlusMinus10V=+/- 10V
+RangePlusMinus5V=+/- 5V
+RangePt100=Pt100
+RangePt200=Pt200
+RangePt500=Pt500
+RangePt1000=Pt1000
+
+[Valve Type namespace="EValveType"]
+BistableMiddlePositionOpen=Bistabil Mittelstellung offen
+BistablePermanent=Bistabil permanent
+BistablePulsed=Bistabil gepulst
+Monostable=Monostabil
+
+[Namespace Reset]
+PlcObjects.ValveTypeEnum=Ventil Typ
+
+
+[AxleManualFunktion namespace="EAxleManualFunktion"]
+Referenzieren=Referenzieren
+Positionieren=Positionieren
+StepPos=Steppen positiv
+StepNeg=Steppen negativ
+TippPos=Tippen positiv
+TippNeg=Tippen negativ
+
+[Namespace Reset]
+PlcObjects.ToolMagazineDepotData=Tool Magazine Depot Data
+PlcObjects.ToolMagazineDepotData.PositionIdPickUp=Position ID Pick Up
+PlcObjects.ToolMagazineDepotData.PickupDistance=Pickup Distance
+PlcObjects.ToolMagazineDepotData.PositionPickUp=Position Pick Up
+
+PlcObjects.ProductOwnerOptions=ProductOwnerOptions
+PlcObjects.ProductOwnerOptions.ProductOwnerOptions=ProductOwnerOptions
+PlcObjects.ProductOwnerOptions.ProductOwnerProcessInfoOptions=ProductOwnerProcessInfoOptions
+
+PlcObjects.ToolPoolConfigurationData.CountOfOccupancySensors=Anzahl Belegungs Sensoren
+PlcObjects.ToolPoolConfigurationData.OccupancySensor=Belegungs Sensor
+
+PlcObjects.StopWatchFunction.ExtendedOptions=Erweiterte Optionen
+PlcObjects.StopWatchFunction.TimeValueToForce=Zu setzender Zeitwert
+PlcObjects.StopWatchFunction.TimeLimit=Zeitlimit
+PlcObjects.StopWatchFunction.WarningThreshold=Warnschwelle
+PlcObjects.StopWatchFunction.AlarmThreshold=Alarmschwelle
+PlcObjects.TimerFunction.ExtendedOptions=Erweiterte Optionen
+PlcObjects.TimerFunction.TimeValueToForce=Zu setzender Zeitwert
+PlcObjects.TimerFunction.StartTime=Startzeit
+PlcObjects.TimerFunction.WarningThreshold=Warnschwelle
+PlcObjects.TimerFunction.AlarmThreshold=Alarmschwelle
+
+PlcObjects.PIDControllerConfigurationData.FunctionNumberOfSafetyCircuit=Funktionsnummer Sicherheitskreis
+PlcObjects.PIDControllerConfigurationData.ActorSelectionBits=Auswahl Ausgangsaktor
+PlcObjects.PIDControllerConfigurationData.ActorSelectionBits.Bit0=Analoger Aktor existiert
+PlcObjects.PIDControllerConfigurationData.ActorSelectionBits.Bit1=Digitaler Positiv Aktor existiert
+PlcObjects.PIDControllerConfigurationData.ActorSelectionBits.Bit2=Digitaler Negativ Aktor existiert
+PlcObjects.PIDControllerConfigurationData.EnablePIDController=PID Regler freigeben
+PlcObjects.PIDControllerConfigurationData.EnablePIDController.Yes=Ja
+PlcObjects.PIDControllerConfigurationData.EnablePIDController.No=Nein
+PlcObjects.PIDControllerConfigurationData.EnableByPass=Hand-Stellwert (Bypass) freigeben
+PlcObjects.PIDControllerConfigurationData.EnableByPass.Yes=Ja
+PlcObjects.PIDControllerConfigurationData.EnableByPass.No=Nein
+PlcObjects.PIDControllerConfigurationData.ByPassValue=Hand-Stellwert (Bypass) in W
+PlcObjects.PIDControllerConfigurationData.ToleranceRangeWaitTime=Wartezeit für Temperaturstabilität in s
+PlcObjects.PIDControllerConfigurationData.ToleranceRange=Toleranzband für Solltemperatur in K
+PlcObjects.PIDControllerConfigurationData.OffsetActualValue=Istwertkorrektur in K
+PlcObjects.PIDControllerConfigurationData.MinSetPointValue=Minimaltemperatur in °C
+PlcObjects.PIDControllerConfigurationData.MaxSetPointValue=Maximaltemperatur in °C
+PlcObjects.PIDControllerConfigurationData.SetPointValue=Solltemperatur in °C
+PlcObjects.PIDControllerConfigurationData.MinActuatorValue=Minimale Heizleistung in W
+PlcObjects.PIDControllerConfigurationData.MaxActuatorValue=Maximale Heizleistung in W
+PlcObjects.PIDControllerConfigurationData.OffsetActuatorValue=Offset Heizleistung in W
+PlcObjects.PIDControllerConfigurationData.ProportionalValue_Kp=Reglerparameter Kp
+PlcObjects.PIDControllerConfigurationData.ResettingTime_Tn=Reglerparameter Tn
+PlcObjects.PIDControllerConfigurationData.DelayTime_Tv=Reglerparameter Tv
+PlcObjects.PIDControllerConfigurationData.CycleTime=Zykluszeit
+PlcObjects.PIDControllerConfigurationData.PIDControllerTypeOption=Auswahl PID Regler-Optionen
+Invalid=Invalide
+WordInputScaled_PWMOutput=Skaliertes Eingangswort/ PWM Ausgang
+WordInputScaled_WordOutputScaled=Skaliertes Eingangswort/ Skaliertes Ausgangswort
+PlcObjects.PIDControllerConfigurationData.PeriodTimePWM=PWM Periode in s
+PlcObjects.PIDControllerConfigurationData.ConfigurationDataAnalogInput=Analog Eingang
+PlcObjects.PIDControllerConfigurationData.AnalogOutput=Analog Ausgang
+PlcObjects.PIDControllerConfigurationData.IndexOfAddressOfProcessImageOutputByteField=Index der Adresse
+PlcObjects.PIDControllerConfigurationData.OffsetActuatorValueProcessImage=Offset Rohwert
+PlcObjects.PIDControllerConfigurationData.FactorOfAnalogOutputValue=Faktor: Prozesswert > Rohwert
+PlcObjects.PIDControllerConfigurationData.DigitalOutputActuatorPositive=Digital Ausgang Positiver Aktor
+PlcObjects.PIDControllerConfigurationData.DigitalOutputActuatorNegative=Digital Ausgang Negativer Aktor
+PlcObjects.DigitalInputConfigurationData.IndexOfOutputByteField=Index der Adresse
+
+[PlcObjects.HydraulicAggregateConfigurationData]
+PlcObjects.HydraulicAggregateConfigurationData.FunctionNumberOfSafetyCircuit=Funktionsnummer Sicherheitskreis
+PlcObjects.HydraulicAggregateConfigurationData.PressureThreshold=Solldruck
+PlcObjects.HydraulicAggregateConfigurationData.MaxHydraulicRuntime=max. Hydrauliklaufzeit
+PlcObjects.HydraulicAggregateConfigurationData.HydraulicAggregateTypeOption=Auswahl Drucksensor
+PlcObjects.HydraulicAggregateConfigurationData.ConfigurationDataDigitalInputPressureReached=Digital Druck-Erreicht Sensor 
+PlcObjects.HydraulicAggregateConfigurationData.ConfigurationDataAnalogInputPressureValue=Analoger Drucksensor
+PlcObjects.HydraulicAggregateConfigurationData.ConfigurationDataDigitalOutputHydraulicPump=Digital Ausgang Pumpe
+PlcObjects.HydraulicAggregateConfigurationData.ConfigurationDataDigitalOutputPressureBuildUp=Digital Ausgang Druckaufbau
+PlcObjects.HydraulicAggregateConfigurationData.ConfigurationDataDigitalOutputPressureRelease=Digital Ausgang Druckfreigabe
+
+EHydraulicAggregateTypeOption.Invalid=Invalider Sensortyp
+EHydraulicAggregateTypeOption.AnalogPressureReached=Analog
+EHydraulicAggregateTypeOption.DigitalPressureReached=Digital
+
+[PlcObjects.AnalogInputConfigurationData]
+PlcObjects.AnalogInputConfigurationData.AnalogValueOption=Analog-Wert-Option
+PlcObjects.AnalogInputConfigurationData.IndexOfAdressOfProcessImageByteField=Index der Adresse
+PlcObjects.AnalogInputConfigurationData.MaxProcessValue=Maximaler Prozesswert
+PlcObjects.AnalogInputConfigurationData.MinProcessValue=Minimaler Prozesswert
+PlcObjects.AnalogInputConfigurationData.NullOffset=Null-Offset
+PlcObjects.AnalogInputConfigurationData.ScalerDeviceType=Typ
+PlcObjects.AnalogInputConfigurationData.UseRawValueByteSwap=Byte-Swap
+PlcObjects.AnalogInputConfigurationData.ValueFactor=Faktor: Rohwert > Prozesswert
+PlcObjects.SFT.AnalogInputConfigurationData.Options=Optionen
+
+PlcObjects.SFT.AnalogInputConfigurationData.Options.CyclicErrorMonitoring=Zyklische Fehlerüberwachung
+PlcObjects.SFT.AnalogInputConfigurationData.Options.AlarmLowLimit=Alarm bei unterer Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.Options.WarningLowLimit=Warnung bei unterer Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.Options.InfoLowLimit=Info bei unterer Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.Options.AlarmHighLimit=Alarm bei oberer Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.Options.WarningHighLimit=Warnung bei oberer Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.Options.InfoHighLimit=Info bei oberer Grenze
+
+PlcObjects.SFT.AnalogInputConfigurationData.TimeToDebounce=Entprellzeit
+PlcObjects.SFT.AnalogInputConfigurationData.LowLimit=Untere Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.HighLimit=Obere Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.CalibrationValue=Kalibrierwert
+
+[PlcObjects.AnalogValueConfigurationData]
+PlcObjects.AnalogValueConfigurationData.ActuatorEffectiveLoad=Analog Eingang - Aktuelle Last
+PlcObjects.AnalogValueConfigurationData.ActuatorSetpoint=Analog Ausgang - Aktor Sollwert
+PlcObjects.AnalogValueConfigurationData.AdressIndex=Index der Adresse
+PlcObjects.AnalogValueConfigurationData.IndexOFInputByteField=Index Adresse des Eingangs
+PlcObjects.AnalogValueConfigurationData.IndexOFOutputByteField=Index Adresse des Ausgangs
+PlcObjects.AnalogValueConfigurationData.TypeOfValue=Art des Sensors
+PlcObjects.AnalogValueConfigurationData.ValueFactor=Faktor
+
+[PlcObjects.AnalogValueOptionEnum]
+PlcObjects.AnalogValueOptionEnum.Festo=Festo
+PlcObjects.AnalogValueOptionEnum.PepperlFuchs=PepperlFuchs
+PlcObjects.AnalogValueOptionEnum.ScalerWeidmueller=ScalerWeidmueller
+PlcObjects.AnalogValueOptionEnum.standard=Standard
+PlcObjects.AnalogValueOptionEnum.temperatur=Temperatur
+
+
+[PlcObjects.CoordinatesClientConfigurationData]
+PlcObjects.CoordinatesClientConfigurationData.ClientID=ID des Client
+PlcObjects.CoordinatesClientConfigurationData.FunctionNumberOfPositionList:=Funktionsnummer von externer Koordinaten-Liste
+PlcObjects.CoordinatesClientConfigurationData.MaxArraySizeOfCoordinatesList=Maximale Anzahl von Koordinaten-Listen
+PlcObjects.CoordinatesClientConfigurationData.MaxNumOfExternalPositionList=Maximale Anzahl von externen Koordinaten-Listen
+PlcObjects.CoordinatesClientConfigurationData.NumberOfRetries=Anzahl der wiederholungsversuche
+PlcObjects.CoordinatesClientConfigurationData.origin=Ursprung
+PlcObjects.CoordinatesClientConfigurationData.Timeout=Timeout
+PlcObjects.CoordinatesClientConfigurationData.Topic=Topic
+PlcObjects.CoordinatesClientConfigurationData.units_angle=Einheit des Winkels
+PlcObjects.CoordinatesClientConfigurationData.units_length=Einheit der Länge
+
+
+
+PlcObjects.ZimmerGripperConfigurationData.IndexOfAdressOfProcessImageInputByteField=Startindex der Eingänge
+PlcObjects.ZimmerGripperConfigurationData.IndexOfAdressOfProcessImageOutputByteField=Startindex der Ausgänge
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption=Greiferbetriebsart
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.DirectMode=DirectMode
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.ForceModeOuterGripperNotFlexible=ForceModeOuterGripperNotFlexible
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.ForceModeOuterGripperFlexible=ForceModeOuterGripperFlexible
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.ForceModeInnerGripperNotFlexible=ForceModeInnerGripperNotFlexible
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.ForceModeInnerGripperFlexible=ForceModeInnerGripperFlexible
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.PrePositionForceModeOuterGripperNotMoveUp=PrePositionForceModeOuterGripperNotMoveUp
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.PrePositionForceModeOuterGripperMoveUp=PrePositionForceModeOuterGripperMoveUp
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.PrePositionForceModeInnerGripperNotMoveUp=PrePositionForceModeInnerGripperNotMoveUp
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperModeOption.PrePositionForceModeInnerGripperMoveUp=PrePositionForceModeInnerGripperMoveUp
+PlcObjects.ZimmerGripperConfigurationData.ZimmerGripperTypeOption=Greifertyp
+PlcObjects.DigitalInputConfigurationData.IoLinkCommunicationConnected=Eingang: Link Verbunden
+PlcObjects.DigitalInputConfigurationData.IoLinkDataValid=Eingang: Link Daten gültig
+PlcObjects.DigitalInputConfigurationData.IoLinkError=Eingang: Link Fehler
+PlcObjects.DigitalInputConfigurationData.IoLinkEnable=Ausgang: Link Aktiv
+PlcObjects.SequenceListMetaData.Start=Start
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpWhenDone=FunctionNumberOfCleanUpWhenDone
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpWhenError=FunctionNumberOfCleanUpWhenError
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpWhenAborted=FunctionNumberOfCleanUpWhenAborted
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpAfterPausing=FunctionNumberOfCleanUpAfterPausing
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpBeforeContinue=FunctionNumberOfCleanUpBeforeContinue
+PlcObjects.SequenceListMetaData.Control=Control
+PlcObjects.SequenceListMetaData.Control.Version=Version
+PlcObjects.SequenceListMetaData.Control.Branch=Branch
+PlcObjects.SequenceListMetaData.Control.Branch.Branch=Branch-Branch
+PlcObjects.SequenceListMetaData.Control.LinkVersionControl=Link Version Control
+PlcObjects.IonizationConfigurationData.DelayTimeNoInputIonizationNozzleDirty=Verzögerungszeit kein Eingang vorhanden
+PlcObjects.IonizationConfigurationData.DelayTimeNoInputSwitchedOnPresent=Verzögerungszeit kein Eingang vorhanden
+PlcObjects.IonizationConfigurationData.DigitalInputIonizationNozzleDirty=Digitaler Eingang Ionisierungsdüse verschmutzt
+PlcObjects.IonizationConfigurationData.DigitalInputSwitchedOn=Digitaler Eingang Ionisierung eingeschaltet
+PlcObjects.IonizationConfigurationData.DigitalOutputAdditionalAirForIonizationNozzle=Digitaler Ausgang Zuluft Ionisierungsdüse
+PlcObjects.IonizationConfigurationData.DigitalOutputSwitchOn=Digitaler Ausgang Ionisierung Ein
+PlcObjects.IonizationConfigurationData.Options=Optionen Ionisierung
+PlcObjects.IonizationConfigurationData.Options.InputSensorIonizationNozzleDirtyExist=DI Ionisierungsdüse verschmutzt vorhanden
+PlcObjects.IonizationConfigurationData.Options.InputSensorSwitchedOnExist=DI Ionisierung eingeschaltet vorhanden
+PlcObjects.IonizationConfigurationData.Options.OutputAdditionaAirForIonizationNozzleExist=DO Zuluft Ionisierungsdüse vorhanden
+PlcObjects.IonizationConfigurationData.Options.OutputSwitchOnExist=DO Ionisierung Ein vorhanden
+PlcObjects.VacuumCleanerConfigurationData.DelayTimeNoInputFaultPresent=Verzögerungszeit kein Eingang vorhanden: Fehler
+PlcObjects.VacuumCleanerConfigurationData.DelayTimeNoInputFullPresent=Verzögerungszeit kein Eingang vorhanden: Voll
+PlcObjects.VacuumCleanerConfigurationData.DelayTimeNoInputSwitchedOnPresent=Verzögerungszeit kein Eingang vorhanden: Aktiv
+PlcObjects.VacuumCleanerConfigurationData.DelayTimeNoInputWarningPresent=Verzögerungszeit kein Eingang vorhanden: Warnung
+PlcObjects.VacuumCleanerConfigurationData.ExhaustFlowMonitoring=Saugleistungsüberwachung
+PlcObjects.VacuumCleanerConfigurationData.ExhaustFlowMonitoringDebounceTime=Saugleistungsüberwachung Verzögerungszeit
+PlcObjects.VacuumCleanerConfigurationData.LeadTime=Einschaltverzögerung
+PlcObjects.VacuumCleanerConfigurationData.Options=Optionen Absaugung
+PlcObjects.VacuumCleanerConfigurationData.StoppingTime=Ausschaltverzögerung
+PlcObjects.VacuumCleanerConfigurationData.VacuumCleanerType=Absaugertyp
+PlcObjects.VacuumCleanerConfigurationData.VacuumCleanerType.WithIOLinkPressureSensor=Absaugung mit IOLink Drucksensor
+PlcObjects.VacuumCleanerConfigurationData.DigitalInputaFull=Digitaler Eingang Voll
+PlcObjects.VacuumCleanerConfigurationData.DigitalInputFault=Digitaler Eingang Störung
+PlcObjects.VacuumCleanerConfigurationData.DigitalInputSwitchedOn=Digitaler Eingang Aktiv
+PlcObjects.VacuumCleanerConfigurationData.DigitalInputWarning=Digitaler Eingang Warnung
+PlcObjects.PCBCleanerConfigurationData.AxisGroupIdMask=
+PlcObjects.PCBCleanerConfigurationData.CompressedAirMonitoring=Druckluft Überwachung
+PlcObjects.PCBCleanerConfigurationData.CompressedAirMonitoringLowerLimit=Druckluft unterer Grenzwert
+PlcObjects.PCBCleanerConfigurationData.CompressedAirMonitoringTimeToDebounce=Druckluft Überwachung Verzögerungszeit
+PlcObjects.PCBCleanerConfigurationData.CompressedAirMonitoringUpperLimit=Druckluft oberer Grenzwert
+PlcObjects.PCBCleanerConfigurationData.DangerZonePositionIDs=
+PlcObjects.PCBCleanerConfigurationData.DigitalOutputAirSupplyCleaner1=Digitaler Ausgang Reiniger 1
+PlcObjects.PCBCleanerConfigurationData.DigitalOutputAirSupplyCleaner2=Digitaler Ausgang Reiniger 2
+PlcObjects.PCBCleanerConfigurationData.DigitalOutputAirSupplyCleaner3=Digitaler Ausgang Reiniger 3
+PlcObjects.PCBCleanerConfigurationData.FunctionNoCoordinatesClient=
+PlcObjects.PCBCleanerConfigurationData.LeadTime=Einschaltverzögerung
+PlcObjects.PCBCleanerConfigurationData.Options=Optionen Reinigungsbox
+PlcObjects.PCBCleanerConfigurationData.Options.InputSensorMonitoringCleaner1Exist=DI Überwachung Reiniger 1 vorhanden
+PlcObjects.PCBCleanerConfigurationData.Options.InputSensorMonitoringCleaner2Exist=DI Überwachung Reiniger 2 vorhanden
+PlcObjects.PCBCleanerConfigurationData.Options.InputSensorMonitoringCleaner3Exist=DI Überwachung Reiniger 3 vorhanden
+PlcObjects.PCBCleanerConfigurationData.Options.InputSensorMonitoringCompressedAirValueExist=AI Überwachung Druckluft vorhanden
+PlcObjects.PCBCleanerConfigurationData.Options.OutputAirSupplyCleaner1Exist=DO Reiniger 1 vorhanden
+PlcObjects.PCBCleanerConfigurationData.Options.OutputAirSupplyCleaner2Exist=DO Reiniger 2 vorhanden
+PlcObjects.PCBCleanerConfigurationData.Options.OutputAirSupplyCleaner3Exist=DO Reiniger 3 vorhanden
+PlcObjects.PCBCleanerConfigurationData.ReferencePositionID=
+PlcObjects.PCBCleanerConfigurationData.ReferencePositionID=
+PlcObjects.PCBCleanerConfigurationData.SinkInCount=
+PlcObjects.PCBCleanerConfigurationData.ThresholdTimeInputMonitoringCleaner1Present=Überwachungszeit Reiniger 1
+PlcObjects.PCBCleanerConfigurationData.ThresholdTimeInputMonitoringCleaner2Present=Überwachungszeit Reiniger 2
+PlcObjects.PCBCleanerConfigurationData.ThresholdTimeInputMonitoringCleaner3Present=Überwachungszeit Reiniger 3
+PlcObjects.PCBCleanerConfigurationData.DigitalInputMonitoringCleaner1=Digitaler Eingang Überwachung Reiniger 1
+PlcObjects.PCBCleanerConfigurationData.DigitalInputMonitoringCleaner2=Digitaler Eingang Überwachung Reiniger 2
+PlcObjects.PCBCleanerConfigurationData.DigitalInputMonitoringCleaner3=Digitaler Eingang Überwachung Reiniger 3
+PlcObjects.PositionID=
+
+[PlcObjects.ScalerConfigurationData]
+PlcObjects.ScalerConfigurationData.MaxProcessValue=Maximalwert
+PlcObjects.ScalerConfigurationData.MinProcessValue=Minimalwert
+PlcObjects.ScalerConfigurationData.Options=Optionen
+PlcObjects.ScalerConfigurationData.Options.UseRawValueByteSwap=Byte-Swap
+PlcObjects.ScalerConfigurationData.ScalerDeviceType=Gerätskalierung
+
+
+[PlcObjects.AnalogInputConfigurationData]
+PlcObjects.AnalogInputConfigurationData.AnalogValueOption=Analog-Wert-Option
+PlcObjects.AnalogInputConfigurationData.IndexOfAdressOfProcessImageByteField=Index der Adresse
+PlcObjects.AnalogInputConfigurationData.MaxProcessValue=Maximaler Prozesswert
+PlcObjects.AnalogInputConfigurationData.MinProcessValue=Minimaler Prozesswert
+PlcObjects.AnalogInputConfigurationData.NullOffset=Null-Offset
+PlcObjects.AnalogInputConfigurationData.ScalerDeviceType=Typ
+PlcObjects.AnalogInputConfigurationData.UseRawValueByteSwap=Byte-Swap
+PlcObjects.AnalogInputConfigurationData.ValueFactor=Faktor: Rohwert > Prozesswert
+PlcObjects.AnalogValueConfigurationData.ActuatorEffectiveLoad=
+PlcObjects.AnalogValueConfigurationData.ActuatorSetpoint=
+PlcObjects.AnalogValueConfigurationData.IndexOFInputByteField=
+PlcObjects.AnalogValueOptionEnum.ScalerWeidmueller=Weidmüller Skalierung
+PlcObjects.AnalogValueOptionEnum.standard=Standard
+PlcObjects.AnalogValueOptionEnum.temperatur=Temperatur
+PlcObjects.AnalogValueOptionEnum.Festo=Festo
+PlcObjects.AnalogValueOptionEnum.PepperlFuchs=Pepperl Fuchs
+PlcObjects.AnalogValueOptionEnum.IFM=IFM
+
+PlcObjects.SFT.AnalogInputConfigurationData.Options=Optionen
+PlcObjects.SFT.AnalogInputConfigurationData.TimeToDebounce=Entprellzeit
+PlcObjects.SFT.AnalogInputConfigurationData.LowLimit=Untere Grenze
+PlcObjects.SFT.AnalogInputConfigurationData.HighLimit=Obere Grenze
+
+[PlcObjects.AnalogOutputConfigurationData]
+PlcObjects.AnalogOutputConfigurationData.IndexOfAdressOfProcessImageByteField=Index der Adresse
+PlcObjects.AnalogOutputConfigurationData.AnalogOutputOption=Analog-Wert-Option
+PlcObjects.AnalogOutputConfigurationData.ValueFactor=Faktor
+PlcObjects.ScalerConfigurationData.UseRawValueByteSwap=Byte-Swap
+
+[PlcObjects.AnalogValueConfigurationData]
+PlcObjects.AnalogValueConfigurationData.ActuatorEffectiveLoad=Analog Eingang - Aktuelle Last
+PlcObjects.AnalogValueConfigurationData.ActuatorSetpoint=Analog Ausgang - Aktor Sollwert
+PlcObjects.AnalogValueConfigurationData.AdressIndex=Index der Adresse
+PlcObjects.AnalogValueConfigurationData.IndexOFInputByteField=Index Adresse des Eingangs
+PlcObjects.AnalogValueConfigurationData.IndexOFOutputByteField=Index Adresse des Ausgangs
+PlcObjects.AnalogValueConfigurationData.TypeOfValue=Art des Sensors
+PlcObjects.AnalogValueConfigurationData.ValueFactor=Faktor
+
+[PlcObjects.AnalogValueOptionEnum]
+PlcObjects.AnalogValueOptionEnum.Festo=Festo
+PlcObjects.AnalogValueOptionEnum.PepperlFuchs=PepperlFuchs
+PlcObjects.AnalogValueOptionEnum.ScalerWeidmueller=ScalerWeidmueller
+PlcObjects.AnalogValueOptionEnum.standard=Standard
+PlcObjects.AnalogValueOptionEnum.temperatur=Temperatur / Standard-Wortweise
+PlcObjects.AnalogValueOptionEnum.IFM=IFM-Sensor
+PlcObjects.AnalogValueOptionEnum.DiSoricLAT52=DiSoricLAT52
+
+[AnalogOutputOptionEnum]
+PlcObjects.AnalogOutputOptionEnum.Festo=Festo
+PlcObjects.AnalogOutputOptionEnum.PepperlFuchs=PepperlFuchs
+PlcObjects.AnalogOutputOptionEnum.ScalerWeidmueller=ScalerWeidmueller
+PlcObjects.AnalogOutputOptionEnum.Standard=Standard
+PlcObjects.AnalogOutputOptionEnum.temperatur=Temperatur / Standard-Wortweise
+PlcObjects.AnalogOutputOptionEnum.IFM=IFM-Sensor
+PlcObjects.AnalogOutputOptionEnum.DiSoricLAT52=DiSoricLAT52
+
+
+[PlcObjects.SafetyCircuitConfigurationData]
+PlcObjects.SafetyCircuitConfigurationData.DigitalInputModuleStandstillVelocityMonitoringOk=DI: Modul Stillstands-/Geschwindigkeitsüberwachung ok
+PlcObjects.SafetyCircuitConfigurationData.DigitalInputSafetyVelocityExceeded=DI: Sichere Geschwindigkeit überschritten
+PlcObjects.SafetyCircuitConfigurationData.DigitalInputStandstillMonitoringOk=DI: Stillstandsüberwachung ok
+PlcObjects.SafetyCircuitConfigurationData.DigitalInputVelocityMonitoringOk=DI: Geschwindigkeitsüberwachung ok
+PlcObjects.SafetyCircuitConfigurationData.DigitalOutputAutomaticModeActive=DO: Automatik aktiv
+PlcObjects.SafetyCircuitConfigurationData.DigitalOutputAxesInStandStill=DO: Achsenstillstand
+PlcObjects.SafetyCircuitConfigurationData.DigitalOutputWatchdog=DO: Watchdog
+PlcObjects.SafetyCircuitConfigurationData.EmergencyDetectedDelayTime=Verzögerungszeit NotAus
+PlcObjects.SafetyCircuitConfigurationData.Options=Optionen
+PlcObjects.SafetyCircuitConfigurationData.Options.DigitalOutputWatchDogExist=DO: Watchdog existiert
+PlcObjects.SafetyCircuitConfigurationData.Options.DigitalInputStandstillMonitoringOkExist=DI: Stillstandsüberwachung existiert
+PlcObjects.SafetyCircuitConfigurationData.Options.DigitalOutputAutomaticModeActiveExist=DO: Automatik aktiv existiert
+PlcObjects.SafetyCircuitConfigurationData.Options.DigitalInputModuleStandstillVelocityMonitoringOkExist=DI: Modul Stillstands-/Geschwindigkeitsüberwachung existiert
+PlcObjects.SafetyCircuitConfigurationData.Options.DigitalOutputAxesInStandStillExist=DO: Achsenstillstand existiert
+PlcObjects.SafetyCircuitConfigurationData.Options.DigitalInputVelocityMonitoringOkExist=DI: Geschwindigkeitsüberwachung existiert
+PlcObjects.SafetyCircuitConfigurationData.Options.DigitalInputSafetyVelocityExceededExist=DI: Sichere Geschwindigkeit überschritten existiert
+PlcObjects.SafetyCircuitConfigurationData.SafetyCircuitTypeOption=Sicherheitskreis Optionen
+PlcObjects.SafetyCircuitConfigurationData.SafetyCircuitTypeOption.ComponentStillSwitchedOnIfUnreadyInterlock=Komponente ohne Verriegelung aktiv
+PlcObjects.SafetyCircuitConfigurationData.SafetyCircuitTypeOption.SwitchOffAllComponentIfUnreadyInterlock=Alle Komponenten ausschalten, wenn Verriegelung nicht bereit
+PlcObjects.SafetyCircuitConfigurationData.FunctionNumberOfRequestDoorOpenFromSafetyPlc=Funktionsnummer - Türfreigabeanforderung Sicherheit-SPS
+PlcObjects.SafetyCircuitConfigurationData.FunctionNumberOfSafePositionMachineInterface=Funktionsnummer - Sichere-Positions-Maschinen-Interfaces
+PlcObjects.SafetyCircuitConfigurationData.AutomaticLockingDelay=Automatische Verriegelungsverzögerung
+
+
+[PlcObjects.SafetyCircuit.SubLists]
+PlcObjects.SafetyCircuit.SubLists.DigitalInputsEmergencyDetected=DI: NOT-AUS erkannt
+PlcObjects.SafetyCircuit.SubLists.DigitalInputsInterlockLocked=DI: Schutztüre sind\nverriegelt
+PlcObjects.SafetyCircuit.SubLists.DigitalInputsReadyForInterlock=DI: Schutztüre sind\ngeschlossen
+PlcObjects.SafetyCircuit.SubLists.DigitalInputsServiceModeActive=DI: Schlüsselschalter\naktiv
+PlcObjects.SafetyCircuit.SubLists.DigitalInputsUnlockEnable=DI: Schutztüre bereit\nzum entriegeln
+PlcObjects.SafetyCircuit.SubLists.DigitalInputsEmergencyAcknowledgeButton=DI: NOT-AUS-\nQuittier-Taster
+PlcObjects.SafetyCircuit.SubLists.DigitalInputsInterlockReleaseButton=DI: Schutztür-\nFreigabe-Taster
+PlcObjects.SafetyCircuit.SubLists.DigitalOutputsInterlock=DO: NOT-AUS-\nQuittier-Lampen
+PlcObjects.SafetyCircuit.SubLists.DigitalOutputsInterlockReleaseSignal=DO: Schutztür-\nFreigabe-Lampen
+PlcObjects.SafetyCircuit.SubLists.DigitalOutputsInterlockUnlock=DO: Sicherheitstüre entriegeln\n(mechanischer Bolzen)
+
+[PlcObjects.ProductPoolConfigurationData]
+PlcObjects.ProductPoolConfigurationData.CountOfProducts=Anzahl der Produkte
+PlcObjects.ProductPoolConfigurationData.CountOfSubProducts=Anzahl der Unter-Produkte
+PlcObjects.ProductPoolConfigurationData.ProductType=Produkt-Typ
+
+[PlcObjects.TraceConfigurationData]
+PlcObjects.TraceConfigurationData.TraceTriggerMode=Trace-Trigger-Modus
+PlcObjects.TraceConfigurationData.TraceTriggerMode.noTriggerMode=kein Trigger Modus
+PlcObjects.TraceConfigurationData.TraceTriggerMode.ContinousMode=Kontinuierlicher Modus
+PlcObjects.TraceConfigurationData.TraceTriggerMode.TriggeredMode=Triggered Modus
+PlcObjects.TraceConfigurationData.FunctionNumberOfTrigger=Funktionnummer des Triggers
+PlcObjects.TraceConfigurationData.FunctionNoOfSequenceFunctionToTrace=Funktionsnummer der zu tracenden Sequenzfunktion
+PlcObjects.TraceConfigurationData.TriggerComparingBoolValueOption=Trigger Option: Vergleich von Boolwerten
+PlcObjects.TraceConfigurationData.TriggerComparingBoolValueOption.LowValue=Wert ist "0"
+PlcObjects.TraceConfigurationData.TriggerComparingBoolValueOption.HighValue=Wert ist "1"
+PlcObjects.TraceConfigurationData.TriggerComparingBoolValueOption.RisedEdge=Positive Flanke
+PlcObjects.TraceConfigurationData.TriggerComparingBoolValueOption.RisedEdgeOnce=Positive Flanke (einmal)
+PlcObjects.TraceConfigurationData.TriggerComparingBoolValueOption.FalledEdge=Negative Flanke
+PlcObjects.TraceConfigurationData.TriggerComparingBoolValueOption.FalledEdgeOnce=Negative Flanke (einmal)
+PlcObjects.TraceConfigurationData.TriggerComparingFloatValueOption=Trigger Option: Vergleich von float-Werten
+PlcObjects.TraceConfigurationData.TriggerComparingFloatValueOption.GreaterThan=Größer als (>)
+PlcObjects.TraceConfigurationData.TriggerComparingFloatValueOption.GreaterThanOnce=Größer gleich (>=)
+PlcObjects.TraceConfigurationData.TriggerComparingFloatValueOption.LessThan=Kleiner als (<)
+PlcObjects.TraceConfigurationData.TriggerComparingFloatValueOption.LessThanOnce=Kleiner gleich (<=)
+PlcObjects.TraceConfigurationData.TriggerComparingFloatValueOption.WithinArea=Im Bereich (==)
+PlcObjects.TraceConfigurationData.TriggerComparingFloatValueOption.OutsideArea=Außerhalb Bereich (<>)
+PlcObjects.TraceConfigurationData.TriggerValueNormally=Triggerwert: Normalerweise
+PlcObjects.TraceConfigurationData.TriggerValueUpperLimit=Triggerwert: Obergrenze
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrace=Achsen: Wert für Trace
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrace.Position=Position
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrace.Velocity=Geschwindigkeit
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrace.Current=Strom
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrace=Sicherheitsschaltkreis: Wert für Trace
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrace.EmergencyDetected=Not-Aus erkannt
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrace.EmergencyDetectedDelayed=Not-Aus (Verzögert) erkannt
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrace.SafetyDoorIsClosed=Sicherheitstür ist geschlossen
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrace.ServiceModeDetected=Service-Modus erkannt
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrace.SafetyVelocityExceeded=Sichere Geschwindigkeit Überschritten
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrigger=Achsen: Wert für Trigger
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrigger.Position=Position
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrigger.Velocity=Geschwindigkeit
+PlcObjects.TraceConfigurationData.AxisTraceValueForTrigger.Current=Strom
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrigger=Sicherheitskreis: Wert für Trigger
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrigger.EmergencyDetected=Not-Aus erkannt
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrigger.EmergencyDetectedDelayed=Not-Aus (Verzögert) erkannt
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrigger.SafetyDoorIsClosed=Sicherheitstür ist geschlossen
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrigger.ServiceModeDetected=Service-Modus erkannt
+PlcObjects.TraceConfigurationData.SafetyCircuitValueForTrigger.SafetyVelocityExceeded=Sichere Geschwindigkeit Überschritten
+PlcObjects.TraceConfigurationData.SizeOfBufferInDword=Größe des Puffers in Dword
+PlcObjects.TraceConfigurationData.MqttTopic=Mqtt-Topic
+PlcObjects.TraceConfigurationData.TimeOutPublisher=TimeOut-Publisher
+
+[PlcObjects.CoordinatesSelectorConfigurationData]
+PlcObjects.CoordinatesSelectorConfigurationData.FunctionNumberOfCoordinatesClient=Funktionsnummer des Koordinaten-Klients
+PlcObjects.CoordinatesSelectorConfigurationData.NodeIdBegin=Knoten-ID-Anfang
+PlcObjects.CoordinatesSelectorConfigurationData.NodeIdEnd=Knoten-ID-Ende
+
+[PlcObjects.HmiAlarmTextConfigurationData]
+PlcObjects.HmiAlarmTextConfigurationData.LogLevel=Log-Level
+PlcObjects.HmiAlarmTextConfigurationData.LogLevel.Verbose=Veraltet
+PlcObjects.HmiAlarmTextConfigurationData.LogLevel.Debug=Debug
+PlcObjects.HmiAlarmTextConfigurationData.LogLevel.Information=Information
+PlcObjects.HmiAlarmTextConfigurationData.LogLevel.Warning=Warnung
+PlcObjects.HmiAlarmTextConfigurationData.LogLevel.Error=Fehler
+PlcObjects.HmiAlarmTextConfigurationData.LogLevel.Fatal=Fatal
+
+PlcObjects.HmiDialog.AnswerJump=Antwort Sprung
+PlcObjects.HmiDialog.AnswerJumpType=Anwort Sprung Typ
+PlcObjects.HmiDialog.AnswerNoJump=Antwort Kein Sprung
+PlcObjects.HmiDialog.FirstTextNumber=PLC-Text Basis Nummer
+PlcObjects.HmiDialog.TimeOutResponse=Timeout für Antwort
+
+[PlcObjects.ValveConfigurationData]
+PlcObjects.ValveConfigurationData.ActivateErrorMonitoring=Fehlerüberwachung aktivieren
+PlcObjects.ValveConfigurationData.BasePosition.DigitalInput=Grundstellung Eingang
+PlcObjects.ValveConfigurationData.BasePosition.DigitalOutput=Grundstellung Ausgang
+PlcObjects.ValveConfigurationData.BasePosition.Times=Grundstellung Zeiten
+PlcObjects.ValveConfigurationData.DelayTimeNoInputPresent=Verzögerungszeit kein Eingang
+PlcObjects.ValveConfigurationData.EnableSetValveBase=Freigabe Ventil Grundstellung
+PlcObjects.ValveConfigurationData.EnableSetValveWork=Freigabe Ventil Arbeitsstellung
+PlcObjects.ValveConfigurationData.InputSensorBaseExist=Eingangssensor Grundstellung vorhanden
+PlcObjects.ValveConfigurationData.InputSensorWorkExist=Eingangssensor Arbeitsstellung vorhanden
+PlcObjects.ValveConfigurationData.MiddlePositionAsWorkPosition=Mittelstellung als Arbeitsstellung
+PlcObjects.ValveConfigurationData.OperatingModeChangePressureFreeOption=Operationsmodus Druckfrei
+PlcObjects.ValveConfigurationData.Options=Optionen
+PlcObjects.ValveConfigurationData.PulsedTimeActive=Pulsen aktiv
+PlcObjects.ValveConfigurationData.WorkPosition.DigitalInput=Arbeitsstellung Eingang
+PlcObjects.ValveConfigurationData.WorkPosition.DigitalOutput=Arbeitsstellung Ausgang
+PlcObjects.ValveConfigurationData.WorkPosition.Times=Arbeitsstellung Zeiten
+
+PlcObjects.ConveyorBeltConfigurationDataForDirection.InputSensor=Eingangssensor-Option
+PlcObjects.ConveyorBeltConfigurationDataForDirection.InputSensor.InputSensorStopperExist=DI Stopper-Sensor vorhanden
+PlcObjects.ConveyorBeltConfigurationDataForDirection.InputSensor.InputSensorPreStopperExist=DI Pre-Stopper-Sensor vorhanden\nUseCase: langsames Fahren auf Stopper-Sensor
+PlcObjects.ConveyorBeltConfigurationDataForDirection.InputSensor.InputSensorStopperBlocksDepositIfTrue=Stopper-Sensor blockiert das Ablegen wenn "1"\nUseCase: Handling soll nicht Ablegen, wenn "1"
+PlcObjects.ConveyorBeltConfigurationDataForDirection.InputSensor.InputSensorStopperBlocksDepositIfFalse=Stopper-Sensor blockiert das Ablegen wenn "0"\nUseCase: Handling soll nicht Ablegen, wenn "0"
+PlcObjects.ConveyorBeltConfigurationDataForDirection.DelayTimeNoInputStopperPresentInlet=Verzögerungszeit Einlauf,wenn kein Stopper vorhanden
+PlcObjects.ConveyorBeltConfigurationDataForDirection.DelayTimeNoInputStopperPresentOutlet=Verzögerungszeit Auslauf,wenn kein Stopper vorhanden
+PlcObjects.ConveyorBeltConfigurationDataForDirection.Stopper=Stopper
+PlcObjects.ConveyorBeltConfigurationDataForDirection.DelayTimeNoInputPreStopperPresent=Verzögerungszeit,wenn kein Vorstopper vorhanden
+PlcObjects.ConveyorBeltConfigurationDataForDirection.PreStopper=Vorstopper
+PlcObjects.ConveyorBeltConfigurationDataForDirection.EmptyRunningTime=Wartezeit für den Leerlauf
+PlcObjects.ConveyorBeltConfigurationDataForDirection.FollowUpTimeAfterOutlet=Nachlaufzeit nach Auslauf
+PlcObjects.ConveyorBeltConfigurationDataForDirection.FollowUpTimeBeforeRunSlow=Nachlaufzeit vor langsamer Fahrt
+PlcObjects.ConveyorBeltConfigurationDataForDirection.ClockingTimeForInletClocking=Taktungszeit für Einlauftaktung
+
+PlcObjects.ConveyorBeltConfigurationData.FunctionNumberOfFrequencyConverter=Funktionsnummer des Frequenzumrichters
+PlcObjects.ConveyorBeltConfigurationData.ActuatorInverseDirectionOption=Aktor: Drehrichtung umdrehen
+PlcObjects.ConveyorBeltConfigurationData.VelocitySlowFactor=Geschwindigkeit langsamer Faktor
+PlcObjects.ConveyorBeltConfigurationData.Lane=Spur
+PlcObjects.ConveyorBeltConfigurationData.Segment=Segment
+PlcObjects.ConveyorBeltConfigurationData.SmemaInputFunctionnumber=SMEMA Eingang Funktionsnummer
+PlcObjects.ConveyorBeltConfigurationData.SmemaOutputFunctionnumber=SMEMA Ausgang Funktionsnummer
+PlcObjects.ConveyorBeltConfigurationData.NormallyDirection=Normale Arbeitsrichtung
+PlcObjects.ConveyorBeltConfigurationData.UsedInView=Anzeige auf Handseite
+
+
+[PlcObjects.FrequencyConverterConfigurationData]
+PlcObjects.FrequencyConverterConfigurationData.Parameter=Parameter
+PlcObjects.FrequencyConverterConfigurationData.FunctionNumberOfSafetyCircuit=Funktionsnummer Sicherheitskreis
+PlcObjects.FrequencyConverterConfigurationData.InputOptions=Eingangsoptionen
+PlcObjects.FrequencyConverterConfigurationData.InputOptions.DIActuatorIsReadyExist=DI: Aktor ist bereit existiert
+PlcObjects.FrequencyConverterConfigurationData.InputOptions.DIVelocityReachedExist=DI: Zielgeschwindigkeit erreicht existiert
+PlcObjects.FrequencyConverterConfigurationData.InputOptions.DIVelocityIsZeroExist=DI: Geschwindigkeit ist 0 existiert
+PlcObjects.FrequencyConverterConfigurationData.InputOptions.DIActuatorIsFaultedExist=DI: Aktor hat Fehler existiert
+PlcObjects.FrequencyConverterConfigurationData.InputOptions.AIEffectiveLoadExist=AI: Aktuelle Last existiert
+PlcObjects.FrequencyConverterConfigurationData.InputOptions.AIActualValueExist=AI: Ist-Geschwindigkeit existiert
+PlcObjects.FrequencyConverterConfigurationData.OutputOptions=Ausangsoptionen
+PlcObjects.FrequencyConverterConfigurationData.OutputOptions.DORunFastExist=DO: Maximale Geschwindigkeit existiert
+PlcObjects.FrequencyConverterConfigurationData.OutputOptions.DORunSlowExist=DO: Langsame Geschwindigkeit existiert
+PlcObjects.FrequencyConverterConfigurationData.OutputOptions.DODirectionExist=DO: Drehrichtung existiert
+PlcObjects.FrequencyConverterConfigurationData.OutputOptions.DOFaultResetExist=DO: Fehler rücksetzen existiert
+PlcObjects.FrequencyConverterConfigurationData.OutputOptions.DOReleaseExist=DO: Freigabe existiert
+PlcObjects.FrequencyConverterConfigurationData.OutputOptions.AOSetpointValueExist=AO: Soll-Geschwindigkeit existiert
+PlcObjects.FrequencyConverterConfigurationData.UseOptions=Funktionsoptionen
+PlcObjects.FrequencyConverterConfigurationData.UseOptions.IsInitializeRunPossible=Initialisierungslauf ist möglich
+PlcObjects.FrequencyConverterConfigurationData.UseOptions.ActiveErrorMonitoring=Fehlerüberwachung aktiv
+PlcObjects.FrequencyConverterConfigurationData.UseOptions.AutoInitializeWhenStarted=Auto-Initialisierung beim Start
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption=Frequenzumrichter Typ
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption.AnalogSetPointAndFeedbackWithDigitalStartAndFaultReset=Analoger Ausgangsaktor mit Sollwertvorgabe, Digitaler Start, Fehlerreset
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption.GroupedAxes=Gruppierte Achsen
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption.OneDigitalOutputActuator=Digitaler Ausgangsaktor
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption.OneDigitalOutputActuatorWithDirection=Digitaler Ausgangsaktor mit Richtungsvorgange
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption.SingleAxis=Einzelachse
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption.TwoDigitalOutputsForFastAndSlowActuator=2 Digitale Ausgangsaktoren (Langsam/Schnell)
+PlcObjects.FrequencyConverterConfigurationData.FrequencyConverterTypeOption.TwoDigitalOutputsForFastAndSlowActuatorWithDirection=2 Digitale Ausgangsaktoren (Langsam/Schnell) mit Richtungsvorgange
+PlcObjects.FrequencyConverterConfigurationData.Axes=Achse
+PlcObjects.FrequencyConverterConfigurationData.AxesGroups=Achsgruppe
+PlcObjects.FrequencyConverterConfigurationData.VelocitySlowFactor=Geschwindigkeitsfaktor langsamer Lauf
+PlcObjects.FrequencyConverterConfigurationData.MaxSetpoint=max. Sollwert
+PlcObjects.FrequencyConverterConfigurationData.RunFastSetpoint=Sollwert schneller Lauf
+PlcObjects.FrequencyConverterConfigurationData.RunSlowSetpoint=Sollwert langsamer Lauf
+PlcObjects.FrequencyConverterConfigurationData.RunInitializeStartSetPoint=Initialisierungslauf Start-Sollwert
+PlcObjects.FrequencyConverterConfigurationData.RunInitializeEndSetPoint=Initialisierungslauf End-Sollwert
+PlcObjects.FrequencyConverterConfigurationData.InitializeDuration=Initialisierungsdauer
+PlcObjects.FrequencyConverterConfigurationData.EffectiveLoadLowerLimit=Lastüberwachung unteres Limit
+PlcObjects.FrequencyConverterConfigurationData.EffectiveLoadUpperLimit=Lastüberwachung oberes Limit
+PlcObjects.FrequencyConverterConfigurationData.FaultResetTime=Zeit Fehlerreset
+PlcObjects.FrequencyConverterConfigurationData.TimeoutVelocityReached=Timeout Geschwindigkeit erreicht
+PlcObjects.FrequencyConverterConfigurationData.TimeoutVelocityIsZero=Timeout Geschwindigkeit Geschwindigkeit Null
+PlcObjects.FrequencyConverterConfigurationData.TimeoutNotReady=Timeout Actor nicht bereit 
+PlcObjects.FrequencyConverterConfigurationData.ActuatorTargetWindow=Zielfenster Geschwindigkeit erreicht
+PlcObjects.DigitalInputConfigurationData.ActuatorIsReady=DI: Aktor ist bereit
+PlcObjects.DigitalInputConfigurationData.VelocityReached=DI: Zielgeschwindigkeit erreicht
+PlcObjects.DigitalInputConfigurationData.VelocityIsZero=DI: Geschwindigkeit ist 0
+PlcObjects.DigitalInputConfigurationData.ActuatorIsFaulted=DI: Aktor hat Fehler
+PlcObjects.DigitalOutputConfigurationData.FastMovement=DO: Maximale Geschwindigkeit
+PlcObjects.DigitalOutputConfigurationData.SlowMovement=DO: Langsame Geschwindigkeit
+PlcObjects.DigitalOutputConfigurationData.Direction=DO: Drehrichtung
+PlcObjects.DigitalOutputConfigurationData.FaultReset=DO: Fehler rücksetzen
+PlcObjects.DigitalOutputConfigurationData.Release=DO: Freigabe
+PlcObjects.AnalogInputConfigurationData.ActuatorActualValue=AI: Ist-Geschwindigkeit 
+PlcObjects.AnalogInputConfigurationData.ActuatorEffectiveLoad=AI: Aktuelle Last 
+PlcObjects.AnalogOutputConfigurationData.ActuatorSetpoint=AO: Soll-Geschwindigkeit
+
+
+
+[PlcObjects.TrayManagementConfigurationData]
+PlcObjects.TrayManagementConfigurationData.Options=Optionen
+PlcObjects.TrayManagementConfigurationData.ReferencePositionID=Bezugspositions-ID
+PlcObjects.TrayManagementConfigurationData.MaxCountOfTrays=Maximale Anzahl Ablagen
+
+[PlcObjects.TrayConfigurationData]
+PlcObjects.TrayConfigurationData.Options=Optionen
+PlcObjects.TrayConfigurationData.FunctionNumberOfMotion=Funktionsnummer der Achse(Motion)
+PlcObjects.TrayConfigurationData.FunctionnumberSmemaInput=Funktionsnummer Smema-Input
+PlcObjects.TrayConfigurationData.FunctionnumberSmemaOutput=Funktionsnummer Smema-Output
+PlcObjects.TrayConfigurationData.FunctionNumberOfDepositBlocker=Funktionsnummer Ablage-Blocker
+PlcObjects.TrayConfigurationData.InstallationPosition=Installations-Richtung der Achse(Motion)
+PlcObjects.TrayConfigurationData.ReferencePositionID=Bezugspositions-ID
+PlcObjects.TrayConfigurationData.LoadUpPositionID=Aufnahmepositions-ID
+PlcObjects.TrayConfigurationData.UnloadPositionID=Entnahmepositions-ID
+PlcObjects.TrayConfigurationData.AxisGroupAxesMask=Achsgruppe
+PlcObjects.TrayConfigurationData.DangerZoneLoadUpPositionIDs=Gefahrenzonen-ID der Aufnahme
+PlcObjects.TrayConfigurationData.DangerZoneUnloadPositionIDs=Gefahrenzonen-ID der Entnahme
+PlcObjects.TrayConfigurationData.FunctionNoCoordinatesClient=Funktionsnummer des Koordinaten-Klients
+PlcObjects.TrayConfigurationData.DeviceCodingMask=Codierungsmaske
+PlcObjects.TrayConfigurationData.CountOfTrayElements=Maximale Anzahl der Ablage-Plätze
+
+SegmentInfo.SegmentID=Segment-ID
+SegmentInfo.LaneID=Spur-ID
+DatasetDescription.TrayCompartment=Ablage-Platz
+DatasetDescription.TrayCompartment.Options=Optionen
+DatasetDescription.TrayCompartment.Options.DigitalInputOccupancySensorExist=Digitaler Belegungssensor existiert
+DatasetDescription.TrayCompartment.PositionID=Positions-ID
+
+
+[PlcObjects.SMEMAInputConfigurationData]
+PlcObjects.SMEMAInputConfigurationData.Options=Optionen
+PlcObjects.SMEMAInputConfigurationData.Options.DigitalInputCustomExist=DI benutzerdef. Eingang vorhanden
+PlcObjects.SMEMAInputConfigurationData.Options.DigitalOutputCustomExist=DO benutzerdef. Ausgang vorhanden
+ESMEMATypeEnum=Smema-Typ
+ESMEMAType.NoInterface=keine Schnittstelle
+ESMEMAType.SMEMA=SMEMA
+ESMEMAType.Siemens=Siemens
+
+PlcObjects.DigitalInputConfigurationData.RequirementFromForeRunner=DI: Anforderung von n-1
+PlcObjects.DigitalInputConfigurationData.DeliveryFromForeRunner=DI: Abgegeben von n-1
+PlcObjects.DigitalInputConfigurationData.PassFromForeRunner=DI: Pass von n-1
+PlcObjects.DigitalInputConfigurationData.DigitalInputCustom=DI: benutzerdef. Eingang
+PlcObjects.DigitalInputConfigurationData.NotBusyToForerunner=DO: Erlaubnis zu n-1
+PlcObjects.DigitalInputConfigurationData.ReceivalToForerunner=DO: Empfangen zu n-1
+PlcObjects.DigitalInputConfigurationData.ConfigEmergencyLoop=DO: Sicherheits-Schleife
+PlcObjects.DigitalInputConfigurationData.DigitalOutputCustom=DO: benutzerdef. Ausgang
+
+[PlcObjects.SMEMAOutputConfigurationData]
+NotBusyFromFollower=DI: Erlaubnis von n+1
+ReceivalFromFollower=DI: Angekommen von n+1
+RequirementToFollower=DO: Anforderung zu n+1
+DeliveryToFollower=DO: Abgegeben zu n+1
+PassToFollower=DO: Pass zu n+1
+ConfigEmergencyLoop=DO: Sicherheits-Schleife
+
+[PlcObjects.ShuttleOutputInterface]
+PlcObjects.ShuttleOutputInterfaceConfigurationData.DigitalInputListProductsOfferRequest=<- Eingangsliste: Auslieferungs-Anforderung der Produkte
+PlcObjects.ShuttleOutputInterfaceConfigurationData.DigitalInputListProductsRemoved=<- Eingangsliste: Produkte entnommen
+PlcObjects.ShuttleOutputInterfaceConfigurationData.DigitalInputListProductsScanned=<- Eingangsliste: Produkte gescannt
+PlcObjects.ShuttleOutputInterfaceConfigurationData.DigitalOutputListProductsOffered=-> Ausgangsliste: Ausgelieferte Produkte
+PlcObjects.ShuttleOutputInterfaceConfigurationData.DigitalOutputListProductsReadyForRemove=-> Ausgangsliste: Produkte bereit zur Entnahme
+PlcObjects.ShuttleOutputInterfaceConfigurationData.DigitalOutputListProductsReadyForScan=-> Ausgangsliste: Produkte bereit zum Scannen
+PlcObjects.ShuttleOutputInterfaceConfigurationData.DigitalOutputListProductStates=-> Ausgangsliste: Produkt-Status
+PlcObjects.ShuttleOutputInterfaceConfigurationData.FunctionNumbers=Digital: Funktionsnummern der IO's
+PlcObjects.ShuttleOutputInterfaceConfigurationData.keepAliveTime=OPC-UA: "keepAlive"-Zeit
+PlcObjects.ShuttleOutputInterfaceConfigurationData.Options=Schnittstellen-Optionen
+PlcObjects.ShuttleOutputInterfaceConfigurationData.PermissionToMove=DI: Erlaubnis zur Bewegung
+PlcObjects.ShuttleOutputInterfaceConfigurationData.ReadyToRemove=DO: Bereit zur Entnahme
+PlcObjects.ShuttleOutputInterfaceConfigurationData.ShuttleOutputInterfaceOption=Schnittstellen-Typ
+ShuttleOutputInterfaceOptionEnum.Digital=Digitale IO's
+ShuttleOutputInterfaceOptionEnum.OPCUA=OPC-UA
+
+[PlcObjects.SequenceListMetaData]
+PlcObjects.SequenceListMetaData.Control=Kontrolle
+PlcObjects.SequenceListMetaData.Control.Version=Version
+PlcObjects.SequenceListMetaData.Control.Branch=Versions-Typ
+PlcObjects.SequenceListMetaData.Control.Branch.Release=Release (Freigegeben)
+PlcObjects.SequenceListMetaData.Control.Branch.Branch=Branch (Zweig)
+PlcObjects.SequenceListMetaData.Control.Branch.Trunk=Trunk (Stamm)
+PlcObjects.SequenceListMetaData.Control.Branch.Special=Spezial
+PlcObjects.SequenceListMetaData.Control.LinkVersionControl=Link: SVN-URL
+PlcObjects.SequenceListMetaData.Start=Start
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpAfterPausing=Aufruf Funktionsnummer nach dem Pausieren
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpBeforeContinue=Aufruf Funktionsnummer vor dem Fortsetzen
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpWhenAborted=Aufruf Funktionsnummer bei Ablaufabbruch
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpWhenDone=Aufruf Funktionsnummer wenn Ablauf erledigt
+PlcObjects.SequenceListMetaData.Start.FunctionNumberOfCleanUpWhenError=Aufruf Funktionsnummer bei Ablauffehler
+
+[LotImport]
+; Analog zu oberen LotImport und werden automatisch erzeugt
+40000=Kennung A1 fehlt
+40001=Kennung N1 fehlt
+40002=Kennung N2 fehlt
+40003=Kennung N3 fehlt
+40004=Kennung N4 fehlt
+40005=Kennung N5 fehlt
+40006=Falsche Anzahl an Parametern
+40007=Falsche Länge eines Parameters
+40008=Kennung unbekannt
+40009=Stab Artikelnummer unbekannt
+40010=Falsche LosID
+40011=Anzahl der Aufträge gleich 0
+40012=Propertycode Übersetzungsdatei ist fehlerhaft oder existiert nicht!
+40013=Kämpfer/Pfosten Position ist falsch!
+40014=Nummer konnte nicht gelesen werden!
+40031=Import fehlgeschlagen
+
+[Andere diverse Fehlermelunden, bei denen ein Zahlenschlüssel erwartet wird]
+40100=Es gab beim Import einer CSV-Datei unbekannte Übersetzungsschlüssel!
+
+40150=Der Header der Lot Operation Log Datei passen nicht! Es wird ein Backup erstellt und ein neues Log begonnen.
+40151=Es gab einen Fehler beim laden der Lot Operation Log Datei! Es wird ein Backup erstellt und ein neues Log begonnen.
+
+40500=Durch manuelle 90° Drehung nach der Schweißung passt das Element nicht mehr in Maschine!
+
+41000=Kommunikationsserver hat einen Fehler gemeldet!
+41001=Eckenputzer hat seit einiger Zeit keinen Status gesendet!
+41002=Die Verbindung zur Steuerung wurde unterbrochen! Bitte beheben und HMI neustarten!
+
+41050=Es konnte kein Datenset für neue Zulage erstellt werden!
+41051=Zulage konnte nicht gespeichert werden!
+41052=Zulage konnte nicht geupdated werden!
+41053=Es wurde kein Datenset für folgende ID gefunden!
+
+42000=Datei mit den gespeicherten Schweißaufträgen existiert nicht! Wird neu angelegt.
+42001=Es gab eine Exception wärend des Speicherns der handeingegebenen Aufträge!
+42002=Unbekannter Fehler beim Laden der handeingegebenen Aufträge!
+42003=Pfad mit den gespeicherten Schweißaufträgen existiert nicht!
+42004=Xml-Datei ist fehlerhaft! Leere Auftragsliste wird genutzt.
+
+42050=Datei mit den Losdaten existiert nicht! Es wurden keine Losdaten geladen! Datei wird neu angelegt.
+42051=Unbekannter Fehler beim Laden der Losdaten!
+42052=Pfad nicht vorhanden! Losdaten konnten nicht gespeichert werden!
+42053=Unbekannter Fehler beim Speichern der Losdaten!
+42054=Xml-Datei ist fehlerhaft! Es wurden keine Losdaten geladen!
+
+43000=OpcUa Server wird nicht benutzt.
+43001=HostName und/oder Port des OpcUa Servers ist nicht konfiguriert!
+43002=OpcUaServer.Start(): OpcUa Server konnte nicht gestartet werden!
+
+44000=Los Datei ist bereits vorhanden!
+44001=Abgearbeitetes Los wird gelöscht
+44002=Beim eintakten eines Loses wurden Aufträge ignoriert, da keine Bearbeitung möglich ist!
+44010=Es gab einen schwerwiegenden Fehler beim Export der Losdatenbank! Bitte Logs checken!
+
+45000=Propertycode Übersetzungsdatei ist fehlerhaft oder existiert nicht!
+45001=Der angegebene Import Ordner existiert nicht!
+45002=Import neuer Losdaten nicht komplett konfiguriert!
+45003=Fehler während des Import neuer Losdaten!
+45004=Zugriff auf eingestellten Import Ordner nicht gestattet!
+
+46000=Der Auftrag ist bereits in Auftragsliste enthalten!
+46001=Der Auftag ist bereits abgeschlossen!
+
+47000=Datenübertragung fehlgeschlagen!
+
+47100=Profilvermessung: Neue Schweißposition gesendet!
+47101=Profilvermessung: Neue Schweißposition NICHT gesendet!
+47102=Profilvermessung: Timout beim warten auf Daten! Verbindung zu PLC oder Broker verloren?
+
+47500=Fehler Log wurde automatisch exportiert
+47501=Fehler Log wurde manuell exportiert
+
+48000=Gescannter Barcode nicht valide!
+48001=Gescannter Auftrag ist bereits abgeschlossen!
+48002=Folgende Anzahl aus gescanntem Code eingetaktet:
+
+49000=Fehlende Auflageseite während des Sendens eines Telegramms zum Eckenputzer!
+
+49500=Fehler während dem Starten der Doppelscheißmachinen Verbindung! Siehe Dev-Log!
+
+; ----------------------------------------- alte Texte - ungesehen übernommen - Relevanz fraglich ----------------------------------------
+[PEGASUS]
+
+L1000=Zu installierende Version ist älter oder identisch zur installierten
+L1001=Plc-Versionen passen nicht zueinander
+L1002=Versuch HMI für spezielle Maschine mit allgemeinen Version zu überschreiben
+L1003=Installiert
+L1004=MSI
+L1005=Trotzdem weitermachen? 
+
+L1010=Erweitern
+L1011=Import
+L1012=Export
+L1013=Neu
+L1014=Löschen
+L1015=Entfernen
+L1016=Überprüfen
+L1017=Ändern
+L1018=Übernahme
+L1019=Abbruch
+L101x=Multi Import
+
+L1020=Suchfeld
+L1021=Sequence wirklich löschen?
+L1022=Funktionsnummer
+L1023=Titel
+L1024=Beschreibung
+L1025=Auswahl der Sprung-Nummer
+L1026=Wartezeit
+L1027=Debug List
+L1028=Debug List
+L1029=Wartezeit in Zyklen
+
+L1030=COMPILER: In jeder Sequenz muss es einen Startpunkt geben!
+L1031=COMPILER: In jeder Sequenz darf es nur einen Startpunkt geben!
+L1032=COMPILER: Mehr Kanäle geöffnet als vorhanden!
+L1033=COMPILER: Kanal ist von einem andern blockiert!
+L1034=COMPILER: Mehr Kanäle geschlossen als geöffnet!
+L1035=COMPILER: Fehlerhafter Funktionsnummereintrag!
+L1036=COMPILER: Fehler im Ablauf!
+L1037=COMPILER: Geöffneter Kanal nicht geschlossen!
+L1038=COMPILER: Es MUSS mindestens eine Funktiom im Ablauf sein!
+L1039=COMPILER: Jede Sprungnummer nur einmal benutzen!
+
+L1040=COMPILER: Einem Sprung fehlt ein Ziel \n oder einem Ziel ein Sprung!
+L1041=COMPILER: Maximalanzahl von Schritten im Ablauf überschitten!
+
+L1050=Ersteller
+L1051=Erstellt
+L1052=Zuletzt geändert von
+L1053=Zuletzt geändert
+
+L1055=Exportiert von
+L1056=Exportiert
+L1057=Exportiert von der Maschine
+L1058=Importiert von
+L1059=Importiert
+
+L1060=Bearbeitung
+L1061=Import/Export
+
+L1070=Nutzername
+L1071=Passwort
+L1072=Suchfeld
+L1073=Login
+L1074=Passwortwiederholung
+L1075=Namen dürfen nicht / \\ : * ? < > | ' enthalten!
+L1076=Nutzer existiert bereits
+L1077=Nutzername darf nicht leer sein
+L1078=Neues Passwort nicht identisch!
+L1079=Altes Passwort
+
+L1080=Das Passwort ist falsch!
+
+L1090=Auswahl des Sprung-Zieles für Type
+L1091=Auswahl des Sprunges für Type
+
+L1100=Historie
+
+L2101=Eingabe ist kein gültiger Zahlenwert!
+L2102=Eingabe ist außerhalb der Grenzen!
+L2103=Nur von
+L2104=bis
+L2105=erlaubt
+L2106=Motoradresse bereits verwendet
+L2107=Achsbuchstabe bereits verwendet
+L2108=Topologie bereits verwendet
+
+L2120=Min. Scannqualität
+L2121=Markengröße X
+L2122=Markengröße Y
+L2123=Markengröße X/Y
+L2124=Durchmesser
+L2125=Aussendurchmesser
+L2126=Innendurchmesser
+L2127=Höhe/Breite
+L2128=Balkenbreite
+L2129=Balkenabstand
+
+L2130=Aussenhöhe/-breite
+L2131=Innenhöhe/-breite
+L2132=Radius
+L2133=Länge der 3 Linien
+L2134=Länge der 1en Linie
+L2135=Strichbreite
+L2137=Eckdurchmesser
+L2138=Suchbereichsbreite
+L2139=Suchbereichshöhe
+
+L2140=Position Suchbereich X
+L2141=Position Suchbereich Y
+L2142=Belichtung
+L2143=Licht Optionen
+L2144=Durchlicht
+L2145=Auflicht
+
+L3000=Data-Verzeichnisse
+L3001=Programm-Verzeichnisse
+L3010=Data Root Path
+L3011=Tmp Path
+L3012=Backup Path
+L3013=Application Data Path
+L3014=Log Path
+L3015=HmiLog Path
+L3016=Config Path
+L3017=DB Path
+L3018=Install Path
+L3019=Pulse Path
+
+L3020=MmiCtrlHelper
+L3021=MmiCtrlHelperLog
+L3022=AppMmiCtrlHelperTmp
+L3023=MmiCtrlHelperExec
+
+L5000=Der File \"{0}\" ist nicht vorhanden!
+L5001=Verzeichnis \"{0}\" ist nicht vorhanden!
+L5002=Der Zugriff auf \"{0}\" ist nicht erlaubt!\n{1}
+L5003=Der Zugriff auf \"{0}\" ist nicht erlaubt!
+L5004=Fehler bein Zugriff auf: \"{0}\"\n{1}!
+L5005=Exception beim Zugriff auf: \"{0}\"\n{1}
+L5006=XML Exception beim Zugriff auf: \"{0}\"\n{1}
+L5007=Uri Format Exception für: \"{0}\"\n{1}
+L5008=Argument Null Exception beim Zugriff auf: \"{0}\"
+L5009=Argument Exception beim Zugriff auf: \"{0}\"
+L5010=Nicht unterstützt Zugriff auf: \"{0}\"\n{1}
+L5011=Path too long Exception beim Zugriff auf: \"{0}\"
+
+100008=Maschine
+
+100015=Beenden
+
+100018=Deutsch
+100019=Englisch
+
+100020=Sprache
+100021=Säubern
+
+100040=Suchfeld
+100041=Datum/Uhrzeit
+100042=Fehlercode
+100043=Ergebnisse Filtern nach
+100044=Bediener
+100045=Steuerung
+100046=Verbindung
+100047=Fehlerklasse 1-3
+
+100052=Zuweisen
+
+100055=Nutzer
+
+100057=Tabelle
+
+100078=Die Erweiterung .zyk oder .din fehlt. 
+
+100097=Eingang
+100098=Ausgang
+
+100102=Fehlerhafte Eingabe
+
+100103=Soll
+100104=Step
+
+100107=Grundkonfiguration
+100108=PLC-Bootproject
+100109=PLC-Firmware
+
+100120=Größe [Byte]
+100121=Datei-Info
+
+100125=Neues Passwort
+100126=Auswählen der Rechte
+100127=Neuer Nutzer anlegen
+
+100130=Texte
+100131=Configfiles
+100132=SPS Daten
+
+100139=Lernen
+
+100188=Löschen
+
+100204=Parameter
+
+100211=Forcen Wert
+
+100214=DinNew - Konfiguration
+
+100224=Datei existiert bereits
+100225=Wollen sie das DIN-File wirklich löschen?
+100226=Name des DIN-Files eingeben
+
+100239=eingeben
+
+100249=Neue Sprache
+100250=Sprache löschen
+100251=Aktuelle Sprache darf nicht gelöscht werden.
+100252=Suchstring
+100253=Ersetzen
+100254=Fehler
+100255=Info
+100256=Warnung
+100257=Frage
+
+100263=Wollen sie die Korrekturdatei wirklich löschen?
+
+100280=Superuser
+
+100295=Kritisch
+100296=HMI Fehler
+
+100300=Fehler beim Schreiben in die Datenbank:
+100301=Fehler beim Lesen aus der Datenbank:
+100302=Fehler beim Schreiben in Files:
+100303=Fehler beim Lesen von Files:
+100304=Fehler beim Löschen von Files:
+100305=Übergeben MSI-Datei nicht gefunden
+100306=Übergeben MSI-Datei ist Falsch. Fehlende Versionsinfo.
+100307=Fehler beim erzeugen der Datei.
+100308=MSI-Datei fehlt.
+100309=Möchten sie die neue HMI installieren?
+
+100370=Info Meldungen
+100371=Warnung HMI
+100372=Warnung PLC
+100373=Fehler
+100374=Schwere Fehler
+
+100480=Suchen nach
+100481=Ersetzen durch
+100482=Suche aufwärts
+100483=Suche abwärts
+100484=Nach oben blättern
+100485=Nach unten blättern
+100486=Text ersetzen
+100487=Groß-/Kleinschreibung beachten
+100488=Keine weiteren Text-Treffer vorhanden!
+
+100700=Einrichten Magazinpositionen
+100702=Einrichten Positionen (Transport)
+
+100907=Produktparameter
+
+100911=Fräsweg je Nutzen
+100912=Fräszeit je Nutzen
+
+102002=Beschreibung
+102003=Haltepunkte Löschen
+102004=Schritt
+102005=Fortfahren
+102006=PLC-Daten
+102007=Haltepunkte
+
+102011=Magazinkonfiguration
+102012=Name
+102013=Funktionsnummer
+
+102028=Funktionsnummern
+
+102103=Ausgang: Link Enable
+
+102116=Wartezeit, wenn kein Eingangsstopper beim Einlauf vorhanden ist
+
+102119=Normale Arbeitrichtung
+
+102131=Band
+
+102135=Spur
+102136=Segment
+
+102210=Frequenzumrichter
+
+102248=Funktionsnummer Smema-Input
+102249=Funktionsnummer Smema-Output
+
+102270=Funktions-Nr.
+
+102272=Ablage-Management
+102273=Ablage
+102274=SMEMA-Ausgang
+102275=SMEMA-Eingang
+
+102282=Begin darf nicht größen als Ende sein!
+102283=Die Differenz zwischen Begin und Ende darf nicht größer als 99 sein!
+
+102293=Bänder
+102294=Ablagemanagement
+102295=Ablagen
+102296=SMEMA
+102297=Stopper
+102298=Vorstopper
+102299=Ventile
+
+102302=Manuelle Funktionen (Transport)
+
+102310=Anzahl der Objekte
+102311=Ausgewählte Objekte Löschen?
+
+10007=Programme
+10009=Löschen
+10010=Kopieren
+
+10022=Import
+10023=Export
+
+10025=Forcen '1'
+10026=Force rücksetzen
+10027=Forcen '0'
+100210=Force rücksetzen
+
+
+10037=Login
+10038=Logout
+
+10040=Beenden
+
+10052=Fehlerlog
+10057=Abbruch
+10058=Übernahme
+10061=Ändern
+10062=Speichern
+
+10066=Nachricht
+10067=Bemerkung
+
+10097=Benutzerrecht
+
+10100=Benutzername
+
+10127=Position
+
+10150=Neu
+10151=Löschen
+10152=Sperren
+10153=Freigeben
+10154=Laden
+
+10299=Reset
+
+10300=Teachen
+
+10462=Berechnen
+
+10519=Maschinenverwaltung
+
+10534=P-Feld
+10535=Wert
+10536=Schliessen
+
+10603=Umbenennen
+
+10642=Start
+10643=Stop
+
+10667=Anzahl
+ExportAll=Alles exportieren
+ImportAll=Alles importieren
+
+10678=HMI-Text-DB
+10679=PLC-Text-DB
+
+10680=MMI-Fehler-DB
+10681=NCR-Fehler-DB
+10682=SPS-Fehler-DB
+10683=MK
+10687=Texte Digital I/O
+
+10786=Einstellungen
+
+10810=Programmname
+10851=Leerfahren
+
+10955=Reset
+
+10960=Transport
+10965=Abrufen
+
+10985=Achs\nKonfiguration
+10986=Achs\nParameter
+10987=Achs\nRegler
+10988=Konfiguration
+
+10995=Home
+
+11098=Magazinplatz
+
+11464=Einlesen
+
+11641=Standard
+11642=Gut
+11643=Schlecht
+11644=Nacharbeit
+11645=Müll
+11646=Ignorieren
+
+11764=Barcode
+11782=Winkel auf X [°]
+
+11853=LP-Referenzposition
+
+11903=Teilezuordnung
+11928=Kundenposition
+
+12057=Band
+
+12331=Parameter übertragen
+
+12466=Nein
+12467=Ja
+
+12712=QR Code
+
+13003=Ansicht
+13010=MFU
+13011=Funktionen
+13071=Einheit
+13073=Achsen
+13082=SoftLimit On
+13083=SoftLimit Off
+
+13105=MFU
+
+; MessageDialogbutton
+17070=Ja
+17071=Nein
+17072=OK
+17073=Abbruch
+17074=Abbruch
+17075=Wiederholen
+17076=Ignorieren
+17077=Alle
+17078=Nein Alle
+17079=Ja Alle
+
+; Maschinenbezugspositionen
+17130=Bezugsposition 1
+17131=Bezugsposition 2
+17132=Bezugsposition 3
+17133=Bezugsposition 4
+17134=Bezugsposition 5
+17135=Bezugsposition 6
+17136=Bezugsposition 7
+17137=Bezugsposition 8
+17138=Bezugsposition 9
+17139=Bezugsposition 10
+17140=Bezugsposition 11
+17141=Bezugsposition 12
+17142=Bezugsposition 13
+17143=Bezugsposition 14
+17144=Bezugsposition 15
+17145=Bezugsposition 16
+17146=Bezugsposition 17
+17147=Bezugsposition 18
+
+18001=Soll der Nutzer wirklich gelöscht werden?
+
+18055=Neustart der Maschine notwendig!
+
+18126=Namen dürfen nicht / \ : * ? < > | ' enthalten!
+18127=Möchten Sie das Programm beenden?
+
+30001=Service
+30006=Maschinendaten ändern
+
+30011=Konfiguration ändern (Achsen)
+30011=Paramerter ändern (Achsen)
+30011=Reglerdaten ändern (Achsen)
+
+30070=Handbedienung I/O's
+30071=Handbedienung Achsen
+
+; LogFileEinträge
+20000=HMI beendet
+20001=HMI startet
+20002=SPS Meldung
+20003=SPS Meldung Bestätigt
+20004=HMI LOG Message
+
+10269=Benutzer Logout Zeit in min
+13091=HMI/PLC Kommunikation, Überwachungszeit
+
+11020.0=Einstellungen
+11020.1=Res1
+11020.2=Res2
+11020.3=Res3
+11020.4=Res4
+11020.5=Res5
+11020.6=Res6
+11020.7=Res7
+11020.8=Res8
+11020.9=Res9
+11020.10=Res10
+11020.11=Res11
+11020.12=Res12
+11020.13=Res13
+11020.14=Res14
+11020.15=Res15
+11020.16=Res16
+11020.17=Res17
+11020.18=Res18
+11020.19=Res19
+11020.20=Res20
+11020.21=Res21
+11020.22=Res22
+11020.23=Res23
+11020.24=Res24
+11020.25=Res25
+11020.26=Res26
+11020.27=Res27
+11020.28=Res28
+11020.29=Debug Simulation Barcodescan aktivieren
+11020.30=Debug Forcen bei Aufruf erlauben
+11020.31=Debug Simulation aktivieren
+11020.32=Debug Traces 300 bis 305 aktivieren
+
+11708.0=HMI-Optionen
+11708.1=Ohne Tastatur
+11708.2=Türfreigabe
+11708.3=Res3
+11708.4=Res4
+11708.5=Texte hervorheben
+11708.6=Achskorrektur
+100262=Achskorrektur
+11708.7=Res7
+11708.8=Res8
+11708.9=Kundenzähler
+11708.10=Res10
+11708.11=Res11
+100330=Res11
+11708.12=Res12
+11708.13=Laden mit Barcode über Konverter
+11708.14=Res14
+11708.15=Res15
+11708.16=Res16
+11708.17=Res17
+100460=Res17
+11708.18=Res18
+11708.19=Res19
+11708.20=Res20
+11708.21=Res21
+11708.22=Res22
+11708.23=Res23
+11708.24=Res24
+11708.25=Res25
+11708.26=Res26
+11708.27=Res27
+11708.28=Res28
+11708.29=Res29
+11708.30=Res30
+11708.31=Res31
+11708.32=Res32
+
+100266=Standard Verzeichnis für Backup
+
+102010.0=Verhalten der PLC bei Kommunikationsabbruch
+102010.1=Soforthalt
+102010.2=Alle Sequenzen Abbrechen
+102010.3=Halt am Taktende
+102010.4=Keine Reaktion
+
+102281=Wert
+
+
+EProductionLineOptions.WithOutFeed=Mit Austransport
+EProductionLineOptions.WithOutFeedV2=Mit neuem Austransport
+EProductionLineOptions.WithBufferTable=Mit Puffertisch
+EProductionLineOptions.OnlyManualRemoval=Nur Handentnahme
+EProductionLineOptions.WithStulpProcessing=Mit Stulpstabbearbeitung
+EProductionLineOptions.WithExternalBufferTable=nicht verfügbar - Externer Puffertisch
+EProductionLineOptions.WithCornerCleaner=Mit Eckenputzer
+
+
+EProductOwnerOptionBits.1=Aktiviere Produkteigentümer (Productowner)
+EProductOwnerOptionBits.2=Aktiviere "Anfrage melden =>" von\n"Sind die Produkte bereit zum Anbieten"
+EProductOwnerOptionBits.4=Aktiviere "Anfrage melden =>" von\n"Sind die Produkte bereit zum Teilen"
+EProductOwnerOptionBits.8=Aktiviere "Anfrage melden =>" von\n"Produkt holen"
+EProductOwnerOptionBits.16=Aktiviere "Anfrage melden =>" von\n"Produkt holen und Produkt-ID zuweisen"
+EProductOwnerOptionBits.32=Aktiviere "Anfrage melden =>" von\n"Produkt greifen"
+EProductOwnerOptionBits.64=Aktiviere "Anfrage melden =>" von\n"Produkt anbieten"
+EProductOwnerOptionBits.128=Aktiviere "Anfrage melden =>" von\n"Produkt freigeben"
+EProductOwnerOptionBits.256=Aktiviere "Anfrage melden =>" von\n"Produkt teilen"
+EProductOwnerOptionBits.512=Aktiviere "Anfrage melden =>" von\n"Produkt aktualisieren"
+EProductOwnerOptionBits.1024=Aktiviere "Anfrage melden =>" von\n"Werden noch Produkte erwartet"
+EProductOwnerOptionBits.2048=Aktiviere "Anfrage melden =>" von\n"Rezepturänderung"
+
+EProductOwnerProcessInfoOptionBits.1=Warten auf "Antwort <=" von\n"Sind die Produkte bereit zum Anbieten"
+EProductOwnerProcessInfoOptionBits.2=Warten auf "Antwort <=" von\n"Sind die Produkte bereit zum Teilen"
+EProductOwnerProcessInfoOptionBits.4=Warten auf "Antwort <=" von\n"Produkt holen"
+EProductOwnerProcessInfoOptionBits.8=Warten auf "Antwort <=" von\n"Produkt holen und Produkt-ID zuweisen"
+EProductOwnerProcessInfoOptionBits.16=Warten auf "Antwort <=" von\n"Produkt greifen"
+EProductOwnerProcessInfoOptionBits.32=Warten auf "Antwort <=" von\n"Produkt anbieten"
+EProductOwnerProcessInfoOptionBits.64=Warten auf "Antwort <=" von\n"Produkt freigeben"
+EProductOwnerProcessInfoOptionBits.128=Warten auf "Antwort <=" von\n"Produkt teilen"
+EProductOwnerProcessInfoOptionBits.256=Warten auf "Antwort <=" von\n"Produkt aktualisieren"
+EProductOwnerProcessInfoOptionBits.512=Warten auf "Antwort <=" von\n"Werden noch Produkte erwartet"
+EProductOwnerProcessInfoOptionBits.1024=Warten auf "Antwort <=" von\n"Rezepturänderung"
+
+Cyc.BposTable.0=Kleinstmaßschwelle
+
+
