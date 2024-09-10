@@ -55,8 +55,9 @@ class SPSFehlDB(DatabaseParser):
             else:
                 # Key-Value Parsing
                 parts = line.split('","')
-                key = parts[0].strip('"')
-                value = parts[1]
+                if len(parts)>=2:
+                    key = parts[0].strip('"')
+                    value = parts[1]
             json_obj[key]=value
                 
         # write dict in JSON

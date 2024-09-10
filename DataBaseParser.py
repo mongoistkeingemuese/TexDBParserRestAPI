@@ -243,7 +243,8 @@ class DatabaseParser(ABC):
         df_result['Key'] = df_result['Key'].astype(str)
 
         # sort Keys alphabeticaly
-        df_result.sort_values(by='Key', inplace=True)
+        if self.name =="TextDB":
+            df_result.sort_values(by='Key', inplace=True)
 
         # save active dataframe in excel
         df_result.to_excel(excel_path, index=False, engine='openpyxl')
