@@ -1,5 +1,5 @@
 from TextDBParser import TextDBParser
-from SPSFehlerDB import SPSFehlDB
+from EXCErrors import ExcErrors
 
 from abc import ABC, abstractmethod
 from flask import Flask, request, jsonify
@@ -18,9 +18,10 @@ def create_app(parsers):
 if __name__ == '__main__':
     # Create parser instances
     TextDB = TextDBParser("TextDB")
-    SPSfehl= SPSFehlDB("SPS_fehl")
-
+    SPSfehl= ExcErrors("SPS_fehl")
+    NCRfehl= ExcErrors("NCR_fehl")
+    MMIfehl= ExcErrors("MMI_fehl")
 
     # Register parsers with the app
-    app = create_app([TextDB, SPSfehl])
+    app = create_app([TextDB, SPSfehl, NCRfehl, MMIfehl])
     app.run(debug=True)

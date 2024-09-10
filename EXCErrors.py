@@ -3,7 +3,7 @@ import os
 import json
 
 
-class SPSFehlDB(DatabaseParser):
+class ExcErrors(DatabaseParser):
     def __init__(self, name):
         super().__init__(name)
 
