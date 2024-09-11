@@ -73,5 +73,5 @@ class ExcErrors(DatabaseParser):
     
 
 if __name__=="__main__":
-    TestParser=SPSFehlDB("SPS_fehl")
+    TestParser=ExcErrors("SPS_fehl")
 
