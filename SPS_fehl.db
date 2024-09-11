@@ -1,8 +1,10 @@
-﻿#Info:Modified=2018-10-23 13:44:54
-#Info:HmiVersion=7.5.7594.0
-#Info:ExportBy=Architekt
-#Info:Export=2024-09-10 10:05:53
-#Info:HashCode=NCsllKaTpcm44uFuPGCTz6QF19MYY5vL0ScaPViXn/n9
+﻿#Info:Modified=2020-04-07 12:46:33
+#Info:HmiVersion=7.5.9950.0
+#Info:ImportBy=Architekt
+#Info:Import=2020-04-07 12:46:31
+#Info:PlcVersion=Unknown
+#Info:ModifiedBy=Architekt
+#Info:Msnr=081896
 "2.10.101","Not-Aus ausgelöst",""
 "2.10.102","Phasenüberwachung ausgelöst",""
 "2.10.103","Druckluft nicht OK.",""
@@ -705,3 +707,4 @@
 
 
 "2.10.9999","Versorungsspannungseinbruch am CAN-Bus-IO-Modul",""
+

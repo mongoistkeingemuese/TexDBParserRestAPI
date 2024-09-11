@@ -1,12 +1,10 @@
-﻿#Info:Modified=2019-04-10 16:05:27
+﻿#Info:ImportBy=Architekt
+#Info:Import=2018-10-23 13:44:52
+#Info:Modified=2019-04-10 16:05:27
 #Info:HmiVersion=7.5.8331.0
 #Info:PlcVersion=?
 #Info:ModifiedBy=Architekt
 #Info:Msnr=081895
-#Info:ExportBy=Architekt
-#Info:Export=2024-09-10 14:19:10
-#Info:ExportMsnr=081895
-#Info:HashCode=sg/SrzRY8/mqO6Q+oSJR6GBNSf8IWhk+DpRy9mDJkccB
 "1.0.1","IPCOM.DLL: nicht ausreichend Speicher für Prozesskommunikation vorhanden",""
 "1.0.2","IPCOM.DLL: kein gültiger Prozesskommunikationsspeicher",""
 "1.0.3","IPCOM.DLL: kein freier Prozesskommunikationsspeicherblock vorhanden"
@@ -223,3 +221,4 @@
 "1.17.252","Firmware-Dateiformat ist unbekannt",""
 "1.17.253","Firmware konnte nicht entpackt werden, Zielpuffer zu klein",""
 "1.17.254","Fehlerhafte Code-Tabelle in komprimierter Firmware",""
+

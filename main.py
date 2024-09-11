@@ -22,7 +22,7 @@ if __name__ == '__main__':
     SPSfehl = ExcErrors("SPS_fehl")
     NCRfehl = ExcErrors("NCR_fehl")
     MMIfehl = ExcErrors("MMI_fehl")
-    DIO_db     = IOdb("DIO")
+    DIO_db     = IOdb("Text_DIO")
 
     # Register parsers with the app
     app = create_app([TextDB, SPSfehl, NCRfehl, MMIfehl, DIO_db])

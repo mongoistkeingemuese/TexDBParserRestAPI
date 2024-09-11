@@ -100,7 +100,10 @@ class IOdb(DatabaseParser):
                 key = key.strip()
                 value = value.strip()
                 if current_section:
-                    json_key = f"{current_section}.{current_namespace}.{key}"
+                    if current_namespace:
+                        json_key = f"{current_section}.{current_namespace}.{key}"
+                    else:
+                        json_key = f"{current_section}.{key}" 
                 else:
                     json_key = f"{current_namespace}.{key}"
                 json_obj[json_key] = value
