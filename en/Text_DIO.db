@@ -1,0 +1,257 @@
+﻿#Info:Modified=2023-08-28 16:22:48
+#Info:HmiVersion=0.0.708.0
+#Info:PlcVersion={"module":"_ModuleMCG","application":"EXC89_Safety_1"}
+#Info:ModifiedBy=a admin
+#Info:Msnr=1
+#Info:ExportBy=Architekt
+#Info:Export=2022-05-24 15:03:50
+#Info:ExportMsnr=123456
+#Info:HashCode=uXFiMDOotxd+g3AXs0KHkXhIaci7KdOB9sRm5MlVkMUB
+#Info:ExternalModified=True
+#Info:ImportBy=Architekt
+#Info:Import=2022-06-02 14:29:36
+
+
+[DI]
+100=DI0.0 Klemmzylinder eingefahren Conveyor 1  3K1:1.1
+101=DI0.1 Klemmzylinder ausgefahren Conveyor 1  3K1:2.1
+102=DI0.2 PCB Detektieren Conveyor 1  3K1:3.1
+103=DI0.3 System Druck OK  3K1:4.1
+104=DI0.4 
+105=DI0.5 
+106=DI0.6 
+107=DI0.7 
+108=DI1.0 Nothalt (LOW)
+109=DI1.1 Türen geschlossen und STO-Freigabe PCB-Handling
+110=DI1.2 Schlüsselschalter
+111=DI1.3 Anf Achsen in Sichere Position
+112=DI1.4 Türen geschlossen und STO-Freigabe BOX-Handling
+113=DI1.5 
+114=DI1.6 
+115=DI1.7 										  
+
+200=DI2.0 Klemmzylinder eingefahren Conveyor 2  4K1:1.1
+201=DI2.1 Klemmzylinder ausgefahren Conveyor 2  4K1:2.1
+202=DI2.2 PCB Detektieren Conveyor 2 Links  4K1:3.1
+203=DI2.3 PCB Detektieren Conveyor 2 Rechts  4K1:4.1
+204=DI2.4 
+205=DI2.5 
+206=DI2.6 
+207=DI2.7
+208=DI3.0 TÜR rechts geschlossen
+209=DI3.1 TÜR Lift rechts geschlossen
+210=DI3.2 TÜR Boxhandling links geschlossen
+211=DI3.3 TÜR Boxhandling rechts geschlossen
+212=DI3.4 TÜR Rückseite links geschlossen
+213=DI3.5 TÜR Rückseite rechts geschlossen 
+214=DI3.6 Lichtgitter Box Einlauf OK
+215=DI3.7 Lichtgitter Box Auslauf OK
+
+300=DI4.0 PCB Detektieren Conveyor 3 Links  5K1:1.1
+301=DI4.1 PCB Detektieren Conveyor 3 Rechts  5K1:2.1
+302=DI4.2 Kompaktejektor: Teilekontrolle  5K1:3.1
+303=DI4.3 Taster Förderband beladen  5K1:4.1
+304=DI4.4 
+305=DI4.5 
+306=DI4.6 
+307=DI4.7
+308=DI5.0 
+309=DI5.1 
+310=DI5.2 
+311=DI5.3 
+312=DI5.4 
+313=DI5.5 
+314=DI5.6 
+315=DI5.7 
+
+400=DI6.0 PCB Detektieren Conveyor 4 Links  6K1:1.1
+401=DI6.1 PCB Detektieren Conveyor 4 Rechts  6K1:2.1
+402=DI6.2 Acknowledge Taster  6K1:3.1
+403=DI6.3 Zustellung Greifer Li AST  6K1:4.1
+404=DI6.4 
+405=DI6.5 
+406=DI6.6 
+407=DI6.7 
+408=DI7.0 
+409=DI7.1 
+410=DI7.2 
+411=DI7.3 
+412=DI7.4 
+413=DI7.5 
+414=DI7.6 
+415=DI7.7 
+
+500=DI8.0 Kistenerkennung Drehtisch
+501=DI8.1 Magazin3 Schublade eingefahren
+502=DI8.2 Magazin3 Zwischenlagen Erkennung
+503=DI8.3 Förderband Entladen
+504=DI8.4 
+505=DI8.5 
+506=DI8.6 
+507=DI8.7 
+508=DI9.0 
+509=DI9.1 
+510=DI9.2 
+511=DI9.3 
+512=DI9.4 
+513=DI9.5 
+514=DI9.6 
+515=DI9.7 
+
+600=DI10.0 SMEMA 01 Part Available  8K1:1.1
+601=DI10.1 SMEMA 02 Part Available  8K1:2.1
+602=DI10.2 SMEMA 01 Ready To Receive  8K1:3.1
+603=DI10.3 SMEMA 02 Ready To Receive  8K1:4.1
+604=DI10.4 
+605=DI10.5 
+606=DI10.6 
+607=DI10.7 
+608=DI11.0 
+609=DI11.1 
+610=DI11.2 
+611=DI11.3 
+612=DI11.4 
+613=DI11.5 
+614=DI11.6 
+615=DI11.7 
+
+700=DI12.0 Schütz Not-Halt verzögert  9K1:1.1
+701=DI12.1 Greifer Kiste eingefahren  9K1:2.1
+702=DI12.2 Greifer Kiste ausgefahren  9K1:3.1
+703=DI12.3 Kiste detektiert  9K1:4.1
+704=DI12.4 
+705=DI12.5 
+706=DI12.6 
+707=DI12.7 
+708=DI13.0 
+709=DI13.1 
+710=DI13.2 
+711=DI13.3 
+712=DI13.4 
+713=DI13.5 
+714=DI13.6 
+715=DI13.7 
+
+800=DI14.0 Einfahrt Kiste detektiert Warteposition  10K1:1.1
+801=DI14.1 Einfahrt Kiste detektiert Endposition  10K1:2.1
+802=DI14.2 Ausfahrt Kiste detektiert Warteposition  10K1:3.1
+803=DI14.3 Ausfahrt Kiste detektiert Endposition  10K1:4.1
+804=DI14.4 
+805=DI14.5 
+806=DI14.6 
+807=DI14.7 
+808=DI15.0 
+809=DI15.1 
+810=DI15.2 
+811=DI15.3 
+812=DI15.4 
+813=DI15.5 
+814=DI15.6 
+815=DI15.7 
+
+900=DI16.0 Zustellung Greifer Li GST  11K1:1.1
+901=DI16.1 Zustellung Greifer Re AST  11K1:2.1
+902=DI16.2 Zustellung Greifer Re GST  11K1:3.1
+903=DI16.3 Lift blockiert Sensor   11K1:4.1
+904=DI16.4 
+905=DI16.5 
+906=DI16.6 
+907=DI16.7 
+908=DI17.0 
+909=DI17.1 
+910=DI17.2 
+911=DI17.3 
+912=DI17.4 
+913=DI17.5 
+914=DI17.6 
+915=DI17.7 
+
+
+
+  
+
+[DO]
+100=DO0.0 Stopper ausfahren Conveyor 1  14K1:1.1
+101=DO0.1 Stopper ausfahren Conveyor 2  14K1:1.3
+102=DO0.2 Signalhorn  14K1:2.1
+103=DO0.3 Signallampe Orange  14K1:2.3
+104=DO0.4 Signallampe Rot  14K1:3.1
+105=DO0.5 Signallampe Grün  14K1:3.3
+106=DO0.6 Abfall Transportband  14K1:4.1
+107=DO0.7 LED Förderband beladen  14K1:4.3
+108=DO1.0 PCB Handling in sicherer Position
+109=DO1.1 Anf Scutztür (Automatik)
+110=DO1.2 BOX Handling in sicherer Position
+111=DO1.3 n.Av
+112=DO1.4 n.Av
+113=DO1.5 n.Av
+114=DO1.6 n.Av
+115=DO1.7 n.Av
+
+200=DO2.0 LED Förderband entladen  15K1:1.1
+201=DO2.1 SMEMA 01 Ready To Receive  15K1:1.3
+202=DO2.2 SMEMA 01 Part Available  15K1:2.1
+203=DO2.3 SMEMA 02 Part Available  15K1:2.3
+204=DO2.4 SMEMA 02 Ready To Receive  15K1:3.1
+205=DO2.5 Greifer Zustellung Li  15K1:3.3
+206=DO2.6 Greifer Zustellung Re  15K1:4.1
+207=DO2.7 Taster "Tür öffnen" Licht An  15K1:4.3
+208=DO3.0 n.Av
+209=DO3.1 n.Av
+210=DO3.2 n.Av
+211=DO3.3 n.Av
+212=DO3.4 n.Av
+213=DO3.5 n.Av
+214=DO3.6 n.Av
+215=DO3.7 n.Av
+
+300=DO4.0 Not-Halt (bzw. 230V Versorgung EDarcK)  16K1:1.1
+301=DO4.1 Kompaktejektor: Vakuum Ein  16K1:1.3
+302=DO4.2 Kompaktejektor: Druckluft Ein  16K1:2.1
+303=DO4.3 Förderband Einfahrt Ein  16K1:2.3
+304=DO4.4 Förderband Ausfahrt Ein  16K1:3.1
+305=DO4.5 Greifer Kiste ausfahren  16K1:3.3
+306=DO4.6 leer  16K1:4.1
+307=DO4.7 Taster "Acknowledge" Licht An  16K1:4.3
+308=DO5.0 n.Av
+309=DO5.1 n.Av
+310=DO5.2 n.Av
+311=DO5.3 n.Av
+312=DO5.4 n.Av
+313=DO5.5 n.Av
+314=DO5.6 n.Av
+315=DO5.7 n.Av
+
+400=DO6.0 Vakuum Greifer Li
+401=DO6.1 Vakuum Greifer Rahmen
+402=DO6.2 Vakuum Greifer Re
+403=DO6.3 RES
+404=DO6.4 RES
+405=DO6.5 RES
+406=DO6.6 RES
+407=DO6.7 RES
+408=DO7.0 n.Av
+409=DO7.1 n.Av
+410=DO7.2 n.Av
+411=DO7.3 n.Av
+412=DO7.4 n.Av
+413=DO7.5 n.Av
+414=DO7.6 n.Av
+415=DO7.7 n.Av
+
+
+[AI]
+101=Spindel Trennlast 13A7_AI200 Blatt9.2.6_9U1
+
+
+[AO]
+101=Spindel Drehzahl Sollwert 13A17_AO200 Blatt9.2.8_9U1
+
+
+[13A22_I0_Link_1 Greiferweite Portal 8M20 Blatt16.4.4
+[13A22_I0_Link_2 Überwachung Saugleistung Spindel 9B1 Blatt16.4.3
+[13A22_I0_Link_3 OPTION Überwachung Saugleistung Reinigungsbox 9B2 Blatt16.4.5
+[13A23_I0_Link_1 Überwachung Druckluft 5B16  Blatt16.5.4
+[13A23_I0_Link_2 OPTION Überwachung Druckluft Reinigungsbox 5B16.1 Blatt5.0.8
+[13A23_I0_Link_3 OPTION Greiferfinger verbogen 5B40 Blatt5.10.8
+
