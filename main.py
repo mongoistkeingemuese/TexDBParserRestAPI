@@ -16,6 +16,9 @@ def create_app(parsers):
     return app
 
 # Example usage
+
+#WebApp API Entry: http://localhost:5000/apidocs/
+
 if __name__ == '__main__':
     # Create parser instances
     TextDB  = TextDBParser("TextDB")
