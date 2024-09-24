@@ -1,11 +1,9 @@
 from abc import ABC, abstractmethod
-from flask import Flask, request, jsonify
-from flasgger import Swagger, swag_from
+from flask import request, jsonify
+from flasgger import swag_from
 import pandas as pd
 import os
 import json
-from openpyxl import load_workbook
-
 
 class DatabaseParser(ABC):
     def __init__(self, name):
@@ -207,9 +205,8 @@ class DatabaseParser(ABC):
         json_path = os.path.normpath(json_path)
         sheet_name = self.name
 
-        # Überprüfen, ob die Excel-Datei existiert
         if not os.path.exists(excel_path):
-            # Erstelle ein leeres DataFrame
+            #create new Dataframe
             df_existing = pd.DataFrame(columns=['Key', 'Value'])
             # Erstelle eine neue Excel-Datei mit dem leeren DataFrame
             with pd.ExcelWriter(excel_path, engine='openpyxl') as writer:
@@ -217,23 +214,23 @@ class DatabaseParser(ABC):
             print(f"Excel-Datei wurde erstellt: {excel_path}")
             print(f"Neues Sheet '{sheet_name}' wurde hinzugefügt.")
         else:
-            # Lade die bestehende Excel-Datei
+            # load ecxal sheet
             try:
                 df_existing = pd.read_excel(excel_path, sheet_name=sheet_name, engine='openpyxl')
                 print(f"Spaltennamen im bestehenden Excel-Sheet '{sheet_name}': {df_existing.columns.tolist()}")
             except ValueError:
-                # Wenn das Sheet nicht existiert, erstelle einen leeren DataFrame
+                # if sheet does not exist, create new one
                 df_existing = pd.DataFrame(columns=['Key', 'Value'])
                 print(f"Sheet '{sheet_name}' existiert nicht. Ein neues Sheet wird erstellt.")
 
 
-        # Lade die JSON-Daten
+        #load Json data
         with open(json_path, 'r', encoding='utf-8') as file:
             json_data = json.load(file)
 
         df_new = pd.DataFrame(list(json_data.items()), columns=['Key', language_description])
 
-        # Mergen der bestehenden und neuen Daten
+        # Merge with existing data
         if df_existing.empty:
             df_result = df_new
         else:
@@ -250,17 +247,16 @@ class DatabaseParser(ABC):
         if sheet_name == "TextDB":
             df_result.sort_values(by='Key', inplace=True)
 
-        # Speichern der Daten in die Excel-Datei
-        # Wenn die Excel-Datei existiert, lade die existierenden Sheets, um sie beizubehalten
+        # save data in excel
+        # if sheet exists, load sheet
         with pd.ExcelWriter(excel_path, engine='openpyxl', mode='a', if_sheet_exists='replace') as writer:
-            # Falls die Datei existiert, alle existierenden Sheets laden und in den Writer einfügen
             if os.path.exists(excel_path):
                 book = pd.ExcelFile(excel_path, engine='openpyxl')
                 for existing_sheet_name in book.sheet_names:
                     if existing_sheet_name != sheet_name:
                         df_existing_sheet = pd.read_excel(excel_path, sheet_name=existing_sheet_name, engine='openpyxl')
                         df_existing_sheet.to_excel(writer, sheet_name=existing_sheet_name, index=False)
-            # Schreibe oder ersetze das spezifizierte Sheet
+            # write sheet
             df_result.to_excel(writer, sheet_name=sheet_name, index=False)
 
         print(f'Die Excel-Datei wurde erfolgreich aktualisiert: {excel_path}')

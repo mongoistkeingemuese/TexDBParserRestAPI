@@ -1,10 +1,8 @@
 from TextDBParser import TextDBParser
 from EXCErrors import ExcErrors
 from IODB import IOdb
-
-from abc import ABC, abstractmethod
-from flask import Flask, request, jsonify
-from flasgger import Swagger, swag_from
+from flask import Flask
+from flasgger import Swagger
 
 def create_app(parsers):
     app = Flask(__name__)
@@ -15,8 +13,6 @@ def create_app(parsers):
         parser.create_routes(app)
     return app
 
-# Example usage
-
 #WebApp API Entry: http://localhost:5000/apidocs/
 
 if __name__ == '__main__':
@@ -25,7 +21,7 @@ if __name__ == '__main__':
     SPSfehl = ExcErrors("SPS_fehl")
     NCRfehl = ExcErrors("NCR_fehl")
     MMIfehl = ExcErrors("MMI_fehl")
-    DIO_db     = IOdb("Text_DIO")
+    DIO_db  = IOdb("Text_DIO")
 
     # Register parsers with the app
     app = create_app([TextDB, SPSfehl, NCRfehl, MMIfehl, DIO_db])

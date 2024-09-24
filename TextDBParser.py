@@ -2,8 +2,6 @@ from DataBaseParser import DatabaseParser
 import os
 import json
 import re
-from collections import defaultdict
-import pandas as pd
 import os
 import json
 
