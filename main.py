@@ -2,6 +2,7 @@ from TextDBParser import TextDBParser
 from EXCErrors import ExcErrors
 from IODB import IOdb
 from flask import Flask
+from PLCDB import PLCdb
 from flasgger import Swagger
 
 def create_app(parsers):
@@ -22,7 +23,8 @@ if __name__ == '__main__':
     NCRfehl = ExcErrors("NCR_fehl")
     MMIfehl = ExcErrors("MMI_fehl")
     DIO_db  = IOdb("Text_DIO")
+    PlcDB   = PLCdb("PlcDB")
 
     # Register parsers with the app
-    app = create_app([TextDB, SPSfehl, NCRfehl, MMIfehl, DIO_db])
+    app = create_app([TextDB, SPSfehl, NCRfehl, MMIfehl, DIO_db, PlcDB])
     app.run(debug=True)
