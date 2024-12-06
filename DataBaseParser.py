@@ -225,7 +225,7 @@ class DatabaseParser(ABC):
 
 
         #load Json data
-        with open(json_path, 'r', encoding='utf-8') as file:
+        with open(json_path, 'r', encoding='latin-1') as file:
             json_data = json.load(file)
 
         df_new = pd.DataFrame(list(json_data.items()), columns=['Key', language_description])
@@ -282,11 +282,11 @@ class DatabaseParser(ABC):
         json_data = dict(zip(df_cleaned[key_column], df_cleaned[language_description]))
         
         # write dict in JSON
-        with open(json_path, 'w', encoding='utf-8') as json_file:
+        with open(json_path, 'w', encoding='latin-1') as json_file:
             json.dump(json_data, json_file, indent=4, ensure_ascii=False)
 
         # send JSON as payload
-        with open(json_path, 'r', encoding='utf-8') as json_file:
+        with open(json_path, 'r', encoding='latin-1') as json_file:
             self.payload=str(json_file.read())
         
         return f'JSON file was created successfully: {json_path}' 

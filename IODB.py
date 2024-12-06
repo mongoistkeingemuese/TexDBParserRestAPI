@@ -15,7 +15,7 @@ class IOdb(DatabaseParser):
         json_path=os.path.normpath(json_path)
         new_database = database_path
 
-        with open(json_path, 'r', encoding='utf-8') as file:
+        with open(json_path, 'r', encoding='latin-1') as file:
             json_obj = json.load(file)
 
         lines = []
@@ -51,11 +51,11 @@ class IOdb(DatabaseParser):
             # Add the key-value pair line
             lines.append(f"{actual_key}={value}")
 
-        with open(new_database, 'w', encoding='utf-8') as text_file:
+        with open(new_database, 'w', encoding='latin-1') as text_file:
             text_file.write('\n'.join(lines))
 
         #send database as payload
-        with open(new_database, 'r', encoding='utf-8') as text_file:
+        with open(new_database, 'r', encoding='latin-1') as text_file:
             self.payload=str(text_file.read())
 
         return f'text database was created successfully  {new_database}'
@@ -68,7 +68,7 @@ class IOdb(DatabaseParser):
 
         database_as_json = json_path
 
-        with open(database_path, 'r', encoding='utf-8') as file:
+        with open(database_path, 'r', encoding='latin-1') as file:
             lines = file.readlines()
 
         json_obj = {}
@@ -109,11 +109,11 @@ class IOdb(DatabaseParser):
                 json_obj[json_key] = value
                 
         # write dict in JSON
-        with open(database_as_json, 'w', encoding='utf-8') as json_file:
+        with open(database_as_json, 'w', encoding='latin-1') as json_file:
             json.dump(json_obj, json_file, indent=4, ensure_ascii=False)
         
         #send JSON as payload
-        with open(database_as_json, 'r', encoding='utf-8') as text_file:
+        with open(database_as_json, 'r', encoding='latin-1') as text_file:
             self.payload=str(text_file.read())
 
         return f'Die JSON-Datei wurde erfolgreich erstellt: {database_as_json}'
